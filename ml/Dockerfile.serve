@@ -1,0 +1,17 @@
+# Service phục vụ DKT (UC-68). Trọng số & vocab nạp qua volume (gitignore).
+FROM python:3.13-slim
+
+WORKDIR /app
+
+# torch bản CPU (nhẹ hơn bản mặc định có CUDA), phần còn lại theo requirements-serve
+COPY requirements-serve.txt .
+RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch \
+    && pip install --no-cache-dir -r requirements-serve.txt
+
+COPY config.py .
+COPY src/ ./src/
+COPY serve_app.py .
+
+# models/ và data/processed/ mount qua volume lúc chạy (không copy vào image)
+EXPOSE 8001
+CMD ["uvicorn", "serve_app:app", "--host", "0.0.0.0", "--port", "8001"]

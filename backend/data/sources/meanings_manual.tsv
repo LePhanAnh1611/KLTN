@@ -1,0 +1,96 @@
+# Nghĩa SỬA TAY — chủ dự án đã duyệt từng từ (2026-10-26)
+#
+# source: manual
+#
+# Nguồn: chủ dự án rà 5 bộ đầu trên trang "Soát bộ từ nền" (A1 · Từ 1–50,
+# B1 · Từ 1–50, B2 · Từ 1–50, C1 · Từ 1–15, Nâng cao C1 · Từ 1–50) và ghi nghĩa đúng.
+# Nguồn `manual` thắng mọi nguồn khác (curated, llm, fvdp) và được ghi ra
+# meaning_source = manual, meaning_confidence = confirmed.
+#
+# ĐỊNH DẠNG: từ<TAB>nghĩa<TAB>nghĩa cũ (để đối chiếu)[<TAB>từ loại]
+# Cột 4 để trống = giữ từ loại hiện có.
+#
+# Sửa thêm: thêm dòng vào file này rồi dựng lại bằng build_core_dataset (xem README).
+the	(mạo từ xác định) cái đó, người ấy	cái, con, người
+to	(ĐT Nguyên mẫu): đến, tới	đến, tới, về
+a	(Mạo từ): một + Danh từ	la
+in	trong	ở, tại, trong
+you	bạn	anh, chị, ông, bà, ngài, ngươi, mày
+he	anh ấy	nó, anh ấy, ông ấy
+on	trên	trên, ở trên
+with	cùng	với, cùng, cùng với
+this	cái này	này
+i	tôi	tôi, mình	pronoun
+she	cô ấy	nó, bà ấy, chị ấy, cô ấy
+by	bởi ai, kế bên	gần, cạnh, kế, bên
+will	ý chí	ý chí, chí, ý định, lòng
+so	cực kỳ	thế
+which	cái nào	nào
+there	chỗ kia	ở đó, tại đó, chỗ đó, chỗ ấy, đấy
+more	nhiều hơn	nhiều hơn, hơn nữa
+get	lấy	được, có được, kiếm được, lấy được
+like	thích	thích, sãn sàng, sãn lòng, vui lòng
+make	làm ra	làm, chế tạo, khiến	verb
+time	thời gian	dịp, cơ hội, thời cơ
+see	nhìn	thấy, trông thấy, nhìn thấy
+what	cái gì, thế nào	gì, thế nào
+term	kỳ học	phiên , kỳ học, quý, khoá
+sort	chỉ chủng loại (giống Kind of)	thứ, loại, hạng
+per	cho mỗi	mỗi, cho mỗi	preposition
+involve	liên quan	bao gồm, liên quan đến
+require	yêu cầu	đòi hỏi, yêu cầu
+general	một cách chung chung	chung, chung chung
+individual	cá nhân	riêng, riêng lẻ, cá nhân
+rise	tăng lên	tăng lên, mọc lên; sự tăng	verb
+charge	khoản phí phải trả	phí; sạc (pin); buộc tội
+regard	coi như là	coi như, xem là; sự quan tâm	verb
+measure	phương sách	phương sách, biện pháp, cách xử trí
+standard	tiêu chuẩn	cờ hiệu, cờ
+demand	nhu cầu	Cầu
+current	dòng	dòng
+cell	tế bào	xà lim
+sector	lĩnh vực	ngành
+procedure	quy trình	thủ tục
+troop	lực lượng (chủ yếu chỉ quân đội)	binh lính
+mechanism	cơ chế	máy móc, cơ cấu, cơ chế
+coverage	phạm vi bảo hiểm	vùng được gộp vào
+clinical	phòng khám	buồng bệnh, ở buồng bệnh, lâm sàng
+whilst	trong khi (giống While)	trong khi (= while)
+allege	cáo buộc	cho là, khẳng định
+voluntary	tự nguyện	tự ý, tự nguyện, tự giác
+structural	cấu trúc	kết cấu, cấu trúc
+trying	cố gắng	nguy ngập, gay go, khó khăn
+removed	loại bỏ	xa, xa cách, khác biệt
+jersey	áo (với loại vải jersey)	áo nịt len
+premier	người đứng đầu	thủ tướng
+sacrifice	sự hy sinh	sự giết để cúng thần
+con	đánh lừa	học thuộc lòng, nghiên cứu, nghiền ngẫm
+isolated	mang tính cô lập	cô lập
+suspension	đình chỉ	sự treo
+charter	điều lệ	hiến chương
+amateur	nghiệp dư	có tính chất tài tử, nghiệp dư, không chuyên
+transit	quá cảnh	sự đi qua, sự vượt qua
+advisory	cho ý kiến	để hỏi, để xin ý kiến
+chill	sự ớn lạnh	sự ớn lạnh, sự rùng mình
+compliance	sự tuân thủ	sự bằng lòng, sự ưng thuận, sự chiều theo, sự làm đúng theo
+marvel	vật kỳ diệu	vật kỳ diệu, vật tuyệt diệu, kỳ công
+conviction	niềm tin	sự kết án, sự kết tội
+restoration	sự phục hồi	sự hoàn lại, sự trả lại
+jurisdiction	thẩm quyền	quyền hạn, phạm vi quyền hạn
+contractor	nhà thầu	thầu khoán, người đấu thầu, người thầu
+demo	thử nghiệm	cuộc biểu tình
+hack	tin tặc (người làm hỏng hệ thống)	búa, rìu
+sentiment	tình cảm	tình, tình cảm
+verdict	phán quyết	lời tuyên án, lời phán quyết
+premises	tiền đề	ngôi nhà hoặc các toà nhà khác có nhà phụ, đất đai
+harassment	sự quấy rối	sự quấy rầy, sự phiền nhiễu
+precision	sự chuẩn xác	sự đúng, sự chính xác
+speculation	suy đoán	Đầu cơ
+wicked	hiểm ác	xấu, hư, tệ, đồi bại, tội lỗi
+gig	(lóng) buổi diễn âm nhạc ngắn -> công việc ngắn hạn	xe độc mã hai banh
+sequel	phần hậu bản	sự tiếp tục
+clan	bang, gia tộc	thị tộc
+coupled	kết hợp	bị ghép
+revealing	tiết lộ	bộc lộ, biểu lộ
+succession	sự kế nghiệp	sự kế tiếp
+substantially	đáng kể	về thực chất, về căn bản

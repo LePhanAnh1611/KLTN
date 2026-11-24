@@ -1,0 +1,18 @@
+# Phụ thuộc RIÊNG cho module luyện nói (app/speaking).
+#
+# Tách khỏi requirements.txt vì faster-whisper kéo theo ctranslate2 + onnxruntime
+# (~200MB) và trọng số model tải lúc chạy. Backend chạy bình thường không cần
+# chúng — chỉ endpoint /api/v1/speaking/* mới cần.
+#
+# Cài:  pip install -r requirements-speaking.txt
+# Ollama KHÔNG cài qua pip — xem docs/speaking-module.md.
+
+faster-whisper==1.1.1
+# faster-whisper 1.1.1 dùng `requests` trong utils.py nhưng KHÔNG khai báo nó
+# trong dependencies — thiếu dòng này thì `import faster_whisper` nổ ngay.
+requests>=2.32
+# faster-whisper 1.1.1 mở file audio bằng `av.open(..., metadata_errors=...)`.
+# PyAV >= 15 đã bỏ tham số này -> mọi lượt chấm phát âm/nói lỗi
+# "open() got an unexpected keyword argument 'metadata_errors'". Không ghim thì
+# mỗi lần dựng lại image pip kéo bản av mới nhất và hỏng lại (đã xảy ra 26/10).
+av==14.2.0

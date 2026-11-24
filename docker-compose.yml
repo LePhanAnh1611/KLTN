@@ -1,0 +1,135 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: dkt_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      # Chỉ mở cho chính máy này (127.0.0.1) — DB không bao giờ ra Internet
+      - "127.0.0.1:${POSTGRES_PORT}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # UC-68 — service phục vụ mô hình DKT (backend gọi qua HTTP nội bộ).
+  # Trọng số + vocab nạp qua volume (dkt_best.pt/processed đều gitignore, không vào image).
+  ml-serve:
+    build:
+      context: ./ml
+      dockerfile: Dockerfile.serve
+    container_name: dkt_ml_serve
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${ML_SERVE_PORT:-8001}:8001"
+    environment:
+      # 'feature' = DKT feature-based (cham duoc tu bat ky) · 'id' = ban goc theo
+      # chi so item, giu lam duong lui va lam moc so sanh cho chuong thuc nghiem.
+      DKT_VARIANT: ${DKT_VARIANT:-feature}
+      CEFR_WORDLIST_PATH: /app/data/cefr_wordlist.csv
+    volumes:
+      - ./ml/models:/app/models:ro
+      - ./ml/data/processed:/app/data/processed:ro
+      # Wordlist CEFR dung CHUNG voi backend — hai ben phai gan cung mot muc cho
+      # cung mot tu, nhan doi file la som muon cung lech.
+      - ./backend/data/cefr_wordlist.csv:/app/data/cefr_wordlist.csv:ro
+
+  # API FastAPI. Entrypoint tự chạy `alembic upgrade head` trước khi phục vụ.
+  backend:
+    build:
+      context: ./backend
+      args:
+        # Bật module luyện nói trong image (xem backend/Dockerfile)
+        INSTALL_SPEAKING: ${INSTALL_SPEAKING:-false}
+        # Bật luồng tạo bộ từ từ PDF — UC-87 (pdfplumber + spaCy)
+        INSTALL_PDF_IMPORT: ${INSTALL_PDF_IMPORT:-false}
+    container_name: dkt_backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Trong mạng compose thì gọi nhau bằng TÊN SERVICE, không phải localhost
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      TEST_DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}_test
+      ML_SERVE_URL: http://ml-serve:8001
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      JWT_ALGORITHM: ${JWT_ALGORITHM:-HS256}
+      ACCESS_TOKEN_EXPIRE_MINUTES: ${ACCESS_TOKEN_EXPIRE_MINUTES:-60}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173}
+      # LLM nay gọi Groq Cloud (không còn Ollama trên máy host) -> chỉ cần key,
+      # không cần host.docker.internal cho luồng này nữa.
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+      GROQ_BASE_URL: ${GROQ_BASE_URL:-https://api.groq.com/openai/v1}
+      # Giữ lại cho health check cũ và cho ai muốn quay về Ollama local.
+      SPEAKING_OLLAMA_URL: ${SPEAKING_OLLAMA_URL:-http://host.docker.internal:11434}
+      SPEAKING_OLLAMA_MODEL: ${SPEAKING_OLLAMA_MODEL:-qwen2.5:7b}
+      SPEAKING_WHISPER_MODEL: ${SPEAKING_WHISPER_MODEL:-base}
+      # Rubric sống ở docs/ (tài liệu người thật sửa), KHÔNG nằm trong image vì
+      # build context là ./backend. Mount vào rồi trỏ đường dẫn tuyệt đối.
+      SPEAKING_RUBRIC_PATH: /app/docs/speaking-rubric.md
+      # Email (UC-62) — 'log' chỉ ghi log; 'smtp' + SMTP_* để gửi thật
+      EMAIL_BACKEND: ${EMAIL_BACKEND:-log}
+      EMAIL_FROM: ${EMAIL_FROM:-no-reply@dktvocab.local}
+      SMTP_HOST: ${SMTP_HOST:-localhost}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      # Loại email gửi thật khi EMAIL_BACKEND=smtp (còn lại chỉ ghi log). "*" = tất cả
+      EMAIL_REAL_TEMPLATES: ${EMAIL_REAL_TEMPLATES:-password_reset,email_verify}
+      FRONTEND_BASE_URL: ${FRONTEND_BASE_URL:-http://localhost:5173}
+      # Pilot kiểm chứng DKT — xem docs/PILOT.md
+      PILOT_START_DATE: ${PILOT_START_DATE:-}
+      PILOT_REPORT_EMAIL: ${PILOT_REPORT_EMAIL:-}
+      # Báo cáo hằng tối ghi ra ./pilot_reports trên máy host (Claude đọc và báo lại)
+      PILOT_REPORT_DIR: /app/pilot_reports
+    extra_hosts:
+      # Linux không tự có host.docker.internal
+      - "host.docker.internal:host-gateway"
+    ports:
+      # Frontend (nginx) đã chuyển tiếp /api vào đây -> chỉ cần mở cho máy này
+      - "127.0.0.1:${BACKEND_PORT:-8000}:8000"
+    volumes:
+      # Ảnh đại diện (UC-08) giữ lại qua các lần rebuild
+      - backend-uploads:/app/uploads
+      # Rubric chấm nói — chỉ đọc; sửa file là có hiệu lực sau khi restart
+      - ./docs:/app/docs:ro
+      # Pilot — báo cáo hằng tối (latest.txt / latest.json), đọc được từ ngoài container
+      - ./pilot_reports:/app/pilot_reports
+      # Model Whisper (luyện nói) tải từ HuggingFace lần đầu (~145MB). Giữ trong
+      # volume để mỗi lần dựng lại image không phải tải lại.
+      - whisper-cache:/root/.cache/huggingface
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8000/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # SPA build sẵn, phục vụ bằng nginx.
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        # Trình duyệt gọi backend qua cổng đã publish của HOST, không phải tên service.
+        # ĐỂ TRỐNG (VITE_API_BASE_URL=) = gọi cùng nguồn qua nginx (/api) — cách
+        # dùng khi deploy ra Internet. Dùng `-` chứ không `:-` để chuỗi rỗng được
+        # giữ nguyên thay vì bị thay bằng mặc định.
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL-http://localhost:8000}
+    container_name: dkt_frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "${FRONTEND_PORT:-5173}:80"
+
+volumes:
+  postgres-data:
+  backend-uploads:
+  whisper-cache:

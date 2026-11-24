@@ -1,0 +1,197 @@
+{
+  "_note": "UC-97 — danh sách video cho kho Shadowing. CHỈ metadata, KHÔNG có phụ đề: phụ đề lấy lúc chạy `python -m app.scripts.seed_shadowing` và chỉ lưu trong DB. youtube_id = null nghĩa là chưa tìm được link YouTube — điền vào rồi chạy lại script. Nguồn: docs/UC-97_Danh_sach_video_ung_vien.md Mã VOA lấy từ playlist Let's Learn English (PLd9hCvj34W5it4a-RMzhlwNJ-edf5HU3Q) ngày 2026-10-27.",
+  "videos": [
+    {
+      "youtube_id": "lgEodUvA5Po",
+      "title": "Let's Learn English L1-19: When Do I Start?",
+      "topic": "Công sở & Kinh doanh",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-19-when-do-you-start/3357760.html"
+    },
+    {
+      "youtube_id": "jCSHkjcmZvs",
+      "title": "Let's Learn English L1-41: Teamwork Works Best With a Team",
+      "topic": "Công sở & Kinh doanh",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-41-teamwork/3635015.html"
+    },
+    {
+      "youtube_id": "xokbf-np33Q",
+      "title": "Let's Learn English L2-2: The Interview",
+      "topic": "Công sở & Kinh doanh",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/p/6765.html"
+    },
+    {
+      "youtube_id": "ZhEf7e4kopM",
+      "title": "How the Internet Works: Wires, Cables, and WiFi",
+      "topic": "Công nghệ thông tin",
+      "license": "youtube-standard",
+      "attribution": "Code.org — How the Internet Works",
+      "source_url": "https://youtu.be/ZhEf7e4kopM"
+    },
+    {
+      "youtube_id": "5o8CwafCxnU",
+      "title": "How the Internet Works: IP Addresses and DNS",
+      "topic": "Công nghệ thông tin",
+      "license": "youtube-standard",
+      "attribution": "Code.org — How the Internet Works",
+      "source_url": "https://youtu.be/5o8CwafCxnU"
+    },
+    {
+      "youtube_id": "kBXQZMmiA4s",
+      "title": "How the Internet Works: HTTP and HTML",
+      "topic": "Công nghệ thông tin",
+      "license": "youtube-standard",
+      "attribution": "Code.org — How the Internet Works",
+      "source_url": "https://youtu.be/kBXQZMmiA4s"
+    },
+    {
+      "youtube_id": "R4SVqLFBhVY",
+      "title": "Let's Learn English L1-45: This Land is Your Land",
+      "topic": "Du lịch & Sân bay",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lesson-45-this-land-is-your-land/3710209.html"
+    },
+    {
+      "youtube_id": "O08F0xp1UGk",
+      "title": "Let's Learn English L2-10: Visit to Peru",
+      "topic": "Du lịch & Sân bay",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-10-visit-to-peru/4079037.html"
+    },
+    {
+      "youtube_id": "yJ5fpEFx6j8",
+      "title": "Let's Learn English L2-5: Greatest Vacation of All Time",
+      "topic": "Du lịch & Sân bay",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-5-greatest-vacation/4035571.html"
+    },
+    {
+      "youtube_id": "8_npDNRKGIE",
+      "title": "Let's Learn English L1-11: This Is My Neighborhood",
+      "topic": "Sinh hoạt hằng ngày",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-11-this-is-my-neighborhood/3293986.html"
+    },
+    {
+      "youtube_id": "rn7kmGroxKs",
+      "title": "Let's Learn English L1-28: I Passed It!",
+      "topic": "Sinh hoạt hằng ngày",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-28-i-passed-it/3487865.html"
+    },
+    {
+      "youtube_id": "NXYXu9Kcb7o",
+      "title": "Let's Learn English L1-36: I Can Fix This!",
+      "topic": "Sinh hoạt hằng ngày",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-36-i-can-fix-this/3568962.html"
+    },
+    {
+      "youtube_id": "DGAUQIcY8FA",
+      "title": "Let's Learn English L1-50: Back to School",
+      "topic": "Học thuật & Nghiên cứu",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-50-back-to-school/3771173.html"
+    },
+    {
+      "youtube_id": "f2O6mQkFiiw",
+      "title": "How to practice effectively... for just about anything",
+      "topic": "Học thuật & Nghiên cứu",
+      "license": "youtube-standard",
+      "attribution": "TED-Ed — CC BY-NC-ND 4.0",
+      "source_url": "https://www.youtube.com/watch?v=f2O6mQkFiiw"
+    },
+    {
+      "youtube_id": "MMmOLN5zBLY",
+      "title": "The benefits of a bilingual brain",
+      "topic": "Học thuật & Nghiên cứu",
+      "license": "youtube-standard",
+      "attribution": "TED-Ed — CC BY-NC-ND 4.0",
+      "source_url": "https://www.youtube.com/watch?v=MMmOLN5zBLY"
+    },
+    {
+      "youtube_id": "d_4TVWhqX4E",
+      "title": "Let's Learn English L1-27: I Can't Come In",
+      "topic": "Sức khỏe & Y tế",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-27-i-cant-come-in/3457316.html"
+    },
+    {
+      "youtube_id": null,
+      "title": "Let's Learn English L1-44: Making Healthy Choices",
+      "topic": "Sức khỏe & Y tế",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-44-making-healthy-choices/3688552.html"
+    },
+    {
+      "youtube_id": "mhCAuZBPaNM",
+      "title": "Let's Learn English L2-30: Dream a Little Dream",
+      "topic": "Sức khỏe & Y tế",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-30/4465315.html"
+    },
+    {
+      "youtube_id": "DzaLlp_kG6c",
+      "title": "Let's Learn English L1-23: What Do You Want?",
+      "topic": "Ẩm thực & Nhà hàng",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-23-what-do-you-want/3413753.html"
+    },
+    {
+      "youtube_id": "GnQEE0gEir0",
+      "title": "Let's Learn English L1-30: Rolling on the River",
+      "topic": "Ẩm thực & Nhà hàng",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-30-rolling-river/3522798.html"
+    },
+    {
+      "youtube_id": "6rFolPv2ntQ",
+      "title": "Let's Learn English L1-35: Let's Make Dinner!",
+      "topic": "Ẩm thực & Nhà hàng",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-35-lets-make-dinner/3571922.html"
+    },
+    {
+      "youtube_id": "Gn383Wyl0UQ",
+      "title": "Let's Learn English L2-21: It Speaks to Me (Trash to Treasure, Part 1)",
+      "topic": "Môi trường & Xã hội",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-21/4273059.html"
+    },
+    {
+      "youtube_id": "EOyRn0ajkgM",
+      "title": "Let's Learn English L2-22: Trash to Treasure, Part 2",
+      "topic": "Môi trường & Xã hội",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-22/4283017.html"
+    },
+    {
+      "youtube_id": "DimMV7rUOhQ",
+      "title": "Let's Learn English L2-11: The Big Snow",
+      "topic": "Môi trường & Xã hội",
+      "license": "public-domain",
+      "attribution": "VOA Learning English",
+      "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-11-the-big-snow/4102755.html"
+    }
+  ]
+}

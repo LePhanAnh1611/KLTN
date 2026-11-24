@@ -1,0 +1,15 @@
+# Phiên âm VIẾT ĐÈ — kiểm tay, dùng khi chính từ điển FVDP ghi sai IPA (bug #8).
+#
+# source: manual
+#
+# Định dạng: từ<TAB>/IPA/<TAB>ghi chú. Giữ ký hiệu kiểu FVDP (' trọng âm chính,
+# , trọng âm phụ) cho đồng nhất với phần còn lại của bộ nền.
+# Lỗi do FVDP gộp biến thể đã được script tự sửa (_headword_ipa); file này chỉ
+# chứa chỗ mà dữ liệu nguồn tự nó sai.
+afterward	/'ɑ:ftəwəd/	FVDP ghi IPA của 'afterwards' (/...wədz/) cho biến thể 'afterward'
+hotelier	/hou'teliə/	FVDP ghi chữ 'hotelier' thay cho IPA; dạng đầu nhóm là 'hotel-keeper'
+hello	/hə'lou/	biến thể FVDP ghi /'he'lou/ (hai trọng âm chính) — giữ dạng chuẩn
+naive	/nɑ:'i:v/	biến thể FVDP /neiv/ là cách đọc cổ — giữ dạng của 'naïve'
+naivety	/nɑ:'i:vti/	tương tự 'naive'; FVDP có /nɑ:'i:vti/ cho dạng 'naïvety'
+ferocity	/fə'rɔsiti/	FVDP ghi /fə'ɔsiti/ — thiếu âm /r/
+reconciliation	/,rekənsili'eiʃn/	FVDP ghi /,rekəsili'eiʃn/ — thiếu âm /n/

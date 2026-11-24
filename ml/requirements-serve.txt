@@ -1,0 +1,7 @@
+# Chỉ để CHẠY service serve_app (nhẹ hơn requirements.txt — không pandas/jupyter/...)
+torch>=2.5
+numpy>=1.26
+fastapi>=0.115
+uvicorn[standard]>=0.32
+# Dac trung tan suat cho ban feature-based (src/features.py)
+wordfreq>=3.1

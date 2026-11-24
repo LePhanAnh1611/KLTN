@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-27T14:39:12.395247+00:00",
+  "data": "pilot dump 2026-10-27 21:34 (sau sửa lỗi chấm 26/10)",
+  "n_labels": 1309,
+  "n_wrong": 178,
+  "n_users": 13,
+  "method": "đóng băng LSTM/in_proj, huấn luyện lại scorer, L2-SP λ=0.1, 30 epoch, lr=1e-3; Platt (học trên dự đoán đánh giá chéo theo người) gộp vào Linear cuối",
+  "platt": {
+    "a": 0.38045874945783204,
+    "b": 1.01990384318149
+  },
+  "cv_auc_base": 0.5522,
+  "cv_auc_finetune": 0.6667,
+  "base_checkpoint": "dkt_feat_slam_original.pt"
+}

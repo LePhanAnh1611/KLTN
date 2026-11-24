@@ -1,0 +1,12 @@
+torch>=2.5
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+matplotlib>=3.9
+tqdm>=4.66
+jupyter>=1.1
+
+# Tần suất từ cho DKT feature-based (src/features.py). Bắt buộc là corpus
+# ĐỘC LẬP với dữ liệu huấn luyện: đếm tần suất trên chính SLAM sẽ cho đặc trưng
+# đẹp mà từ mới không có, tức là phá đúng mục đích tổng quát hóa.
+wordfreq>=3.1

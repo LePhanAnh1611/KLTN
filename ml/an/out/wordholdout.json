@@ -1,0 +1,11 @@
+{
+ "best_epoch": 41,
+ "dev_auc_seen": 0.8326,
+ "n_held_items": 445,
+ "train_rows_removed": 396613,
+ "test_auc_seen": 0.834,
+ "test_n_seen": 327913,
+ "test_auc_held": 0.7951,
+ "test_n_held": 58691,
+ "seconds": 5085
+}

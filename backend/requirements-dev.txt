@@ -1,0 +1,14 @@
+-r requirements.txt
+pytest>=8.3
+httpx>=0.27
+
+# Dựng lại bộ từ nền (app/scripts/build_core_dataset.py). Backend chạy bình
+# thường không cần — bộ từ đã nằm sẵn trong data/vocab_seed_core.json, chỉ khi
+# dựng lại từ nguồn mới cần.
+#
+# Vì sao có hai dòng này: 2026-09-21 chạy lại lệnh dựng trong
+# docs/CHAY_DEMO_BO_TU_NEN.md trên venv sạch thì chết ngay ở `import openpyxl`.
+# Cả hai gói đều không được khai ở đâu — tức lời hứa "dựng lại được bằng một
+# lệnh" trong tài liệu bảo vệ thực ra không tái lập được.
+openpyxl>=3.1     # đọc NGSL_with_SFI.xlsx (thứ hạng + chỉ số tần suất SFI)
+wordfreq>=3.1     # thang Zipf, ghi tần suất vào từng item để đối chiếu

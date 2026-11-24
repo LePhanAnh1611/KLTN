@@ -1,0 +1,116 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Env & secrets
+.env
+!.env.example
+
+# ML artifacts
+ml/models/*.pt
+ml/models/*.pth
+
+# ML datasets (SLAM, ...) — không commit dataset
+ml/data/
+
+# Uploaded user content
+backend/uploads/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Docker
+postgres-data/
+
+# Slide & bản trình bày — file .pptx là nhị phân nặng, sửa một chữ là git lưu
+# nguyên một bản mới nên repo phình rất nhanh. Giữ ngoài git.
+*.pptx
+docs/Tai_lieu_trinh_bay_de_tai.md
+
+# Cấu hình & skill của trợ lý AI: settings.local.json là thiết lập riêng từng
+# máy, còn thư mục skills là thư viện tải về (734 file, ~25MB) — để ngoài git.
+.claude/
+
+# File khoa tam cua Office khi dang mo tai lieu
+~$*
+
+# File tam / ban dong goi do tro ly AI tao ra khi lam viec — khong phai ma nguon
+.claude_tmp/
+Claude outputs/
+_build_bundle.tar.gz
+
+# Cấu hình pilot thật (mật khẩu DB, JWT, Gmail) — chỉ commit bản .example
+.env.pilot
+backups/
+pilot_reports/
+.claude_tmp_*.tgz
+_backend_bundle.tar.gz
+_build_bundle.tar.gz
+
+# ===== AI / agent =====
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+.agents/
+.cursor/
+
+# ===== Script .bat ca nhan =====
+*.bat
+
+# ===== Rac, file nen, file ca nhan =====
+_to_delete/
+*.tar.gz
+*.tgz
+uploads/
+LearningHub-LogBugManual.xlsx
+*.log
+demo.html
+voa_playlist.txt
+
+# ===== AI / agent =====
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+.agents/
+.cursor/
+
+# ===== Script .bat ca nhan =====
+*.bat
+
+# ===== Rac, file nen, file ca nhan =====
+_to_delete/
+*.tar.gz
+*.tgz
+uploads/
+LearningHub-LogBugManual.xlsx
+*.log
+
+# ===== AI / agent =====
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+.agents/
+.cursor/
+
+# ===== Script .bat ca nhan =====
+*.bat
+
+# ===== Rac, file nen, file ca nhan =====
+_to_delete/
+*.tar.gz
+*.tgz
+uploads/
+LearningHub-LogBugManual.xlsx
+*.log
+docs/

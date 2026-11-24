@@ -1,0 +1,15 @@
+# Phụ thuộc RIÊNG cho luồng tạo bộ từ từ PDF (UC-87, app/services/pdf_import).
+#
+# Tách khỏi requirements.txt vì spaCy kéo theo thinc/blis/numpy và model
+# en_core_web_sm (~12MB tải lúc cài); pdfplumber kéo theo pdfminer.six + Pillow.
+# Backend chạy bình thường không cần chúng — chỉ 3 endpoint của UC-87 mới cần.
+#
+# Cài:
+#   pip install -r requirements-import.txt
+#   python -m spacy download en_core_web_sm
+#
+# Chưa cài thì /api/v1/word-sets/extract-pdf trả 503 kèm hướng dẫn, phần còn lại
+# của ứng dụng KHÔNG bị ảnh hưởng.
+
+pdfplumber==0.11.4
+spacy>=3.7,<4.0

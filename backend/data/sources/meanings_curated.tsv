@@ -1,0 +1,251 @@
+# Nghĩa CHỌN LỌC — 1 nghĩa chính / từ, bám thứ tự nghĩa của Cambridge (bug #9, 2026-10-26)
+#
+# source: curated
+#
+# Phạm vi: 4 bộ lỗi nặng nhất — B2 · Từ 1–50, 51–100, 101–150 và Học thuật C1 · Từ 1–69
+# (219 từ). Trước đợt này đa số là nghĩa FVDP "chưa đối chứng": fusion = "sự nấu
+# chảy", niche = "hốc thường", conditional bị gắn động từ.
+#
+# Quy ước soạn:
+#   - ĐÚNG MỘT nghĩa, không dấu phẩy/chấm phẩy — nghĩa này là đáp án trắc nghiệm.
+#   - Chọn nghĩa thông dụng nhất mà Cambridge đặt lên đầu; nếu câu ví dụ hiện có
+#     dùng một nghĩa khác cũng phổ biến thì chọn nghĩa khớp câu ví dụ
+#     (convention = "hội nghị", chip = "vi mạch").
+#   - Cột 4 sửa từ loại theo nghĩa đã chọn (conditional -> adjective).
+#
+# Do Claude soạn theo yêu cầu chủ dự án, CHƯA có người xác nhận -> DB ghi
+# meaning_source = llm, meaning_confidence = llm (UI hiện dấu "máy đề xuất").
+# Mức ưu tiên `curated` đứng trên `llm`, dưới `manual`.
+#
+# CÁCH DUYỆT: mở bằng Excel/VS Code, đối chiếu từng dòng với Cambridge
+# (dictionary.cambridge.org/dictionary/english-vietnamese/<từ>), sửa cột 2/cột 4,
+# rồi đổi `# source: curated` thành `# source: manual` -> dấu cảnh báo tự mất.
+#
+# Cột: từ<TAB>nghĩa chọn<TAB>nghĩa cũ (đối chiếu)<TAB>từ loại<TAB>bộ
+#
+# --- B2 · Từ 1–50 ---
+candidate	ứng viên	người ứng cử	noun	B2 · Từ 1–50
+conference	hội nghị	hội nghị	noun	B2 · Từ 1–50
+community	cộng đồng	dân, dân chúng, nhân dân	noun	B2 · Từ 1–50
+particular	cụ thể	đặc biệt, đặc thù	adjective	B2 · Từ 1–50
+project	dự án	kế hoạch, đề án, dự án	noun	B2 · Từ 1–50
+data	dữ liệu	Số liệu, dữ liệu	noun	B2 · Từ 1–50
+employee	nhân viên	người làm, người làm công	noun	B2 · Từ 1–50
+factor	yếu tố	nhân tố	noun	B2 · Từ 1–50
+campaign	chiến dịch	chiến dịch	noun	B2 · Từ 1–50
+solar	thuộc về mặt trời	mặt trời, thái dương	adjective	B2 · Từ 1–50
+stock	hàng tồn kho	Cổ phần, cổ phiếu, dung lượng vốn, trữ lượng	noun	B2 · Từ 1–50
+environment	môi trường	môi trường, hoàn cảnh, những vật xung quanh	noun	B2 · Từ 1–50
+contract	hợp đồng	hợp đồng, giao kèo, khế ước, giấy ký kết	noun	B2 · Từ 1–50
+identify	nhận ra	nhận ra, làm cho nhận ra, nhận biết	verb	B2 · Từ 1–50
+investment	sự đầu tư	Đầu tư	noun	B2 · Từ 1–50
+energy	năng lượng	năng lượng	noun	B2 · Từ 1–50
+reference	sự nhắc đến	sự chuyển đến để xem xét, sự giao cho giải quyết	noun	B2 · Từ 1–50
+profit	lợi nhuận	lợi, lợi ích, bổ ích	noun	B2 · Từ 1–50
+version	phiên bản	bản dịch	noun	B2 · Từ 1–50
+purchase	việc mua hàng	sự mua, sự tậu được	noun	B2 · Từ 1–50
+trial	phiên tòa	sự thử	noun	B2 · Từ 1–50
+executive	người điều hành	Người điều hành	noun	B2 · Từ 1–50
+primary	chủ yếu	nguyên thuỷ, đầu, đầu tiên	adjective	B2 · Từ 1–50
+overall	tổng thể	toàn bộ, toàn thể, từ đầu này sang đầu kia	adjective	B2 · Từ 1–50
+user	người dùng	người dùng, người hay dùng	noun	B2 · Từ 1–50
+federal	thuộc liên bang	liên bang	adjective	B2 · Từ 1–50
+percentage	tỷ lệ phần trăm	tỷ lệ phần trăm	noun	B2 · Từ 1–50
+decade	thập kỷ	bộ mười, nhóm mười	noun	B2 · Từ 1–50
+institution	tổ chức	thể chế	noun	B2 · Từ 1–50
+sector	ngành	hình quạt	noun	B2 · Từ 1–50
+procedure	thủ tục	thủ tục	noun	B2 · Từ 1–50
+reform	sự cải cách	sự cải cách, sự cải lương, sự cải thiện, sự cải tạo	noun	B2 · Từ 1–50
+neither	không cái nào trong hai	không	determiner	B2 · Từ 1–50
+circumstance	hoàn cảnh	hoàn cảnh, trường hợp, tình huống	noun	B2 · Từ 1–50
+reaction	phản ứng	phản ứng	noun	B2 · Từ 1–50
+colleague	đồng nghiệp	bạn đồng nghiệp, bạn đồng sự	noun	B2 · Từ 1–50
+scheme	kế hoạch	sự sắp xếp theo hệ thống, sự phối hợp	noun	B2 · Từ 1–50
+payment	khoản thanh toán	sự trả tiền, sự nộp tiền	noun	B2 · Từ 1–50
+employ	tuyển dụng	tuyển dụng, sử dụng	verb	B2 · Từ 1–50
+actual	thực tế	thật sự, thật, thực tế, có thật	adjective	B2 · Từ 1–50
+revenue	doanh thu	doanh thu	noun	B2 · Từ 1–50
+whereas	trong khi	nhưng trái lại, trong khi mà, còn	conjunction	B2 · Từ 1–50
+manufacture	sản xuất	sự chế tạo, sự sản xuất	verb	B2 · Từ 1–50
+route	tuyến đường	tuyến đường, đường đi	noun	B2 · Từ 1–50
+bind	buộc chặt	ràng buộc	verb	B2 · Từ 1–50
+quote	lời trích dẫn	lời trích dẫn	noun	B2 · Từ 1–50
+minister	bộ trưởng	bộ trưởng	noun	B2 · Từ 1–50
+domestic	nội địa	gia đình, việc nhà, nội trợ	adjective	B2 · Từ 1–50
+troop	binh lính	đoàn, lũ, đàn, đám, bọn, toán	noun	B2 · Từ 1–50
+technical	kỹ thuật	kỹ thuật, chuyên môn	adjective	B2 · Từ 1–50
+#
+# --- B2 · Từ 51–100 ---
+corporate	thuộc doanh nghiệp	đoàn thể	adjective	B2 · Từ 51–100
+tough	khó khăn	dai, bền	adjective	B2 · Từ 51–100
+assessment	sự đánh giá	sự định giá để đánh thuế	noun	B2 · Từ 51–100
+component	thành phần	bộ phận, thành phần	noun	B2 · Từ 51–100
+perspective	góc nhìn	góc nhìn	noun	B2 · Từ 51–100
+assess	đánh giá	định giá để đánh thuế	verb	B2 · Từ 51–100
+relevant	liên quan	thích đang, thích hợp	adjective	B2 · Từ 51–100
+necessarily	nhất thiết	tất yếu, nhất thiết	adverb	B2 · Từ 51–100
+threaten	đe dọa	doạ, đe doạ, hăm doạ	verb	B2 · Từ 51–100
+division	sự phân chia	phép chia	noun	B2 · Từ 51–100
+amaze	làm kinh ngạc	làm kinh ngạc, làm sửng sốt, làm hết sức ngạc nhiên	verb	B2 · Từ 51–100
+label	nhãn	nhãn, nhãn hiệu	noun	B2 · Từ 51–100
+investigate	điều tra	điều tra nghiên cứu	verb	B2 · Từ 51–100
+recommendation	lời đề xuất	sự giới thiệu, sự tiến cử	noun	B2 · Từ 51–100
+friendly	thân thiện	thân mật, thân thiết, thân thiện	adjective	B2 · Từ 51–100
+provision	sự cung cấp	+ for, against sự chuẩn bị, sự dự phòng, sự trữ sẵn	noun	B2 · Từ 51–100
+export	xuất khẩu	Xuất khẩu, hàng xuất khẩu	verb	B2 · Từ 51–100
+abuse	sự lạm dụng	sự lạm dụng, sự lộng hành	noun	B2 · Từ 51–100
+master	bậc thầy	chủ, chủ nhân	noun	B2 · Từ 51–100
+previously	trước đây	trước, trước đây	adverb	B2 · Từ 51–100
+wed	kết hôn	g chồng, cưới vợ cho	verb	B2 · Từ 51–100
+theme	chủ đề	đề tài, chủ đề	noun	B2 · Từ 51–100
+odd	kỳ lạ	cú đánh thêm	adjective	B2 · Từ 51–100
+loan	khoản vay	Khoản cho vay	noun	B2 · Từ 51–100
+elect	bầu chọn	chọn lọc	verb	B2 · Từ 51–100
+commission	ủy ban	lệnh, mệnh lệnh	noun	B2 · Từ 51–100
+investor	nhà đầu tư	người đầu tư	noun	B2 · Từ 51–100
+expectation	sự kỳ vọng	sự mong chờ, sự chờ đợi, sự ngóng chờ, sự trông mong	noun	B2 · Từ 51–100
+sexual	thuộc về tình dục	giới tính	adjective	B2 · Từ 51–100
+import	nhập khẩu	Hàng nhập khẩu	verb	B2 · Từ 51–100
+cast	dàn diễn viên	sự quăng, sự ném	noun	B2 · Từ 51–100
+relief	sự nhẹ nhõm	sự giảm nhẹ, sự bớt đi, sự làm khuây	noun	B2 · Từ 51–100
+outcome	kết quả	Kết cục, kết quả	noun	B2 · Từ 51–100
+specifically	một cách cụ thể	chính xác, rõ rệt	adverb	B2 · Từ 51–100
+peak	đỉnh điểm	đỉnh cao nhất, tột đỉnh, cao điểm	noun	B2 · Từ 51–100
+constant	liên tục	không ngớt, không dứt, liên miên, liên tiếp	adjective	B2 · Từ 51–100
+significantly	đáng kể	theo một cách truyền đạt có ý nghĩa đặc biệt	adverb	B2 · Từ 51–100
+somewhat	hơi	hơi, gọi là, một chút	adverb	B2 · Từ 51–100
+faith	niềm tin	sự tin tưởng, sự tin cậy	noun	B2 · Từ 51–100
+phase	giai đoạn	giai đoạn, pha	noun	B2 · Từ 51–100
+employer	chủ lao động	chủ	noun	B2 · Từ 51–100
+ban	cấm	cấm, cấm chỉ	verb	B2 · Từ 51–100
+index	chỉ số	chỉ số	noun	B2 · Từ 51–100
+impose	áp đặt	đánh	verb	B2 · Từ 51–100
+multiple	nhiều	nhiều, nhiều mối, phức tạp	adjective	B2 · Từ 51–100
+yield	sản lượng	lợi nhuận, lợi tức	noun	B2 · Từ 51–100
+legislation	luật pháp	pháp luật, pháp chế	noun	B2 · Từ 51–100
+implement	thực hiện	số nhiều đồ dùng , dụng cụ, công cụ	verb	B2 · Từ 51–100
+hell	địa ngục	địa ngục, âm ti	noun	B2 · Từ 51–100
+voter	cử tri	người bỏ phiếu, người bầu cử	noun	B2 · Từ 51–100
+#
+# --- B2 · Từ 101–150 ---
+wage	tiền lương	tiền lương, tiền công	noun	B2 · Từ 101–150
+estate	điền trang	đẳng cấp	noun	B2 · Từ 101–150
+prior	trước đó	trước đó	adjective	B2 · Từ 101–150
+priority	sự ưu tiên	quyền được trước, sự ưu tiên	noun	B2 · Từ 101–150
+resolution	nghị quyết	nghị quyết	noun	B2 · Từ 101–150
+draft	bản nháp	bản nháp	noun	B2 · Từ 101–150
+salary	lương	Lương	noun	B2 · Từ 101–150
+illustrate	minh họa	minh hoạ, làm rõ ý	verb	B2 · Từ 101–150
+imply	ngụ ý	ý nói	verb	B2 · Từ 101–150
+liberal	phóng khoáng	rộng rãi, hào phóng	adjective	B2 · Từ 101–150
+core	cốt lõi	lõi, hạch	noun	B2 · Từ 101–150
+aircraft	máy bay	máy bay, tàu bay	noun	B2 · Từ 101–150
+panel	hội đồng	cán ô , panô	noun	B2 · Từ 101–150
+prime	hàng đầu	đầu tiên	adjective	B2 · Từ 101–150
+effectively	một cách hiệu quả	có kết quả	adverb	B2 · Từ 101–150
+initiative	sáng kiến	bắt đầu, khởi đầu	noun	B2 · Từ 101–150
+motion	chuyển động	sự vận động, sự chuyển đông, sự di động	noun	B2 · Từ 101–150
+discipline	kỷ luật	kỷ luật	noun	B2 · Từ 101–150
+assumption	giả định	giả định	noun	B2 · Từ 101–150
+implication	hệ quả	sự lôi kéo vào	noun	B2 · Từ 101–150
+fundamental	cơ bản	cơ bản, cơ sở, chủ yếu	adjective	B2 · Từ 101–150
+presidential	thuộc tổng thống	chủ tịch	adjective	B2 · Từ 101–150
+enhance	nâng cao	làm tăng, nâng cao, đề cao, làm nổi bật	verb	B2 · Từ 101–150
+manufacturer	nhà sản xuất	người chế tạo, người sản xuất	noun	B2 · Từ 101–150
+cope	đối phó	áo lễ	verb	B2 · Từ 101–150
+accommodation	chỗ ở	sự điều tiết, sự thích nghi, sự làm cho phù hợp	noun	B2 · Từ 101–150
+exception	ngoại lệ	sự trừ ra, sự loại ra	noun	B2 · Từ 101–150
+corporation	tập đoàn	Hợp doanh	noun	B2 · Từ 101–150
+chip	vi mạch	vỏ bào, vỏ tiện, mạt giũa	noun	B2 · Từ 101–150
+urban	thuộc đô thị	thành phố, thành thị	adjective	B2 · Từ 101–150
+output	sản lượng	Sản lượng	noun	B2 · Từ 101–150
+creation	sự tạo ra	sự tạo thành, sự sáng tạo	noun	B2 · Từ 101–150
+swing	đung đưa	sự đua đưa, sự lúc lắc	verb	B2 · Từ 101–150
+consistent	nhất quán	Thống nhất/ nhất quán	adjective	B2 · Từ 101–150
+originally	ban đầu	với tính chất gốc	adverb	B2 · Từ 101–150
+secondly	thứ hai là	hai là	adverb	B2 · Từ 101–150
+prospect	triển vọng	cảnh, toàn cảnh, viễn cảnh	noun	B2 · Từ 101–150
+plot	cốt truyện	tình tiết, cốt truyện	noun	B2 · Từ 101–150
+integrate	hợp nhất	hợp thành một thể thống nhất	verb	B2 · Từ 101–150
+criticism	sự chỉ trích	sự phê bình, sự phê phán, sự bình phẩm, sự chỉ trích	noun	B2 · Từ 101–150
+convention	hội nghị	hiệp định	noun	B2 · Từ 101–150
+rural	thuộc nông thôn	nông thôn, thôn dã	adjective	B2 · Từ 101–150
+revolution	cuộc cách mạng	vòng, tua	noun	B2 · Từ 101–150
+intellectual	thuộc trí tuệ	trí óc	adjective	B2 · Từ 101–150
+crucial	cực kỳ quan trọng	quyết định	adjective	B2 · Từ 101–150
+interpretation	sự diễn giải	sự giải thích, sự làm sáng tỏ	noun	B2 · Từ 101–150
+exhibit	trưng bày	vật trưng bày, vật triển lãm	verb	B2 · Từ 101–150
+dominate	chi phối	thống trị	verb	B2 · Từ 101–150
+supplier	nhà cung cấp	người cung cấp, người tiếp tế	noun	B2 · Từ 101–150
+peer	bạn đồng trang lứa	người cùng địa vị xã hội, người ngang hàng	noun	B2 · Từ 101–150
+#
+# --- Học thuật C1 · Từ 1–69 ---
+linear	tuyến tính	nét kẻ, thuộc đường kẻ, đường vạch	adjective	Học thuật C1 · Từ 1–69
+discourse	diễn ngôn	bài thuyết trình, bài diễn thuyết	noun	Học thuật C1 · Từ 1–69
+duration	thời lượng	thời gian, khoảng thời gian	noun	Học thuật C1 · Từ 1–69
+dominant	chiếm ưu thế	át, trội, có ưu thế hơn	adjective	Học thuật C1 · Từ 1–69
+magnetic	có từ tính	nam châm, có tính từ, từ	adjective	Học thuật C1 · Từ 1–69
+maternal	thuộc về người mẹ	mẹ	adjective	Học thuật C1 · Từ 1–69
+induction	phép quy nạp	quy nạp, sự cảm ứng	noun	Học thuật C1 · Từ 1–69
+integral	không thể thiếu	tích phân	adjective	Học thuật C1 · Từ 1–69
+specification	bản đặc tả kỹ thuật	sự chỉ rõ, sự ghi rõ, sự định rõ	noun	Học thuật C1 · Từ 1–69
+fraction	phần nhỏ	phân số	noun	Học thuật C1 · Từ 1–69
+estimation	sự ước tính	Sự ước lượng	noun	Học thuật C1 · Từ 1–69
+thereby	do đó	bằng cách ấy, theo cách ấy, do đó	adverb	Học thuật C1 · Từ 1–69
+vertical	thẳng đứng	thẳng đứng, đứng	adjective	Học thuật C1 · Từ 1–69
+continuity	tính liên tục	sự liên tục, sự liên tiếp	noun	Học thuật C1 · Từ 1–69
+likelihood	khả năng xảy ra	sự có thể đúng, sự có thể thật	noun	Học thuật C1 · Từ 1–69
+inclusion	sự bao gồm	sự gồm cả, sự kể vào, sự kể cả	noun	Học thuật C1 · Từ 1–69
+scenario	kịch bản	truyện phim, cốt kịch, kịch bản	noun	Học thuật C1 · Từ 1–69
+conditional	có điều kiện	ước định, quy định	adjective	Học thuật C1 · Từ 1–69
+marginal	không đáng kể	Cận biên, gia lượng	adjective	Học thuật C1 · Từ 1–69
+characterization	sự mô tả đặc điểm	sự biểu thị đặc điểm, sự mô tả đặc điểm	noun	Học thuật C1 · Từ 1–69
+ethical	thuộc về đạo đức	đạo đức, luân thường đạo lý	adjective	Học thuật C1 · Từ 1–69
+specimen	mẫu vật	mẫu, vật mẫu	noun	Học thuật C1 · Từ 1–69
+fusion	sự kết hợp	sự làm cho chảy ra, sự nấu chảy ra	noun	Học thuật C1 · Từ 1–69
+render	kết xuất	trả, trả lại, hoàn lại	verb	Học thuật C1 · Từ 1–69
+psychiatric	thuộc về tâm thần	bệnh tinh thần, bệnh tâm thần	adjective	Học thuật C1 · Từ 1–69
+depict	miêu tả	tả, miêu tả	verb	Học thuật C1 · Từ 1–69
+aesthetic	thẩm mỹ	mỹ học, thẩm mỹ	adjective	Học thuật C1 · Từ 1–69
+spontaneous	tự phát	tự động, tự ý	adjective	Học thuật C1 · Từ 1–69
+elaborate	công phu	phức tạp	adjective	Học thuật C1 · Từ 1–69
+offspring	con cái	con, con cái, con cháu, con đẻ	noun	Học thuật C1 · Từ 1–69
+circulation	sự lưu thông	sự lưu thông	noun	Học thuật C1 · Từ 1–69
+tract	vùng đất rộng	bộ máy, đường	noun	Học thuật C1 · Từ 1–69
+manipulation	sự thao túng	sự vận dụng bằng tay, sự thao tác	noun	Học thuật C1 · Từ 1–69
+elevate	nâng lên	nâng lên, đưa lên, giương	verb	Học thuật C1 · Từ 1–69
+plausible	có vẻ hợp lý	có vẻ hợp lý, có vẻ đúng	adjective	Học thuật C1 · Từ 1–69
+peasant	nông dân	nông dân	noun	Học thuật C1 · Từ 1–69
+fossil	hóa thạch	hoá đá, hoá thạch	noun	Học thuật C1 · Từ 1–69
+carrier	người vận chuyển	người đưa, người mang	noun	Học thuật C1 · Từ 1–69
+conserve	bảo tồn	bảo tồn, tiết kiệm	verb	Học thuật C1 · Từ 1–69
+bulk	phần lớn	trọng tải hàng hoá	noun	Học thuật C1 · Từ 1–69
+vegetation	thảm thực vật	cây cối, cây cỏ, thực vật	noun	Học thuật C1 · Từ 1–69
+consultation	sự tham vấn	sự hỏi ý kiến	noun	Học thuật C1 · Từ 1–69
+rotate	xoay	quay, xoay quanh	verb	Học thuật C1 · Từ 1–69
+elevation	độ cao	sự nâng lên, sự đưa lên, sự giương lên	noun	Học thuật C1 · Từ 1–69
+profound	sâu sắc	sâu sắc, uyên thâm, thâm thuý	adjective	Học thuật C1 · Từ 1–69
+circulate	lan truyền	lưu hành, truyền, truyền bá	verb	Học thuật C1 · Từ 1–69
+obscure	ít người biết đến	tối, tối tăm, mờ, mờ mịt	adjective	Học thuật C1 · Từ 1–69
+trauma	chấn thương tâm lý	chấn thương	noun	Học thuật C1 · Từ 1–69
+anthropology	nhân học	nhân loại học	noun	Học thuật C1 · Từ 1–69
+portray	khắc họa	vẽ chân dung	verb	Học thuật C1 · Từ 1–69
+fatigue	sự mệt mỏi	sự mệt mỏi, sự mệt nhọc	noun	Học thuật C1 · Từ 1–69
+synthetic	tổng hợp	tổng hợp	adjective	Học thuật C1 · Từ 1–69
+sustainable	bền vững	có thể chống đỡ được	adjective	Học thuật C1 · Từ 1–69
+elastic	co giãn	co giãn , đàn hồi	adjective	Học thuật C1 · Từ 1–69
+crude	thô	nguyên, sống, thô, chưa luyện	adjective	Học thuật C1 · Từ 1–69
+realism	chủ nghĩa hiện thực	chủ nghĩa hiện thực	noun	Học thuật C1 · Từ 1–69
+domination	sự thống trị	sự thống trị	noun	Học thuật C1 · Từ 1–69
+degrade	làm xuống cấp	giáng chức, hạ tầng công tác	verb	Học thuật C1 · Từ 1–69
+niche	thị trường ngách	hốc thường	noun	Học thuật C1 · Từ 1–69
+antiquity	thời cổ đại	tình trạng cổ xưa	noun	Học thuật C1 · Từ 1–69
+comply	tuân thủ	tuân theo, chiếu theo, đồng ý làm theo	verb	Học thuật C1 · Từ 1–69
+credibility	sự đáng tin cậy	sự tín nhiệm	noun	Học thuật C1 · Từ 1–69
+dissection	sự mổ xẻ	sự cắt ra từng mảnh, sự chặt ra từng khúc	noun	Học thuật C1 · Từ 1–69
+portrayal	sự khắc họa	sự vẽ chân dung	noun	Học thuật C1 · Từ 1–69
+acidic	có tính axit	có tính chất axit	adjective	Học thuật C1 · Từ 1–69
+phenomenal	phi thường	hiện tượng, có tính chất hiện tượng	adjective	Học thuật C1 · Từ 1–69
+enormously	vô cùng	to lớn, khổng lồ	adverb	Học thuật C1 · Từ 1–69
+swap	hoán đổi	sự trao đổi, sự đổi chác	verb	Học thuật C1 · Từ 1–69
+sponsorship	sự tài trợ	trách nhiệm của cha đỡ đầu, trách nhiệm của mẹ đỡ đầu	noun	Học thuật C1 · Từ 1–69

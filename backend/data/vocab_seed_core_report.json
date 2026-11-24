@@ -1,0 +1,465 @@
+{
+ "stats": {
+  "total": 5272,
+  "word_sets": 108,
+  "CEFR nguồn: direct": 4845,
+  "CEFR nguồn: không có": 427,
+  "IPA hỏng trong nguồn, bỏ": 307,
+  "IPA viết đè": 7,
+  "NAWL: giữ": 945,
+  "NAWL: đầu vào": 958,
+  "NGSL: giữ": 2803,
+  "NGSL: đầu vào": 2809,
+  "Octanove: giữ": 1524,
+  "Octanove: đầu vào": 1615,
+  "bỏ: không có nghĩa tiếng Việt": 109,
+  "bỏ: nghĩa rỗng sau khi làm sạch": 1,
+  "có CEFR": 4845,
+  "có IPA": 4669,
+  "có từ loại": 5127,
+  "có ví dụ": 4088,
+  "có đối chứng Wiktionary": 3708,
+  "nghĩa: confirmed": 1861,
+  "nghĩa: llm": 1619,
+  "nghĩa: needs-review": 662,
+  "nghĩa: single-source": 1130,
+  "trùng, bỏ": 115,
+  "từ loại viết đè": 372,
+  "ví dụ từ nguồn: fvdp": 2248,
+  "ví dụ từ nguồn: llm": 1840
+ },
+ "sets": [
+  {
+   "name": "A1 · Từ 1–50",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 51–100",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 101–150",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 151–200",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 201–250",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 251–300",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 301–350",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 351–400",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 401–450",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 451–500",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 501–550",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 551–600",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 601–650",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 651–700",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 701–750",
+   "items": 50
+  },
+  {
+   "name": "A1 · Từ 751–803",
+   "items": 53
+  },
+  {
+   "name": "A2 · Từ 1–50",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 51–100",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 101–150",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 151–200",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 201–250",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 251–300",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 301–350",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 351–400",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 401–450",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 451–500",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 501–550",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 551–600",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 601–650",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 651–700",
+   "items": 50
+  },
+  {
+   "name": "A2 · Từ 701–740",
+   "items": 40
+  },
+  {
+   "name": "B1 · Từ 1–50",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 51–100",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 101–150",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 151–200",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 201–250",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 251–300",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 301–350",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 351–400",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 401–450",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 451–500",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 501–550",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 551–600",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 601–650",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 651–700",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 701–750",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 751–800",
+   "items": 50
+  },
+  {
+   "name": "B1 · Từ 801–855",
+   "items": 55
+  },
+  {
+   "name": "B2 · Từ 1–50",
+   "items": 50
+  },
+  {
+   "name": "B2 · Từ 51–100",
+   "items": 50
+  },
+  {
+   "name": "B2 · Từ 101–150",
+   "items": 50
+  },
+  {
+   "name": "B2 · Từ 151–200",
+   "items": 50
+  },
+  {
+   "name": "B2 · Từ 201–250",
+   "items": 50
+  },
+  {
+   "name": "B2 · Từ 251–300",
+   "items": 50
+  },
+  {
+   "name": "B2 · Từ 301–338",
+   "items": 38
+  },
+  {
+   "name": "C1 · Từ 1–15",
+   "items": 15
+  },
+  {
+   "name": "C2 · Từ 1–2",
+   "items": 2
+  },
+  {
+   "name": "(chưa xếp mức) · Từ 1–50",
+   "items": 50
+  },
+  {
+   "name": "Học thuật A1 · Từ 1–21",
+   "items": 21
+  },
+  {
+   "name": "Học thuật A2 · Từ 1–49",
+   "items": 49
+  },
+  {
+   "name": "Học thuật B1 · Từ 1–50",
+   "items": 50
+  },
+  {
+   "name": "Học thuật B1 · Từ 51–100",
+   "items": 50
+  },
+  {
+   "name": "Học thuật B1 · Từ 101–150",
+   "items": 50
+  },
+  {
+   "name": "Học thuật B1 · Từ 151–189",
+   "items": 39
+  },
+  {
+   "name": "Học thuật B2 · Từ 1–50",
+   "items": 50
+  },
+  {
+   "name": "Học thuật B2 · Từ 51–100",
+   "items": 50
+  },
+  {
+   "name": "Học thuật B2 · Từ 101–150",
+   "items": 50
+  },
+  {
+   "name": "Học thuật B2 · Từ 151–210",
+   "items": 60
+  },
+  {
+   "name": "Học thuật C1 · Từ 1–69",
+   "items": 69
+  },
+  {
+   "name": "Học thuật C2 · Từ 1–30",
+   "items": 30
+  },
+  {
+   "name": "Học thuật (chưa xếp mức) · Từ 1–50",
+   "items": 50
+  },
+  {
+   "name": "Học thuật (chưa xếp mức) · Từ 51–100",
+   "items": 50
+  },
+  {
+   "name": "Học thuật (chưa xếp mức) · Từ 101–150",
+   "items": 50
+  },
+  {
+   "name": "Học thuật (chưa xếp mức) · Từ 151–200",
+   "items": 50
+  },
+  {
+   "name": "Học thuật (chưa xếp mức) · Từ 201–250",
+   "items": 50
+  },
+  {
+   "name": "Học thuật (chưa xếp mức) · Từ 251–300",
+   "items": 50
+  },
+  {
+   "name": "Học thuật (chưa xếp mức) · Từ 301–350",
+   "items": 50
+  },
+  {
+   "name": "Học thuật (chưa xếp mức) · Từ 351–377",
+   "items": 27
+  },
+  {
+   "name": "Nâng cao C1 · Từ 1–50",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 51–100",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 101–150",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 151–200",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 201–250",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 251–300",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 301–350",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 351–400",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 401–450",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 451–500",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 501–550",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 551–600",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 601–650",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 651–700",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C1 · Từ 701–763",
+   "items": 63
+  },
+  {
+   "name": "Nâng cao C2 · Từ 1–50",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 51–100",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 101–150",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 151–200",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 201–250",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 251–300",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 301–350",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 351–400",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 401–450",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 451–500",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 501–550",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 551–600",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 601–650",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 651–700",
+   "items": 50
+  },
+  {
+   "name": "Nâng cao C2 · Từ 701–761",
+   "items": 61
+  }
+ ]
+}

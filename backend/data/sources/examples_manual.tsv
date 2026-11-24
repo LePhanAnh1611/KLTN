@@ -1,0 +1,31 @@
+# Câu ví dụ viết tay — thắng mọi nguồn tự động, không mất khi dựng lại dataset
+#
+# source: manual
+#
+# ĐỊNH DẠNG: mỗi dòng ba cột, ngăn bằng phím TAB (không phải dấu cách):
+#
+#     từ<TAB>câu tiếng Anh<TAB>bản dịch tiếng Việt
+#
+# Cột thứ ba để trống cũng được, nhưng có bản dịch thì người học mới dùng được
+# câu đó để tự kiểm.
+#
+# NẠP VÀO BẰNG:
+#     python -m app.scripts.build_core_dataset ... \
+#         --examples data/sources/examples_manual.tsv
+#
+# Dùng --examples nhiều lần để nạp nhiều file. Ưu tiên khi một từ có ở nhiều
+# nguồn: manual > llm / tatoeba > fvdp (câu lấy từ từ điển gốc).
+#
+# CÂU THẾ NÀO LÀ DÙNG ĐƯỢC:
+#   - phải chứa ĐÚNG DẠNG GỐC của từ, KHÔNG chia đuôi. Bài điền khuyết (UC-28)
+#     khoét chỗ trống bằng regex \bword\b, nên:
+#         parameter + "three parameters we can adjust"  -> TRƯỢT, bỏ qua từ này
+#         parameter + "one parameter we can adjust"     -> ĐÚNG
+#     Đây là lỗi dễ mắc nhất khi viết câu ví dụ.
+#   - một câu hoàn chỉnh, 5–15 từ; cụm ngắn kiểu "a man of sixty winters" là thứ
+#     ta đang muốn thay
+#   - dùng nghĩa THÔNG DỤNG của từ, khớp với nghĩa tiếng Việt đang hiển thị
+#
+# Danh sách từ còn thiếu ví dụ, xếp theo độ phổ biến: docs/thieu_vi_du.txt
+#
+# Viết câu mới xuống dưới dòng này:

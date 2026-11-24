@@ -1,0 +1,101 @@
+/* Reset và CSS Tokens Anti-AI Slop — Học thuật & Tập trung cao độ */
+
+:root {
+  /* Retro Pixel Pop — trùng với theme.ts */
+  --bg-app: #D9E9F7;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F4EFE3;
+  --border-default: rgba(29, 27, 58, 0.22);
+  --border-strong: #151515;
+
+  --text-primary: #2E2A26;
+  --text-secondary: #454545;
+  --text-muted: #77738C;
+
+  --teal-primary: #0E6B62;
+  --teal-hover: #178276;
+  --teal-subtle: #DDF3EF;
+  --teal-border: #7FD8CC;
+
+  --study-accent: #991B1B;
+  --study-accent-subtle: #FEF2F2;
+  --study-accent-border: #FECACA;
+
+  --mastery-high: #16A34A;
+  --mastery-med: #D97706;
+  --mastery-low: #DC2626;
+}
+
+[data-theme='dark'] {
+  --bg-app: #090D16;
+  --bg-surface: #131B2E;
+  --bg-subtle: #1E293B;
+  --border-default: #26354A;
+  --border-strong: #334155;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+
+  --teal-primary: #14B8A6;
+  --teal-hover: #2DD4BF;
+  --teal-subtle: #132E35;
+  --teal-border: #115E59;
+
+  --study-accent: #EF4444;
+  --study-accent-subtle: #2D1517;
+  --study-accent-border: #7F1D1D;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* Cùng một bộ với ACCENT_FONT trong theme.ts. Trước đây body là Plus Jakarta
+     Sans còn MUI là Be Vietnam Pro, nên chữ ngoài MUI (kbd, text thuần) lệch hẳn
+     khỏi phần còn lại. Be Vietnam Pro có đủ dấu tiếng Việt. */
+  font-family: "Nunito", "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Phím tắt kiểu bàn phím vật lý chuẩn Anti-AI Slop */
+kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-secondary);
+  background-color: #FFFFFF;
+  border: 1px solid #E5DACF;
+  border-radius: 6px;
+}
+
+/* Scrollbar tinh gọn */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Thanh cuộn kiểu khối pixel */
+::-webkit-scrollbar-thumb {
+  background: #D9CCC0;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #BFAE9F;
+}

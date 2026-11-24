@@ -1,0 +1,189 @@
+# Nghĩa ĐỀ XUẤT SỬA — do mô hình đưa ra trong lúc viết câu ví dụ, CHƯA có người xác nhận
+#
+# source: llm
+#
+# Vì sao có file này: từ điển gốc xếp nghĩa theo lối từ điển cũ, nên nghĩa ĐẦU TIÊN
+# đôi khi là nghĩa cổ hoặc nghĩa chuyên ngành hiếm. Viết câu ví dụ cho 1.646 từ là dịp
+# đọc qua từng nghĩa một, và đây là những chỗ sai rõ ràng bắt gặp trên đường.
+#
+# Cột 3 là nghĩa mà từ điển đang hiển thị — để đối chiếu, KHÔNG phải ghi chú.
+#
+# CÁCH DÙNG: rà lại, sửa chỗ nào thấy chưa ổn, rồi đổi dòng `# source: llm` ở trên
+# thành `# source: manual` và đổi tên file thành meanings_manual.tsv.
+# Chừng nào còn là `llm` thì mỗi từ trong này sẽ mang meaning_source = "llm".
+#
+main	chính, chủ yếu	cuộc chọi gà
+service	dịch vụ	cây thanh lương trà
+able	có thể	có năng lực, có tài
+mental	thuộc tinh thần, trí óc	cằm
+crash	vụ va chạm, sự sập đổ	vải thô
+diet	chế độ ăn	nghị viên
+assign	giao, phân công	người được quyền thừa hưởng
+assumption	giả định	sự mang, sự khoác, sự lấy
+last	kéo dài, cuối cùng	khuôn giày, cốt giày
+or	hoặc, hay là	vàng
+can	có thể	bình, bi đông, ca
+could	có thể	bình, bi đông, ca
+even	thậm chí, ngay cả	chiều, chiều hôm
+ray	tia	cá đuối
+phone	điện thoại	âm tỏ lời nói
+date	ngày tháng	quả chà là
+film	phim	màng
+major	chính, chủ yếu, lớn	thiếu tá
+kid	đứa trẻ	con dê non
+strand	sợi	bờ
+hold	giữ, cầm	khoang
+follow	theo, đi theo	cú đánh theo
+compact	nhỏ gọn	sự thoả thuận
+probe	đầu dò, thăm dò	cái thông, cái que thăm
+classroom	lớp học	phòng đọc
+watch	đồng hồ đeo tay, theo dõi	đồng hồ quả quít
+stay	ở lại	dây néo
+exploit	khai thác	kỳ công
+initiate	khởi xướng, bắt đầu	người đã được vỡ lòng
+offer	lời đề nghị, đề nghị	sự đưa tay ra
+orient	định hướng	phương đông
+carry	mang, bê	tư thế cầm gươm chào
+conserve	bảo tồn, tiết kiệm	mứt, mứt quả
+clarify	làm rõ	lọc, gạn
+insert	chèn vào, cắm vào	vật lồng vào
+articulate	diễn đạt rõ ràng	có khớp, có đốt
+likewise	cũng vậy, tương tự	cúng thế, giống như cậy
+randomly	một cách ngẫu nhiên	ẩu, bừa
+bill	hóa đơn	Hối phiếu
+mole	nốt ruồi	đê chắn sóng
+specialty	đặc sản, chuyên môn	hợp đồng có đóng dấu
+mall	trung tâm thương mại	búa nặng, búa tạ
+bang	tiếng nổ lớn, tiếng rầm	tóc cắt ngang trán
+key	chìa khóa	hòn đảo nhỏ
+bat	con dơi, cây gậy	gây
+guy	anh chàng	dây, xích
+safe	két sắt, an toàn	chạn
+count	đếm	bá tước
+block	chặn, khối nhà	khối, tảng, súc
+shoot	bắn, chồi non	cành non
+survey	khảo sát	sự nhìn chung
+launch	ra mắt, phóng	xuồng lớn
+surround	bao quanh	tấm quanh thảm
+scale	thang đo, tỉ lệ	vảy
+photo	bức ảnh	của photograph
+burn	vết bỏng, đốt cháy	dòng suối
+pop	nhạc pop	buổi hoà nhạc bình dân
+employ	tuyển dụng, sử dụng	sự dùng
+settle	định cư, giải quyết	ghế tủ
+nurse	y tá	cá nhám
+divide	chia	đường chia nước
+tire	làm mệt	tyre
+pool	bể bơi	vũng
+coach	huấn luyện viên	xe ngựa bốn bánh
+monitor	màn hình, theo dõi	trưởng lớp, cán bộ lớp
+theater	nhà hát	thetre
+taste	vị, nếm	Sở thích, thị hiếu
+editor	biên tập viên	người thu thập và xuất bản
+switch	công tắc, chuyển đổi	cành cây mềm
+border	biên giới	bờ, mép, vỉa, lề
+ad	quảng cáo	của advertisement
+studio	phòng thu, xưởng vẽ	xưởng vẽ, xưởng điêu khắc
+component	bộ phận, thành phần	hợp thành, cấu thành
+suspect	nghi ngờ	đáng ngờ, khả nghi
+perspective	góc nhìn	luật xa gần
+commitment	cam kết	committal
+wake	đánh thức, thức dậy	lằn tàu
+bond	mối gắn bó, trái phiếu	Tờ-rớt
+lock	ổ khóa, khóa lại	món tóc, mớ tóc
+honor	vinh dự, danh dự	honour
+mail	thư từ	áo giáp
+entry	mục từ, lối vào	mục từ
+capture	ghi lại, bắt giữ	sự bắt giữ, sự bị bắt
+left	bên trái	trái
+mass	khối lượng, đám đông	lễ mét
+hide	trốn, giấu	da sống
+plane	máy bay	cây tiêu huyền
+repeat	nhắc lại	sự nhắc lại, sự lặp lại
+host	chủ nhà, người dẫn chương trình	chủ nhà
+trend	xu hướng	Xu hướng
+bore	làm chán	lỗ khoan
+kick	cú đá, đá	trôn chai
+prior	trước đó	trưởng tu viện
+draft	bản nháp	cặn
+lake	hồ	chất màu đỏ tía
+diet	chế độ ăn	nghị viên
+forth	ra phía trước	chương ngữ Forth
+jail	nhà tù	goal
+mere	chỉ là, vỏn vẹn	ao
+flag	lá cờ	cây irit
+ski	trượt tuyết, ván trượt	Xki, ván trượt tuyết
+pro	chuyên nghiệp	của professional
+catalog	danh mục	Cách viết khác : catalog
+panic	hoảng loạn	cây tắc
+weird	kỳ quái	số phận, số mệnh
+fade	phai, nhạt dần	héo đi, tàn đi
+pale	xanh xao, nhợt nhạt	làm rào bao quanh
+server	máy chủ	người hầu
+fool	lừa gạt, kẻ ngốc	món hoa quả nấu
+found	thành lập	nấu chảy
+noun	danh từ	danh t
+fancy	thích, ưa	sự tưởng tượng
+fold	gấp lại	bãi rào
+bin	thùng rác	thùng
+craft	nghề thủ công	nghề, nghề thủ công
+damn	chút nào, đáng nguyền rủa	lời nguyền rủa
+tackle	giải quyết, xử lý	đồ dùng, dụng cụ
+pile	chồng, đống	cọc, cừ
+chamber	phòng, buồng	buồng, phòng
+boost	sự thúc đẩy	sự quảng cáo rùm beng
+resist	cưỡng lại, chống lại	chất cản màu
+barrier	rào cản	đặt vật chướng ngại
+float	nổi	Tiền trôi nổi
+random	ngẫu nhiên	at random càn, bậy bạ
+glance	cái liếc nhanh	quặng bóng
+pump	máy bơm	giày nhảy
+hook	cái móc	cái móc, cái mác
+vessel	tàu thuyền, mạch máu	bình, chậu, lọ, thùng
+keen	háo hức, ham thích	bài hát tang
+cousin	anh chị em họ	anh
+sand	cát	cát
+cap	mũ lưỡi trai	Xem COMMON AGRICULTURAL POLICY
+charm	nét duyên, sức hút	bùa mê, bùa yêu, ngải
+venture	dự án mạo hiểm	việc mạo hiểm
+dialog	đối thoại	hội thoại
+cancel	hủy bỏ	sự xoá bỏ
+dismiss	bác bỏ, sa thải	giải tán
+opponent	đối thủ	phản đối, đối lập
+motor	động cơ	động cơ mô tô
+awareness	nhận thức, sự nhận biết	xem aware
+increasingly	ngày càng	xem increase
+potentially	có tiềm năng, có thể	xem potential
+deliberately	cố ý	xem deliberate
+neighbor	hàng xóm	như neighbour
+identical	giống hệt nhau	identic note công hàm tư tưởng
+elite	tinh hoa, ưu tú	Một kiểu chữ, in được 12 ký tự
+par	ngang bằng, mức chuẩn	trung bình
+sin	tội lỗi	tội lỗi, tội ác
+norm	chuẩn mực	Định mức tăng lương
+beam	thanh dầm, chùm sáng	xà, rầm
+school	trường học	đàn cá, bầy cá
+company	công ty	Công ty
+interest	sự quan tâm, tiền lãi	Tiền lãi, lãi suất
+cone	hình nón	hình nón
+marker	dấu hiệu, bút dạ	người ghi
+correlate	tương quan	thể tương liên
+antibody	kháng thể	thể kháng
+nucleus	hạt nhân	nhân
+coordinate	phối hợp, tọa độ	tọa độ
+need	cần	Nhu cầu
+mean	trung bình, có nghĩa là	Trung bình
+meet	gặp	cuộc gặp gỡ
+adaptation	sự thích nghi	sự tra vào, sự lắp vào
+cortex	vỏ não	vỏ
+minimal	rất ít, tối thiểu	rất nhỏ li ti
+induction	quy nạp, sự cảm ứng	sự làm lễ nhậm chức
+trajectory	quỹ đạo	đường đạn
+mediate	hòa giải, trung gian	gián tiếp
+indicator	chỉ báo, dấu hiệu	người chỉ
+variant	biến thể	khác nhau chút ít
+evolutionary	thuộc tiến hóa	sự tiến triển
+feedback	phản hồi	sự nối tiếp
+during	trong suốt	trải qua, trong lúc
+arbitrary	tùy tiện, độc đoán	chuyên quyền, độc đoán
+deadline	hạn chót	đường giới hạn không được vượt qua

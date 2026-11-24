@@ -1,0 +1,30 @@
+{
+ "best_epoch": 41,
+ "n_held_items": 445,
+ "test_auc_held": 0.7951,
+ "n_held": 58691,
+ "pos_rate_held": 0.829,
+ "test_auc_seen": 0.834,
+ "n_seen": 327913,
+ "pos_rate_seen": 0.853,
+ "ci": {
+  "held": [
+   0.7878,
+   0.8013
+  ],
+  "seen": [
+   0.8295,
+   0.8377
+  ],
+  "diff": [
+   0.033,
+   0.0436
+  ]
+ },
+ "held_first_encounter_auc": 0.7627,
+ "n_held_first": 30188,
+ "seen_first_encounter_auc": 0.7811,
+ "orig_model_auc_held": 0.8286,
+ "orig_model_auc_seen": 0.8397,
+ "ece_held": 0.0226
+}

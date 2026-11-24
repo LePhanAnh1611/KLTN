@@ -1,0 +1,1269 @@
+# Nghĩa ĐỀ XUẤT SỬA — đợt rà soát bug #9 (2026-10-20), do mô hình đưa ra, CHƯA có người xác nhận
+#
+# source: llm
+#
+# Phạm vi: toàn bộ từ A1–B1 của bộ nền có meaning_confidence = needs-review hoặc
+# single-source (1.150 từ), cộng các nghĩa rác ở mọi mức ("xem X", "<Mỹ>",
+# "Cách viết khác…", chữ tiếng Anh nằm chỗ nghĩa).
+#
+# Vì sao: script lấy KHỐI NGHĨA ĐẦU TIÊN của FVDP, mà từ điển cũ hay xếp nghĩa cổ
+# hoặc từ loại hiếm lên đầu: say = "vải chéo" (danh từ), bread = "làm thủng"
+# (động từ), sell = "sự làm thất vọng". Người học thấy 4 đáp án "không sát từ".
+#
+# Cột: từ<TAB>nghĩa đề xuất<TAB>nghĩa từ điển đang hiển thị (để đối chiếu)<TAB>từ loại
+# Cột 4 (tùy chọn) sửa luôn từ loại — để trống là giữ từ loại cũ.
+# Dòng mà cột 2 == cột 3 là từ đã đọc qua và thấy nghĩa ổn: giữ nguyên chữ, chỉ
+# đổi nhãn sang `llm` để phân biệt với nghĩa chưa ai đọc.
+#
+# CÁCH DÙNG: rà lại, sửa chỗ chưa ổn, rồi đổi `# source: llm` thành
+# `# source: manual` (và đổi tên file thành meanings_manual_*.tsv).
+#
+the	cái, con, người	cái, con, người	determiner
+it	nó, cái đó, điều đó	cái đó, điều đó, con vật đó	pronoun
+they	họ, chúng nó, chúng	chúng nó, chúng, họ	pronoun
+not	không	không	
+we	chúng tôi, chúng ta	chúng tôi, chúng ta	pronoun
+i	tôi, mình	một	pronoun
+as	như, là, với tư cách là	là, với tư cách là	conjunction
+at	ở, tại (nơi chốn, thời điểm)	ở tại	preposition
+say	nói, bảo	vải chéo	verb
+go	đi	sự đi	verb
+more	nhiều hơn, hơn nữa	nhiều hơn, lớn hơn, đông hơn	
+make	làm, chế tạo, khiến	hình dáng, cấu tạo	verb
+up	ở trên, lên trên, lên	ở trên, lên trên, lên	
+take	lấy, cầm, mang đi	sự cầm, sự nắm, sự lấy	verb
+well	tốt, giỏi	phun ra, vọt ra, tuôn ra	adverb
+very	rất	thực, thực sự	adverb
+use	dùng, sử dụng	sự dùng	verb
+than	hơn	hơn	
+only	chỉ, duy nhất	chỉ có một, duy nhất	adverb
+look	nhìn, trông, xem	cái nhìn, cái ngó, cái dòm	verb
+want	muốn	sự thiếu, sự không có, sự khuyết	verb
+find	tìm thấy, thấy	sự tìm thấy	verb
+may	có thể, có lẽ	có thể, có lẽ	
+here	đây, ở đây, ở chỗ này	đây, ở đây, ở chỗ này	
+call	gọi, gọi điện	tiếng kêu, tiếng la, tiếng gọi	verb
+down	xuống	xuống	
+show	cho xem, chỉ ra; buổi biểu diễn	sự bày tỏ	verb
+same	giống nhau, cùng một	đều đều, đơn điệu	adjective
+try	thử, cố gắng	sự thử, sự làm thử	verb
+leave	rời đi, để lại	sự cho phép	verb
+both	cả hai	cả hai	determiner
+own	của chính mình, của riêng mình	của chính mình, của riêng mình	
+help	giúp, giúp đỡ	sự giúp đỡ, sự cứu giúp, sự giúp ích	verb
+start	bắt đầu	lúc bắt đầu, buổi đầu	verb
+talk	nói chuyện, trò chuyện	lời nói	verb
+something	một cái gì đó, một việc gì đó	một điều gì đó, một việc gì đó	pronoun
+another	một … khác, thêm một	khác	determiner
+high	cao	cao	
+off	tắt; rời khỏi	tắt	adverb
+course	khóa học; tiến trình	tiến trình, dòng	noun
+let	để, cho phép	sự ngăn cản, sự cản trở	verb
+study	học, nghiên cứu	sự học tập	verb
+run	chạy; điều hành	sự chạy	verb
+under	dưới, ở dưới	dưới, ở dưới	
+bring	mang đến, đem lại	cầm lại, đem lại, mang lại, xách lại, đưa lại	verb
+friend	bạn, người bạn	người bạn	noun
+business	kinh doanh, việc buôn bán; doanh nghiệp	việc buôn bán, việc kinh doanh, việc thương mại	noun
+information	thông tin	Thông tin	noun
+build	xây dựng	sự xây dựng	verb
+happen	xảy đến, xảy ra	xảy đến, xảy ra	
+student	học sinh, sinh viên	học sinh đại học, sinh viên	noun
+hope	hy vọng, mong	hy vọng	
+car	xe ô tô, xe hơi	xe ô tô	noun
+once	một lần; một khi	một lần	adverb
+bad	xấu, tồi, dở	Hàng xấu	adjective
+train	tàu hỏa; huấn luyện	xe lửa	noun
+parent	cha hoặc mẹ; phụ huynh	cha	noun
+party	bữa tiệc; đảng	đảng	noun
+care	sự chăm sóc; quan tâm	sự chăn sóc, sự chăm nom, sự giữ gìn, sự bảo dưỡng	noun
+anything	bất cứ thứ gì, bất cứ việc gì	vật gì, việc gì	pronoun
+test	bài kiểm tra; kiểm tra	vỏ	noun
+visit	thăm, đến thăm; chuyến thăm	sự đi thăm, sự thăm hỏi, sự thăm viếng	verb
+walk	đi bộ; cuộc đi bộ	sự đi bộ	verb
+stop	dừng lại; điểm dừng	sự ngừng lại, sư dừng, sự đỗ lại	verb
+light	ánh sáng; đèn	ánh sáng, ánh sáng mặt trời, ánh sáng ban ngày	noun
+share	chia sẻ; phần, cổ phần	Cổ phiếu	verb
+answer	câu trả lời; trả lời	sự trả lời	noun
+town	thị trấn, thị xã	thành phố, thị xã	noun
+break	làm vỡ; giờ nghỉ	xe vực ngựa	verb
+either	một trong hai; (phủ định) cũng không	mỗi , một	determiner
+monkey	con khỉ	con khỉ	
+top	đỉnh, phần trên cùng	con cù, con quay	noun
+win	thắng, chiến thắng	sự thắng cuộc	verb
+color	màu sắc	colour	noun
+social	thuộc xã hội	có tính chất xã hội, có tính chất thành viên của một tập thể	adjective
+drive	lái xe	cuộc đi xe, cuộc đi chơi bằng xe	verb
+along	dọc theo	theo chiều dài, suốt theo	preposition
+sale	sự bán; đợt giảm giá	sự bán	noun
+wait	chờ, đợi	sự chờ đợi	verb
+black	đen	đen	
+add	thêm, cộng	+ up, together cộng	verb
+sell	bán	sự làm thất vọng	verb
+cover	che, phủ; bìa, vỏ bọc	vỏ, vỏ bọc, cái bọc ngoài	verb
+computer	máy tính	máy điện toán	noun
+someone	một người nào đó, có người	một người nào đó, có người	
+above	ở trên, phía trên	trên đầu, trên đỉnh đầu	preposition
+cut	cắt	sự cắt, sự đốn, sự chặt, sự thái	verb
+else	khác, nữa	khác, nữa	
+please	làm ơn, xin vui lòng	làm vui lòng, làm hài lòng, làm vừa lòng, làm vừa ý	adverb
+draw	vẽ; kéo	sự kéo	verb
+door	cửa, cửa ra vào	cửa, cửa ra vào	
+travel	đi du lịch, đi lại	sự đi du lịch	verb
+picture	bức tranh, bức ảnh	bức tranh, bức ảnh, bức vẽ	noun
+list	danh sách	trạng thái nghiêng	noun
+wear	mặc, đội, đeo	sự mang	verb
+save	cứu; tiết kiệm; lưu	sự phá bóng cứu nguy	verb
+due	đến hạn; do, vì	quyền được hưởng	adjective
+check	kiểm tra	cheque	verb
+pick	chọn; hái, nhặt	sự chọn lọc, sự chọn lựa	verb
+ground	mặt đất	mặt đất, đất	noun
+elementary	cơ bản, sơ cấp	cơ bản, sơ yếu	adjective
+fight	đánh nhau, chiến đấu	sự đấu tranh, sự chiến đấu	verb
+leader	người lãnh đạo, thủ lĩnh	lânh tụ, người lânh đạo, người chỉ huy, người hướng dẫn	noun
+ruler	thước kẻ; người cai trị	người thống trị, người chuyên quyền	noun
+finish	hoàn thành, kết thúc	sự kết thúc, sự kết liễu	verb
+laugh	cười; tiếng cười	tiếng cười	verb
+surprise	sự ngạc nhiên; làm ngạc nhiên	sự ngạc nhiên	noun
+worry	lo lắng	sự lo lắng	verb
+inside	bên trong, phía trong	mặt trong, phía trong, phần trong, bên trong	noun
+section	phần, đoạn, mục	sự cắt	noun
+fever	cơn sốt	cơn sốt	
+catch	bắt, chụp; bắt kịp	sự bắt, sự nắm lấy	verb
+skill	kỹ năng	sự khéo léo, sự khéo tay, sự tinh xảo	noun
+bed	cái giường	cái giường	
+review	xem lại, ôn lại; bài đánh giá	sự xem lại, sự xét lại	noun
+tree	cây	cây	
+college	trường đại học, trường cao đẳng	trường đại học, trường cao đẳng	
+holiday	ngày lễ, ngày nghỉ	ngày lễ, ngày nghỉ	
+church	nhà thờ	nhà thờ	
+item	món, mục, mặt hàng	khoản , món	noun
+below	ở dưới, ở bên dưới, ở dưới thấp, ở phía dưới	ở dưới, ở bên dưới, ở dưới thấp, ở phía dưới	
+movie	bộ phim	phim xi nê	noun
+sorry	xin lỗi; lấy làm tiếc	lấy làm buồn, lấy làm tiếc, lấy làm phiền	adjective
+interview	cuộc phỏng vấn; phỏng vấn	sự gặp gỡ, sự gặp mặt	noun
+interviewer	người phỏng vấn	người gặp riêng	noun
+apple	quả táo	quả táo	
+blank	trống, để trống	để trống, để trắng	adjective
+television	tivi, truyền hình	sự truyền hình	noun
+husband	chồng	người chồng	noun
+yourself	tự bạn, chính bạn	tự anh, tự chị, chính anh, chính mày, tự mày, tự mình	pronoun
+super	tuyệt, siêu	thượng hảo hạng	adjective
+brother	anh trai, em trai	anh	noun
+sleep	ngủ; giấc ngủ	giấc ngủ	verb
+snake	con rắn	Con rắn	noun
+touch	chạm, sờ	sự sờ, sự mó, sự đụng, sự chạm	verb
+file	tệp, hồ sơ	cái giũa	noun
+middle	ở giữa, phần giữa	giữa	noun
+bar	quán bar; thanh, thỏi	barơ	noun
+fill	làm đầy, lấp đầy	cái làm đầy	verb
+throw	ném, quăng	sự ném, sự vứt, sự quăng, sự liệng	verb
+goal	mục tiêu; bàn thắng	khung thành gồm	noun
+blue	màu xanh dương	xanh	adjective
+push	đẩy	sự xô, sự đẩy	verb
+baby	em bé	đứa bé mới sinh	noun
+successful	thành công	có kết quả, thành công, thắng lợi, thành đạt	adjective
+officer	sĩ quan; viên chức	sĩ quan	noun
+dress	váy liền; mặc quần áo	quần áo	noun
+guess	đoán	sự đoán, sự ước chừng	verb
+fun	niềm vui, sự vui vẻ	sự vui đùa, sự vui thích	noun
+hair	tóc, lông	tóc, lông	
+okay	được, ổn, đồng ý	sự đồng ý, sự tán thành	adjective
+pardon	xin lỗi, xin nhắc lại; sự tha thứ	sự tha thứ, sự tha lỗi	noun
+post	bưu điện, thư; bài đăng	cột trụ	noun
+clock	đồng hồ (treo tường, để bàn)	đường chỉ viền ở cạnh bít tất	noun
+homework	bài tập về nhà	bài làm ở nhà	noun
+dance	nhảy, múa; điệu nhảy	sự nhảy múa	verb
+sister	chị, em gái	chị, em gái	
+dollar	đồng đô la	đồng đô la	
+conversation	cuộc trò chuyện, cuộc hội thoại	sự nói chuyện	noun
+magazine	tạp chí	tạp chí	
+welcome	chào mừng, hoan nghênh	được tiếp đ i ân cần, được hoan nghênh	adjective
+favorite	yêu thích nhất	được mến chuộng, được ưa thích	adjective
+glass	ly, cốc thủy tinh; kính	kính thuỷ tinh	noun
+radio	đài, radio	rađiô	noun
+ride	đi (xe, ngựa); chuyến đi	sự đi chơi, cuộc đi chơi	verb
+chair	ghế	ghế	
+expensive	đắt tiền	đắt tiền	
+video	video	truyền hình	noun
+wonderful	tuyệt vời	kỳ lạ, phi thường	adjective
+flat	căn hộ; phẳng	dãy phòng	noun
+collection	bộ sưu tập	sự tập họp, sự tụ họp	noun
+partner	đối tác, cộng sự; bạn đời	người cùng chung phần	noun
+taxi	xe taxi	xe tắc xi	noun
+feed	cho ăn	sự ăn, sự cho ăn	verb
+excellent	xuất sắc, tuyệt vời	hơn hẳn, trội hơn	adjective
+camp	trại; cắm trại	trại, chỗ cắm trại, hạ trại	noun
+cook	nấu ăn; đầu bếp	người nấu ăn, người làm bếp, cấp dưỡng, anh nuôi	verb
+driver	người lái xe, tài xế	người lái , người đánh xe , người dắt	noun
+ball	quả bóng	buổi khiêu vũ	noun
+cry	khóc; kêu la	tiếng kêu, tiêng la, tiếng hò hét, tiếng hò reo	verb
+football	bóng đá	quả bóng đá	noun
+solve	giải quyết	giải quyết	
+bottom	đáy, phần dưới cùng	phần dưới cùng	noun
+lady	quý bà, phụ nữ	vợ, phu nhân	noun
+bird	con chim	con chim	
+suggestion	sự gợi ý	sự gợi ý	
+topic	đề tài, chủ đề	đề tài, chủ đề	
+boat	thuyền	tàu thuyền	noun
+engineer	kỹ sư	kỹ sư, công trình sư	noun
+jump	nhảy	sự nhảy, bước nhảy	verb
+lunch	bữa ăn trưa	bữa ăn trưa	
+afraid	sợ, e sợ	sợ, hãi, hoảng, hoảng sợ	adjective
+sun	mặt trời	mặt trời, vừng thái dương	noun
+blow	thổi	cú đánh đòn	verb
+wash	rửa, giặt	sự tắm rửa, sự tắm gội, sự rửa ráy	verb
+sum	tổng, tổng số; khoản tiền	tổng số	noun
+concert	buổi hòa nhạc	sự phối hợp, sự hoà hợp	noun
+camera	máy ảnh	máy ảnh	
+swim	bơi	sự bơi lội	verb
+scientist	nhà khoa học	nhà khoa học	
+tonight	đêm nay, tối nay	đêm nay, tối nay	
+hurt	làm đau, làm tổn thương	vết thương, chỗ bị đau	verb
+anybody	bất kỳ ai	một người nào đó	pronoun
+bedroom	phòng ngủ	buồng ngủ	noun
+climb	leo, trèo	sự leo trèo	verb
+noise	tiếng ồn	tiếng	noun
+shake	lắc, rung	sự rung, sự lắc, sự giũ	verb
+hole	lỗ, lỗ thủng	lỗ, lỗ thủng	
+birth	sự ra đời, sự sinh	sự sinh đẻ	noun
+bridge	cây cầu	brit	noun
+ice	băng, nước đá	băng nước đá	noun
+farmer	nông dân	người tá điền	noun
+desk	bàn học, bàn làm việc	bàn học sinh, bàn viết, bàn làm việc	noun
+lovely	đáng yêu, xinh xắn	đẹp đẽ, xinh, đáng yêu, dễ thương, có duyên, yêu kiều	adjective
+celebrate	ăn mừng, kỷ niệm	kỷ niệm, làm lễ kỷ niệm	verb
+dad	bố, ba	ba, cha, bố, thầy	noun
+fruit	trái cây, hoa quả	quả, trái cây	noun
+ideal	lý tưởng	quan niệm, tư tưởng	adjective
+cat	con mèo	con mèo	
+kiss	hôn; nụ hôn	cái hôn	verb
+hat	cái mũ, cái nón	cái mũ	noun
+tall	cao	cao	
+breakfast	bữa ăn sáng, bữa điểm tâm	bữa ăn sáng, bữa điểm tâm	
+hi	xin chào	này!, ê!	interjection
+self	bản thân, cái tôi	đồng màu, cùng màu	noun
+gray	xám	xám	
+meat	thịt	thịt	
+reporter	phóng viên	người báo cáo	noun
+shirt	áo sơ mi	áo sơ mi	
+excuse	lời xin lỗi; cái cớ	lời xin lỗi	noun
+spell	đánh vần	lời thần chú	verb
+bike	xe đạp	của bicycle xe đạp	noun
+smart	thông minh; bảnh bao	sự đau đớn, sự nhức nhối	adjective
+truck	xe tải	sự trao đổi, sự đổi chác	noun
+mom	mẹ	uây khyếm mẹ	noun
+sir	thưa ông, thưa ngài, thưa tiên sinh	thưa ông, thưa ngài, thưa tiên sinh	
+everyday	hằng ngày, dùng hằng ngày	hằng ngày, dùng hằng ngày	
+album	album, tập ảnh	tập ảnh, quyển anbom	noun
+festival	lễ hội	thuộc ngày hội	noun
+vegetable	rau, rau củ	thực vật	noun
+jacket	áo khoác	áo vét tông , áo vét	noun
+bread	bánh mì	làm thủng	noun
+button	cái nút, cúc áo	cái khuy, cái cúc	noun
+bath	bồn tắm; sự tắm	sự tắm	noun
+pen	bút, bút mực	bút lông chim	noun
+dig	đào, bới	sự đào, sự bới, sự xới, sự cuốc	verb
+chicken	gà; thịt gà	gà con	noun
+shower	vòi sen; tắm vòi sen; mưa rào	người chỉ, người cho xem, người dẫn	noun
+march	tháng Ba; diễu hành	March tháng ba	noun
+opera	nhạc kịch, opera	Opêra	noun
+contest	cuộc thi	cuộc tranh luận, cuộc tranh cãi	noun
+brush	bàn chải	bàn chải	
+celebration	lễ kỷ niệm, sự ăn mừng	sự kỷ niệm	noun
+orange	quả cam; màu cam	quả cam	noun
+pig	con lợn, con heo	lợn heo	noun
+shelf	giá, kệ	giá sách	noun
+cow	con bò cái	bò cái	noun
+guitar	đàn ghi-ta	<nhạc> đàn ghita	noun
+piano	đàn piano, dương cầm	pianô	noun
+moon	mặt trăng	mặt trăng	
+paragraph	đoạn văn	đoạn văn	
+chocolate	sô-cô-la	sôcôla	noun
+knife	con dao	con dao	
+hurry	vội vàng; sự vội vàng	sự vội vàng, sự hấp tấp, sự hối hả, sự gấp rút	verb
+bell	cái chuông	cái chuông	
+uncle	chú, bác, cậu	chú	noun
+sheep	con cừu	con cừu	
+rat	con chuột	con chuột	
+aunt	cô, dì, thím, mợ, bác gái	cô, dì, thím, mợ, bác gái	
+hello	xin chào	chào anh!, chào chị!	interjection
+prediction	sự dự đoán, lời dự báo	Dự báo	noun
+such	như vậy, như thế	thật là, quả là	determiner
+comparative	so sánh; (ngữ pháp) dạng so sánh hơn	so sánh	adjective
+while	trong khi	lúc, chốc, lát	conjunction
+might	có thể, có lẽ	sức mạnh, lực	auxiliary
+report	bản báo cáo	bản báo cáo	
+since	từ khi; vì	từ lâu	conjunction
+fact	sự thật, sự việc	việc, sự việc	noun
+however	tuy nhiên	dù đến đâu, dù cách nào, dù cách gì	adverb
+without	không, không có	không, không có	
+against	chống lại, ngược lại, phản đối	chống lại, ngược lại, phản đối	
+increase	tăng, tăng lên; sự gia tăng	sự tăng, sự tăng thêm	verb
+logical	hợp lý, hợp logic	hợp với lôgic	adjective
+support	ủng hộ, hỗ trợ; sự ủng hộ	sự ủng hộ	verb
+composer	nhà soạn nhạc	người soạn nhạc	noun
+singular	ở số ít	ở số ít	
+least	tối thiểu, nhỏ nhất, ít nhất, kém nhất	tối thiểu, nhỏ nhất, ít nhất, kém nhất	
+low	thấp	tiếng rống	adjective
+possible	có thể, có thể được, có thể làm được, có thể xảy ra	có thể, có thể được, có thể làm được, có thể xảy ra	
+control	kiểm soát, điều khiển; sự kiểm soát	quyền hành, quyền lực, quyền chỉ huy	noun
+concern	mối quan tâm, mối lo; liên quan đến	sự liên quan tới, sự dính líu tới	noun
+deal	thỏa thuận, giao dịch; giải quyết	gỗ tùng, gỗ thông	noun
+probably	có lẽ, có thể	hầu như chắc chắn	adverb
+center	trung tâm	centre	noun
+return	trở lại, trả lại; sự trở về	sự trở lại, sự trở về, sự quay trở lại	verb
+several	vài	vài	
+bit	một chút, một mẩu	miếng	noun
+occupation	nghề nghiệp; sự chiếm đóng	sự chiếm, sự giữ, sự chiếm giữ, sự chiếm đóng	noun
+clear	rõ ràng; trong trẻo	trong, trong trẻo, trong sạch	adjective
+remain	vẫn còn, còn lại	đồ thừa, cái còn lại	verb
+reach	đạt tới, với tới, đến	sự chìa ra, sự trải ra	verb
+sound	âm thanh; nghe có vẻ	khoẻ mạnh, tráng kiện, lành mạnh	noun
+further	xa hơn, thêm nữa	xa hơn nữa, bên kia	adverb
+clone	bản sao, dòng vô tính; nhân bản	dòng vô tính, hệ vô tính	noun
+toward	về phía, hướng về	dễ bảo, dễ dạy, ngoan	preposition
+correctly	đúng, chính xác	đúng cách thức, phù hợp	adverb
+research	sự nghiên cứu	sự nghiên cứu	
+forward	về phía trước	ở trước, phía trước, tiến lên, tiến về phía trước	adverb
+die	chết	con súc sắc	verb
+himself	chính anh ấy, tự anh ấy	tự nó, tự mình	pronoun
+especially	đặc biệt là, nhất là	đặc biệt là, nhất là	
+disadvantage	sự bất lợi	sự bất lợi	
+themselves	chính họ, tự họ	tự chúng, tự họ, tự	pronoun
+customer	khách hàng	khách hàng	
+claim	khẳng định, tuyên bố; đòi, yêu cầu	sự đòi, sự yêu sách, sự thỉnh cầu	verb
+death	cái chết	sự chết	noun
+range	phạm vi, khoảng	Dải, khoảng	noun
+road	con đường	con đường	
+importantly	quan trọng là, điều quan trọng	quan trọng, trội yếu	adverb
+education	sự giáo dục, nền giáo dục	sự giáo dục, sự cho ăn học	noun
+serve	phục vụ; giao bóng	cú giao bóng	verb
+likely	có khả năng, có thể xảy ra	chắc đúng, có lẽ đúng, có lẽ thật	adjective
+itself	chính nó, bản thân nó	bản thân cái đó, bản thân điều đó, bản thân con vật đó	pronoun
+instead	thay vào đó	để thay vào, để thế cho	adverb
+single	đơn, duy nhất; độc thân	đơn, đơn độc, một mình, chỉ một	adjective
+performance	màn trình diễn; hiệu suất, thành tích	Thành quả	noun
+chance	cơ hội; khả năng; sự tình cờ	sự may rủi, sự tình cờ	noun
+mention	nhắc đến, đề cập	sự kể ra, sự nói đến, sự đề cập	verb
+choice	sự lựa chọn	sự lựa, sự chọn, sự lựa chọn	noun
+physically	về mặt thể chất	về thân thể	adverb
+effort	sự cố gắng, sự ráng sức	sự cố gắng, sự ráng sức	
+attention	sự chú ý	sự chú ý	noun
+upon	trên, ở trên; ngay khi	trên, ở trên	preposition
+lie	nói dối; nằm; lời nói dối	sự nói dối, sự nói láo, sự nói điêu, sự dối trá	verb
+century	thế kỷ	trăm năm, thế kỷ	noun
+contact	liên lạc, tiếp xúc; sự liên lạc	sự chạm, sự tiếp xúc	noun
+response	sự phản hồi, câu trả lời	sự trả lời	noun
+apply	nộp đơn; áp dụng; bôi, thoa	gắn vào, áp vào, ghép vào, đính vào, đắp vào, tra vào	verb
+manage	quản lý; xoay xở được	quản lý, trông nom	verb
+simply	đơn giản, chỉ	chỉ là	adverb
+continent	châu lục, lục địa	tiết độ, điều độ	noun
+attack	tấn công; cuộc tấn công	sự tấn công, sự công kích	noun
+feature	đặc điểm, tính năng	nét đặc biệt, điểm đặc trưng	noun
+recent	gần đây	gần đây, xảy ra gần đây, mới đây, mới xảy ra	adjective
+bargain	món hời; mặc cả	sự mặc cả, sự thoả thuận mua bán	noun
+psychologist	nhà tâm lý học	nhà tâm lý học	
+notice	nhận thấy, để ý; thông báo	thông tri, yết thị, thông cáo	verb
+diary	nhật ký	sổ nhật ký	noun
+wonder	tự hỏi, thắc mắc; kỳ quan	vật kỳ diệu, kỳ quan, vật phi thường	verb
+myself	chính tôi, tự tôi	tự tôi	pronoun
+whatever	bất cứ thứ gì	nào	pronoun
+attempt	cố gắng, thử; sự cố gắng	sự cố gắng, sự thử	noun
+average	trung bình; mức trung bình	Số trung bình	adjective
+hit	đánh, đập; trúng	đòn, cú đánh trúng	verb
+leisure	thời gian rảnh rỗi	thì giờ rỗi rãi, lúc thư nhàn	noun
+indeed	quả thực, thực vậy	thực vậy, thực mà, quả thực, thực lại là	adverb
+fit	vừa, vừa vặn; khỏe mạnh	đoạn thơ	verb
+behavior	hành vi, cách cư xử	cách xử lý, chế độ	noun
+addition	sự thêm vào; phép cộng	tính cộng	noun
+wisdom	sự khôn ngoan, trí tuệ	tính khôn ngoan	noun
+fail	thất bại; trượt (thi)	sự hỏng thi	verb
+enter	đi vào; nhập (dữ liệu)	đi vào	verb
+success	sự thành công, sự thắng lợi	sự thành công, sự thắng lợi	
+clearly	rõ ràng, sáng sủa, sáng tỏ	rõ ràng, sáng sủa, sáng tỏ	
+lack	thiếu; sự thiếu	sự thiếu	noun
+mark	điểm số; dấu, vết	đồng Mác	noun
+achieve	đạt được, giành được	đạt được, giành được	
+cent	đồng xu (cent)	đồng xu	noun
+container	đồ đựng, thùng chứa; công-te-nơ	cái đựng, cái chứa	noun
+stuff	đồ, thứ, đồ đạc	chất, chất liệu	noun
+discussion	cuộc thảo luận	sự thảo luận, sự bàn cãi, sự tranh luận	noun
+challenge	thử thách, thách thức	tiếng hô "đứng lại"	noun
+statement	lời phát biểu, tuyên bố; bản kê	sự bày tỏ, sự trình bày, sự phát biểu	noun
+advantage	lợi thế, sự thuận lợi	sự thuận lợi, hoàn cảnh thuận lợi	noun
+release	thả, phát hành; sự giải phóng	sự giải thoát, sự thoát khỏi	verb
+capital	thủ đô; vốn; chữ in hoa	Tư bản/ vốn	noun
+fear	nỗi sợ, sự sợ hãi; sợ	sự sợ, sự sợ hãi	noun
+pull	kéo	sự lôi, sự kéo, sự giật	verb
+audio	âm thanh (thuộc về âm thanh)	thuộc âm thanh	adjective
+shall	sẽ	sẽ	
+express	bày tỏ, diễn đạt; tốc hành	người đưa thư hoả tốc, công văn hoả tốc	verb
+gram	gam	gramme	noun
+beyond	vượt quá, ở bên kia	ở xa, ở phía bên kia	preposition
+trouble	rắc rối, sự phiền phức	điều lo lắng, điều phiền muộn	noun
+except	ngoại trừ, trừ	trừ ra, loại ra	preposition
+junior	cấp dưới; nhỏ tuổi hơn	trẻ tuổi hơn	adjective
+click	nhấp chuột, nhấn; tiếng lách cách	tiếng lách cách	verb
+avoid	tránh, tránh xa	tránh, tránh xa	
+refer	nhắc đến; tham khảo; giới thiệu tới	quy, quy cho, quy vào	verb
+doubt	sự nghi ngờ; nghi ngờ	sự nghi ngờ, sự ngờ vực	noun
+competition	cuộc thi; sự cạnh tranh	sự cạnh tranh	noun
+quiz	bài kiểm tra nhanh, câu đố	kỳ thi kiểm tra nói , kỳ thi vấn đáp	noun
+argument	cuộc tranh cãi; lý lẽ	lý lẽ	noun
+liter	lít	lít	noun
+search	tìm kiếm; sự tìm kiếm	sự nhìn để tìm, sự sờ để tìm	verb
+separate	riêng biệt, tách rời; tách ra	riêng rẽ, rời, không dính với nhau	adjective
+rope	dây thừng	dây thừng, dây chão	noun
+anyway	dù sao đi nữa	thế nào cũng được, cách nào cũng được	adverb
+campus	khuôn viên trường	khu sân bãi	noun
+semester	học kỳ	học kỳ sáu tháng	noun
+bonus	tiền thưởng	tiền thưởng	
+earn	kiếm được (tiền)	kiếm được	verb
+cheer	cổ vũ, reo hò	sự vui vẻ, sự khoái trá	verb
+debate	cuộc tranh luận; tranh luận	cuộc tranh luận, cuộc thảo luận, cuộc tranh cãi	noun
+chess	cờ vua	cờ	noun
+discover	khám phá ra, tìm ra, phát hiện ra, nhận ra	khám phá ra, tìm ra, phát hiện ra, nhận ra	
+prefer	thích hơn, ưa hơn	thích hơn, ưa hơn	
+track	đường đua; dấu vết; theo dõi	dấu, vết	noun
+university	trường đại học	trường đại học	
+easily	dễ dàng	thoải mái, thanh thản, không lo lắng	adverb
+agency	đại lý, cơ quan	tác dụng, lực	noun
+ahead	phía trước, trước	trước, về phía trước, ở thẳng phía trước	adverb
+cross	băng qua, đi qua; chữ thập	cây thánh giá	verb
+somebody	một người nào đó, có người	một người nào đó, có người	
+communication	sự giao tiếp, liên lạc; truyền thông	sự truyền đạt, sự thông tri, sự thông tin	noun
+herself	chính cô ấy, tự cô ấy	tự nó, tự cô ta, tự chị ta, tự bà ta, tự mình	pronoun
+difficulty	sự khó khăn, nỗi khó khăn, nỗi gay go	sự khó khăn, nỗi khó khăn, nỗi gay go	
+request	lời thỉnh cầu, lời yêu cầu, lời đề nghị	lời thỉnh cầu, lời yêu cầu, lời đề nghị	
+medical	thuộc y tế, y học	y, y học	adjective
+text	văn bản; tin nhắn	nguyên văn, nguyên bản	noun
+title	tiêu đề, tên; danh hiệu	tên	noun
+extra	thêm, phụ	thêm, phụ, ngoại	adjective
+trust	tin tưởng; lòng tin	Tờ-rớt	verb
+additional	thêm vào, phụ vào, tăng thêm	thêm vào, phụ vào, tăng thêm	
+tour	chuyến du lịch, chuyến tham quan	cuộc đi, cuộc đi du lịch	noun
+print	in	chữ in	verb
+truth	sự thật	sự thật, lẽ phải, chân lý	noun
+speed	tốc độ	sự mau lẹ	noun
+reply	câu trả lời, lời đáp	câu trả lời, lời đáp	
+display	trưng bày, hiển thị; sự trưng bày	sự bày ra, sự phô bày, sự trưng bày	verb
+physical	thuộc thể chất; vật lý	vật chất	adjective
+apart	cách xa, riêng ra	về một bên, qua một bên	adverb
+favor	sự giúp đỡ, ân huệ; ủng hộ	thiện ý	noun
+south	hướng nam, phương nam, phía nam	hướng nam, phương nam, phía nam	
+labor	lao động	lao động	
+audience	khán giả, thính giả	những người nghe, thính giả	noun
+contrast	sự tương phản, sự trái ngược	sự tương phản, sự trái ngược	
+quick	nhanh	thịt mềm	adjective
+spread	lan rộng, trải ra; sự lan truyền	sự trải ra, sự căng ra, sự giăng ra	verb
+north	hướng bắc, phương bắc, phía bắc	hướng bắc, phương bắc, phía bắc	
+senior	cấp cao; lớn tuổi hơn	Senior nhiều tuổi hơn, bố	adjective
+survive	sống sót	sống lâu hơn	verb
+flight	chuyến bay	sự bỏ chạy, sự rút chạy	noun
+traffic	giao thông	sự đi lại, sự giao thông	noun
+schedule	lịch trình, thời gian biểu	bản danh mục, bảng liệt kê	noun
+speaker	người nói, diễn giả; cái loa	người nói, người diễn thuyết	noun
+plus	cộng với, thêm	cộng với	preposition
+extremely	cực kỳ, vô cùng	thái cực	adverb
+unfortunately	không may, đáng tiếc	một cách đáng tiếc, không may	adverb
+apparently	hình như, có vẻ như	nhìn bên ngoài, hình như	adverb
+mostly	hầu hết, phần lớn	hầu hết, phần lớn	
+twice	hai lần	hai lần	
+delay	sự chậm trễ; trì hoãn	sự chậm trễ	noun
+somewhere	ở một nơi nào đó	ở một nơi nào đó	
+hardly	hầu như không	khắc nghiệt, nghiêm khắc, tàn tệ, cứng rắn	adverb
+impossible	không thể	không thể làm được	adjective
+opposite	đối diện; ngược lại	đối nhau, ngược nhau	adjective
+murder	vụ giết người; giết	tội giết người, tội ám sát	noun
+hate	ghét, căm ghét	lòng căm thù	verb
+wine	rượu vang	rượu vang	
+museum	nhà bảo tàng	nhà bảo tàng	
+freedom	sự tự do	sự tự do	
+belong	thuộc về, của, thuộc quyền sở hữu	thuộc về, của, thuộc quyền sở hữu	
+danger	sự nguy hiểm, mối hiểm nghèo	sự nguy hiểm, mối hiểm nghèo	
+load	gánh nặng, hàng chở; chất lên	vậy nặng, gánh nặng	noun
+fee	lệ phí, phí	tiền thù lao	noun
+escape	trốn thoát; sự trốn thoát	sự trốn thoát	verb
+relax	thư giãn	nới lỏng, lơi ra	verb
+tourist	khách du lịch	nhà du lịch, khách du lịch	noun
+description	sự mô tả	sự tả, sự diễn tả, sự mô tả, sự miêu tả	noun
+explore	khám phá, thám hiểm	thăm dò, thám hiểm	verb
+slowly	chậm, chầm chậm	chậm, chầm chậm	
+tie	buộc, thắt; cà vạt	dây buộc, dây cột, dây trói	verb
+west	hướng tây, phía tây	hướng tây, phưng tây, phía tây	noun
+plenty	nhiều, dồi dào	sự sung túc, sự phong phú, sự dồi dào, sự có nhiều	noun
+consist	gồm có	gồm có	verb
+graduate	tốt nghiệp; người đã tốt nghiệp	grad	verb
+brand	nhãn hiệu, thương hiệu	nhãn	noun
+principal	hiệu trưởng; chính, chủ yếu	Tiền gốc	noun
+predict	dự đoán	nói trước	verb
+rent	thuê; tiền thuê	Tô, lợi, tiền thuê	verb
+shot	phát súng; cú sút; bức ảnh	sự trả tiền	noun
+till	cho đến khi	ngăn kéo để tiền	preposition
+license	giấy phép	cho phép	noun
+succeed	thành công; kế nhiệm	kế tiếp, tiếp theo	verb
+seriously	nghiêm túc	đứng đắn, nghiêm trang	adverb
+association	hiệp hội; sự liên kết	sự kết hợp, sự liên hợp, sự liên kết	noun
+ourselves	chính chúng ta, chính chúng tôi	bản thân chúng ta, bản thân chúng tôi, bản thân chúng mình	pronoun
+journey	cuộc hành trình	cuộc hành trình	
+blame	đổ lỗi; sự khiển trách	sự khiển trách	verb
+explanation	sự giải thích, lời giải thích	sự giảng, sự giảng giải, sự giải nghĩa, lời giảng	noun
+musical	thuộc âm nhạc; vở nhạc kịch	nhạc, âm nhạc	adjective
+retire	nghỉ hưu	rời bỏ, đi ra, rút về, lui về	verb
+native	bản xứ, bản địa	nơi sinh	adjective
+anywhere	bất kỳ chỗ nào, bất cứ nơi đâu	bất kỳ chỗ nào, bất cứ nơi đâu	
+chemical	hóa chất; thuộc hóa học	hoá học	noun
+shout	hét, la to	tiếng kêu	verb
+guard	bảo vệ, canh gác; người bảo vệ	sự thủ thế, sự giữ miếng	noun
+complaint	lời phàn nàn, khiếu nại	lời than phiền, lời phàn nàn, lời oán trách, lời than thở	noun
+rush	vội vàng, lao nhanh	cây bấc	verb
+latter	người/cái sau (trong hai)	sau cùng, gần đây, mới đây	adjective
+helpful	hữu ích, có ích	giúp đỡ	adjective
+joke	câu chuyện cười, lời nói đùa	lời nói đùa, câu nói đùa	noun
+coast	bờ biển	bờ biển	
+unlike	không giống, khác với	khác, không giống	preposition
+assistant	trợ lý, người phụ tá	người giúp đỡ, người phụ tá	noun
+chart	biểu đồ	bản đồ đi biển, hải đồ	noun
+advise	khuyên	khuyên, khuyên bảo, răn bảo	verb
+east	hướng đông, phương đông, phía đông	hướng đông, phương đông, phía đông	
+widely	rộng rãi	nhiều, xa	adverb
+shut	đóng, khép	đóng, khép, đậy, nút, nhắm, gập, ngậm	verb
+communicate	giao tiếp, truyền đạt	truyền	verb
+exhibition	cuộc triển lãm	cuộc triển lãm cuộc trưng bày	noun
+childhood	tuổi thơ	tuổi thơ ấu, thời thơ ấu	noun
+knock	gõ (cửa); cú đánh	cú đánh, cú va chạm	verb
+truly	thật sự, thực sự	thật, sự thật, đúng	adverb
+appointment	cuộc hẹn; sự bổ nhiệm	được bổ nhiệm, chức vụ được bổ nhiệm	noun
+elsewhere	ở một nơi nào khác	ở một nơi nào khác	
+bother	làm phiền; bận tâm	điều bực mình, điều khó chịu, điều buồn bực, điều phiền muộn	verb
+freeze	đóng băng; lạnh cóng	sự đông vì lạnh, sự giá lạnh	verb
+passage	đoạn văn; lối đi	sự đi qua, sự trôi qua	noun
+unusual	bất thường, khác thường	không thường, không thông thường, không thường dùng	adjective
+repair	sửa chữa	sự sửa chữa, sự tu sửa	verb
+abroad	ở nước ngoài, ra nước ngoài	ở nước ngoài, ra nước ngoài	
+perfectly	hoàn toàn, hoàn hảo	hoàn toàn, hoàn hảo	
+emergency	tình trạng khẩn cấp	tình trạng khẩn cấp	noun
+educational	thuộc giáo dục, mang tính giáo dục	thuộc ngành giáo dục	adjective
+slide	trượt; cầu trượt; trang chiếu	sự trượt	verb
+winner	người chiến thắng	người được cuộc, người thắng	noun
+partly	một phần, phần nào	một phần, phần nào	
+split	chia, tách ra	nứt, nẻ, chia ra, tách ra	verb
+sudden	thình lình, đột ngột	thình lình, đột ngột	
+advertisement	quảng cáo	sự quảng cáo	noun
+silence	sự im lặng	sự lặng thinh, sự nín lặng	noun
+grateful	biết ơn	biết ơn	
+fault	lỗi, khuyết điểm	sự thiếu sót	noun
+storm	cơn bão	dông tố, cơn bão	noun
+roof	mái nhà	mái nhà, nóc	noun
+upset	buồn bực, khó chịu; làm buồn	làm đổ, đánh đổ, lật đổ	adjective
+entertainment	sự giải trí	sự tiếp đãi	noun
+unknown	không ai biết, chưa biết	không biết, chưa từng ai biết, lạ	adjective
+inch	inch (đơn vị đo ≈ 2,54 cm)	đảo nhỏ	noun
+elderly	cao tuổi, lớn tuổi	sắp già	adjective
+uniform	đồng phục; đồng nhất	đồng dạng, cùng một kiểu, giống nhau	noun
+beer	bia	rượu bia	noun
+mood	tâm trạng	lối, thức	noun
+episode	tập (phim); giai đoạn	phần giữa	noun
+nervous	lo lắng, hồi hộp	thần kinh	adjective
+wet	ướt	ẩm	adjective
+sink	bồn rửa; chìm	thùng rửa bát, chậu rửa bát	noun
+anymore	không … nữa	nữa	adverb
+hero	người anh hùng	người anh hùng	
+meter	mét; đồng hồ đo	cái đo	noun
+terrorist	kẻ khủng bố	người khủng bố, người dùng chính sách khủng bố	noun
+badly	tệ, tồi; nặng	xấu, tồi, dở, bậy	adverb
+essay	bài luận, tiểu luận	sự làm thử	noun
+scream	hét lên; tiếng thét	tiếng thét, tiếng hét, tiếng kêu thất thanh	verb
+furniture	đồ nội thất	đồ đạc	noun
+symbol	biểu tượng, ký hiệu	vật tượng trưng	noun
+apartment	căn hộ	căn phòng, buồng	noun
+trap	cái bẫy; bẫy	đồ đạc quần áo, đồ dùng riêng	noun
+wealth	sự giàu có, sự giàu sang	sự giàu có, sự giàu sang	
+tune	giai điệu	điệu , giai điệu	noun
+frighten	làm hoảng sợ, làm sợ	làm hoảng sợ, làm sợ	
+awful	kinh khủng, tồi tệ	đáng kinh sợ	adjective
+confident	tự tin; tin chắc	tin chắc, chắc chắn	adjective
+web	mạng (web); mạng nhện	vi dệt	noun
+independence	sự độc lập	sự độc lập	
+inner	bên trong	ở trong nước, nội bộ	adjective
+impress	gây ấn tượng	sự đóng dấu	verb
+exam	kỳ thi, bài thi	của examination	noun
+bend	uốn cong, cúi xuống; khúc quanh	chỗ uốn, chỗ cong	verb
+alarm	chuông báo; sự báo động	sự báo động, sự báo nguy	noun
+disturb	làm phiền, quấy rầy	làm mất yên tĩnh, làm náo động	verb
+desert	sa mạc; bỏ rơi	công lao, giá trị	noun
+tap	vòi nước; gõ nhẹ	vòi	noun
+lend	cho vay, cho mượn	cho vay, cho mượn	
+summary	bản tóm tắt	tóm tắt, sơ lược, giản lược	noun
+teenager	thanh thiếu niên (13–19 tuổi)	Cách viết khác : teener	noun
+illegal	không hợp pháp, trái luật	không hợp pháp, trái luật	
+cigarette	điếu thuốc lá	điếu thuốc lá	
+regret	hối tiếc, tiếc nuối; sự hối tiếc	lòng thương tiếc	verb
+ruin	làm hỏng, phá hủy; tàn tích	sự đổ nát, sự suy đồi	verb
+greatly	rất nhiều, đáng kể	rất lắm	adverb
+electric	thuộc về điện, chạy bằng điện	điện, có điện, phát điện	adjective
+slave	người nô lệ	người nô lệ	
+architecture	kiến trúc	thuật kiến trúc, khoa kiến trúc, khoa xây dựng	noun
+acceptable	có thể chấp nhận được	có thể nhận, có thể chấp nhận	adjective
+successfully	thành công, một cách thành công	có kết quả, thành công, thắng lợi, thành đạt	adverb
+roughly	khoảng, xấp xỉ; thô bạo	ráp, xù xì, gồ ghề, không bằng phẳng, bờm xờm, lởm chởm	adverb
+gallery	phòng trưng bày (tranh, ảnh)	phòng trưng bày tranh tượng	noun
+golf	môn gôn	môn đánh gôn	noun
+weigh	cân; nặng (bao nhiêu)	under weigh đang đi, dọc đường	verb
+fantastic	tuyệt vời	kỳ quái, quái dị, lập dị	adjective
+disagree	không đồng ý, bất đồng	khác, không giống, không khớp	verb
+joy	niềm vui, sự vui sướng	sự vui mừng, sự hân hoan, sự vui sướng	noun
+fortune	vận may; tài sản lớn	vận may	noun
+automatically	tự động	tự động	
+creature	sinh vật	sinh vật, loài vật	noun
+chat	trò chuyện, tán gẫu	chuyện phiếm, chuyện gẫu	verb
+sake	vì lợi ích của (for the sake of)	mục đích, lợi ích	noun
+wooden	bằng gỗ	bằng gỗ	
+pride	niềm tự hào; tính kiêu ngạo	sự kiêu hãnh, sự hãnh diện	noun
+mystery	điều bí ẩn	điều huyền bí, điều thần bí	noun
+maker	nhà sản xuất, người làm ra	người làm, người sáng tạo, người tạo ra	noun
+stair	bậc cầu thang; cầu thang	bậc thang	noun
+shine	chiếu sáng, tỏa sáng	ánh sáng, ánh nắng	verb
+romantic	lãng mạn	tiểu thuyết, như tiểu thuyết	adjective
+stomach	dạ dày, bụng	dạy dày	noun
+championship	giải vô địch; chức vô địch	chức vô địch	noun
+differently	khác, một cách khác	khác, khác nhau, khác biệt	adverb
+golden	bằng vàng; màu vàng óng	bằng vàng	adjective
+stamp	con tem; con dấu	tem	noun
+weekly	hằng tuần	kéo dài một tuần	adjective
+bite	cắn; vết cắn	sự cắn, sự ngoạm	verb
+quietly	lặng lẽ, khẽ	yên lặng, yên tĩnh, êm ả	adverb
+castle	lâu đài	thành trì, thành quách	noun
+fiction	tiểu thuyết, truyện hư cấu	điều hư cấu, điều tưởng tượng	noun
+slice	lát mỏng, miếng	miếng mỏng, lát mỏng	noun
+wander	đi lang thang	đi thơ thẩn, đi lang thang	verb
+royal	thuộc hoàng gia	vua	adjective
+alright	ổn, được (= all right)	<khngu> dùng như all right	adjective
+obtain	đạt được, thu được, giành được, kiếm được	đạt được, thu được, giành được, kiếm được	
+distribution	sự phân phối	Phân phối	noun
+transformation	sự biến đổi, chuyển đổi	sự thay đổi, sự biến đổi	noun
+molecule	phân tử	phân t	noun
+consumption	sự tiêu thụ, tiêu dùng	Sự tiêu dùng	noun
+similarity	sự giống nhau, sự tương tự	sự giống nhau, sự tương tự	
+calculation	phép tính, sự tính toán	sự tính, sự tính toán	noun
+intermediate	trung cấp; trung gian	ở giữa	adjective
+rational	hợp lý, có lý trí	có lý trí, dựa trên lý trí	adjective
+accuracy	độ chính xác	sự đúng đắn, sự chính xác	noun
+systematic	có hệ thống	có hệ thống	
+interact	tương tác	ảnh hưởng lẫn nhau, tác động qua lại	verb
+oral	bằng lời nói, nói; thuộc miệng	bằng lời nói, nói miệng	adjective
+tropical	nhiệt đới	nhiệt đới	
+separation	sự tách ra, sự chia cắt; ly thân	sự phân ly, sự chia cắt	noun
+equality	sự bình đẳng	tính bằng, tính ngang bằng	noun
+diverse	đa dạng	gồm nhiều loại khác nhau, linh tinh	adjective
+outer	ở ngoài, bên ngoài	ở phía ngoài, ở xa hơn	adjective
+disturbance	sự quấy rầy, sự náo động	sự làm mất yên tĩnh, sự làm náo động	noun
+consonant	phụ âm	thuận tai, êm ái, du dương	noun
+usage	cách dùng, sự sử dụng	cách dùng, cách sử dụng	noun
+whether	liệu … hay không	có... không, có... chăng, không biết có... không	conjunction
+oxygen	khí ôxy	Oxy	noun
+conservation	sự bảo tồn	sự giữ gìn, sự duy trì, sự bảo tồn, sự bảo toàn	noun
+minimize	giảm thiểu	giảm đến mức tối thiểu	verb
+parental	thuộc cha mẹ	cha mẹ	adjective
+questionnaire	bảng câu hỏi	bản câu hỏi	noun
+tense	căng thẳng; (ngữ pháp) thì	thời	adjective
+nutrient	chất dinh dưỡng	bổ, dinh dưỡng, dùng làm chất nuôi dưỡng	noun
+ecological	thuộc sinh thái	sinh thái học	adjective
+development	sự phát triển	sự trình bày, sự bày tỏ, sự thuyết minh	noun
+per	mỗi, cho mỗi	mỗi	preposition
+suicide	sự tự tử, sự tự vẫn	sự tự tử, sự tự vẫn	
+habitat	môi trường sống, nơi sống	môi trường sống, nơi sống	
+assignment	bài tập (được giao); nhiệm vụ	sự giao việc, sự phân công	noun
+involve	bao gồm, liên quan đến	gồm, bao hàm	verb
+disability	khuyết tật	sự bất tài, sự bất lực	noun
+cattle	gia súc, bò	thú nuôi, gia súc	noun
+scatter	rải rác, làm phân tán	Biểu đồ tán xạ	verb
+correction	sự sửa chữa, chỗ sửa	sự sửa, sự sửa chữa, sự hiệu chỉnh	noun
+discrimination	sự phân biệt đối xử	Sự phân biệt đối sử	noun
+productive	năng suất, có hiệu quả	sản xuất	adjective
+conscious	tỉnh táo; có ý thức	biết rõ, thấy rõ, tỉnh, tỉnh táo, có ý thức	adjective
+resemble	giống với	giống với	verb
+liver	gan	người sống	noun
+decision	quyết định	sự giải quyết	noun
+rewrite	viết lại	viết lại, chép lại	verb
+available	có sẵn, sẵn có để dùng	sẵn có để dùng, sẵn sàng để dùng, có thể dùng được	adjective
+rise	tăng lên, mọc lên; sự tăng	sự lên, sự đưa lên, sự kéo lên, sự dâng	verb
+definite	rõ ràng, xác định	xác đinh, định rõ	adjective
+myth	thần thoại; chuyện hoang đường	thần thoại	noun
+philosopher	nhà triết học	nhà triết học	
+objection	sự phản đối	sự phản đối, sự chống đối	noun
+meaningful	có ý nghĩa	đầy ý nghĩa, có ý nghĩa	adjective
+basin	chậu rửa; lưu vực	cái chậu	noun
+admission	sự nhận vào, sự kết nạp; phí vào cửa	sự nhận vào, sự thu nạp vào	noun
+curriculum	chương trình học	chương trình giảng dạy	noun
+approach	cách tiếp cận; tiến lại gần	sự đến gần, sự lại gần	noun
+charge	phí; sạc (pin); buộc tội	vật mang, vật chở, vật gánh	noun
+civilization	nền văn minh	sự làm cho văn minh, sự khai hoá	noun
+positively	tích cực; chắc chắn	xác thực, rõ ràng	adverb
+deficiency	sự thiếu hụt	sự thiếu hụt, sự không đầy đủ	noun
+relationship	mối quan hệ, mối liên hệ	mối quan hệ, mối liên hệ	
+formally	chính thức, trang trọng	chính thức	adverb
+socially	về mặt xã hội	chung cho xã hội	adverb
+regard	coi như, xem là; sự quan tâm	cái nhìn	verb
+fund	quỹ, ngân quỹ; cấp vốn	kho	noun
+rest	nghỉ ngơi; phần còn lại	sự nghỉ ngơi	noun
+punishment	sự trừng phạt, hình phạt	sự phạt, sự trừng phạt, sự trừng trị	noun
+industry	ngành công nghiệp, ngành	Ngành công nghiệp	noun
+intensive	chuyên sâu, cường độ cao	mạnh, có cường độ lớn	adjective
+motive	động cơ, lý do	vận động, chuyển động	noun
+clinic	phòng khám	bệnh viện thực hành	noun
+rainfall	lượng mưa	trận mưa rào	noun
+invasion	sự xâm lược	sự xâm lược, sự xâm chiếm, sự xâm lấn	noun
+realistic	thực tế	hiện thực	adjective
+freely	tự do, thoải mái	tự do, tuỳ thích, không gò bó, thoải mái	adverb
+particularly	đặc biệt là	đặc biệt, cá biệt, riêng biệt	adverb
+atomic	thuộc nguyên tử	nguyên tử	adjective
+puzzle	câu đố, trò xếp hình; làm bối rối	sự bối rối, sự khó xử	noun
+upward	hướng lên	đi lên, hướng lên, lên	adverb
+firm	công ty, hãng; chắc chắn	Hãng sản xuất	noun
+physics	vật lý học	vật lý học	noun
+slavery	chế độ nô lệ	đầy nước dãi	noun
+artistic	nghệ thuật	nghệ thuật	
+affect	ảnh hưởng đến	làm ảnh hưởng đến, làm tác động đến	verb
+relate	liên quan; kể lại	kể lại, thuật lại	verb
+chemistry	hóa học	ngành hoá học	noun
+financial	tài chính, về tài chính	tài chính, về tài chính	
+goods	hàng hóa	Các hàng hoá tốt	noun
+pause	tạm dừng; sự tạm ngừng	sự tạm nghỉ, sự tạm ngừng	verb
+shortly	không lâu nữa, chẳng mấy chốc	không lâu nữa, chẳng mấy chốc	
+nonetheless	tuy nhiên, dù vậy	trạng từ	adverb
+growth	sự tăng trưởng, sự phát triển	sự lớn mạnh, sự phát triển	noun
+respect	tôn trọng; sự tôn trọng	sự tôn trọng, sự kính trọng	noun
+various	nhiều loại khác nhau	khác nhau	adjective
+cure	chữa khỏi; cách chữa trị	cách chữa bệnh, cách điều trị	verb
+sensation	cảm giác; sự náo động	cảm giác	noun
+management	sự quản lý; ban quản lý	Ban quản lý	noun
+economy	nền kinh tế	sự quản lý kinh tế	noun
+genetically	về mặt di truyền	về mặt di truyền học, có liên quan đến khía cạnh di truyền	adverb
+comment	bình luận, nhận xét	lời bình luận	noun
+occur	xảy ra, xảy đên	xảy ra, xảy đên	
+damp	ẩm ướt	sự ẩm ướt	adjective
+anti	chống lại, phản đối	chống lại	preposition
+department	phòng, ban, khoa; bộ	cục	noun
+dioxide	đi-ô-xít	đioxyt	noun
+election	cuộc bầu cử	sự chọn	noun
+afterward	sau đó, về sau	sau này, về sau, sau đấy, rồi thì	adverb
+jazz	nhạc jazz	nhạc ja	noun
+republic	nước cộng hoà	nước cộng hoà	
+link	liên kết, đường dẫn; nối	đuốc, cây đuốc	noun
+goodness	lòng tốt	lòng tốt, tính tốt, lòng hào hiệp	noun
+slot	khe; khung giờ	đường đi của hươu nai, vết đi của hươu nai	noun
+tempt	cám dỗ, xúi giục	xúi, xúi giục	verb
+supposedly	cho là, giả sử là	cho là, giả sử là	
+swell	sưng lên, phồng lên	đặc sắc, cử, trội	verb
+aim	mục đích; nhắm vào	sự nhắm, sự nhắm	noun
+destination	điểm đến	nơi gửi tới, nơi đưa tới, nơi đi tới	noun
+access	sự truy cập, quyền tiếp cận; truy cập	lối vào, cửa vào, đường vào	noun
+lab	phòng thí nghiệm	phòng thí nghiệm	
+minus	trừ, âm	trừ	preposition
+treatment	sự điều trị; sự đối xử	sự đối xử, sự đối đãi, sự cư xử	noun
+supply	cung cấp; nguồn cung	sự cung cấp, sự tiếp tế	noun
+attend	tham dự, có mặt	dự, có mặt	verb
+score	điểm số; ghi điểm	sổ điểm, sổ bán thắng	noun
+potential	tiềm năng	tiềm tàng	adjective
+tremendous	to lớn, khủng khiếp	ghê gớm, kinh khủng, khủng khiếp, dữ dội	adjective
+relation	mối quan hệ; họ hàng	sự kể lại, sự thuật lại	noun
+surgeon	bác sĩ phẫu thuật	nhà phẫu thuật, bác sĩ phẫu thuật	noun
+tend	có xu hướng; chăm sóc	trông nom, săn sóc, chăm sóc, chăm nom, giữ gìn	verb
+advance	tiến lên; sự tiến bộ	Tiền ứng trước	verb
+plug	phích cắm; cắm vào	nút	noun
+clip	cái kẹp; đoạn phim ngắn	cái ghim, cái cặp, cái kẹp	noun
+associate	liên tưởng, gắn với; cộng sự	kết giao, kết hợp liên hợp	verb
+option	sự lựa chọn, phương án	Hợp đồng mua bán trước	noun
+application	đơn xin; ứng dụng	sự gắn vào, sự áp vào, sự ghép vào, sự đính vào, sự đắp vào	noun
+obviously	rõ ràng, hiển nhiên	một cách rõ ràng	adverb
+unclear	không rõ ràng	không trong, đục	adjective
+central	ở trung tâm, trung ương	ở giữa, ở trung tâm	adjective
+sometime	vào lúc nào đó	một lúc nào đó	adverb
+balance	sự cân bằng; số dư	cái cân	noun
+damage	thiệt hại; làm hư hại	mối hại, điều hại, điều bất lợi	noun
+underneath	bên dưới	bên dưới, dưới	adverb
+memorize	ghi nhớ, học thuộc	Cách viết khác : memorise	verb
+income	thu nhập	Thu nhập	noun
+whichever	bất cứ cái nào	nào, bất cứ... nào	determiner
+previous	trước, trước đó	trước	adjective
+incredible	không thể tin được	không thể tin được	adjective
+conclusion	kết luận; sự kết thúc	sự kết thúc, sự chấm dứt	noun
+athletic	khỏe mạnh, lực lưỡng; thuộc điền kinh	có tính chất lực sĩ, lực lưỡng, khoẻ mạnh	adjective
+terribly	rất, cực kỳ; tồi tệ	rất tệ	adverb
+nasty	khó chịu, xấu xa	bẩn thỉu	adjective
+incredibly	cực kỳ, đến mức khó tin	khó tin nổi, đáng kinh ngạc, đến nỗi không ngờ	adverb
+possibility	khả năng, sự có thể	sự có thể, tình trạng có thể, khả năng	noun
+facility	cơ sở vật chất, tiện nghi	điều kiện dễ dàng, điều kiện thuận lợi	noun
+variety	sự đa dạng; loại	trạng thái khác nhau, trạng thái muôn màu muôn vẻ	noun
+applause	tràng vỗ tay	tiếng vỗ tay khen ngợi	noun
+sneeze	hắt hơi	sự hắt hơi	verb
+responsibility	trách nhiệm	trách nhiệm	
+nor	cũng không	mà... cũng không, và... không	conjunction
+proposal	lời đề nghị, đề xuất	sự đề nghị, sự đề xuất	noun
+suddenly	đột nhiên, bất ngờ	một cách bất ngờ	adverb
+estimate	ước tính; sự ước lượng	sự đánh giá, sự ước lượng	verb
+stick	cái gậy; dán, dính	cái gậy	noun
+none	không ai, không cái nào	không ai, chẳng một ai, không người nào	pronoun
+aware	nhận thức được, biết	biết, nhận thấy, nhận thức thấy	adjective
+remove	loại bỏ, gỡ bỏ	món ăn tiếp theo	verb
+equipment	thiết bị	sự trang bị	noun
+otherwise	nếu không thì; khác	khác, cách khác	adverb
+sex	giới tính	giới tính	noun
+connection	sự kết nối, mối liên hệ	sự liên quan, sự liên lạc, mối quan hệ	noun
+inform	thông báo cho	báo tin cho	verb
+appeal	lời kêu gọi; sức hấp dẫn; kháng cáo	sự kêu gọi	noun
+highly	rất, ở mức độ cao	rất, lắm, hết sức, ở mức độ cao	adverb
+absolutely	tuyệt đối, hoàn toàn	tuyệt đối, hoàn toàn	
+responsible	chịu trách nhiệm	chịu trách nhiệm	
+hang	treo	sự cúi xuống, sự gục xuống	verb
+alternative	sự thay thế, lựa chọn khác	xen nhau	noun
+progress	sự tiến bộ, tiến triển	sự tiến tới, sự tiến bộ	noun
+lay	đặt, để; đẻ (trứng)	bài thơ ngắn, bài vè ngắn	verb
+transfer	chuyển; sự chuyển nhượng	sự di chuyển, sự dời chỗ	verb
+decline	suy giảm; từ chối	sự sụt, sự suy tàn, sự suy sụp, sự tàn tạ	verb
+consumer	người tiêu dùng	Người tiêu dùng	noun
+eventually	cuối cùng	cuối cùng	
+guide	hướng dẫn viên; hướng dẫn	người chỉ dẫn	noun
+grant	trợ cấp, tài trợ; cấp cho	Trợ cấp	noun
+pain	sự đau đớn, cơn đau	sự đau đớn, sự đau khổ	noun
+chief	người đứng đầu, sếp; chính	thủ lĩnh, lãnh tụ	noun
+surface	bề mặt	mặt, mặt ngoài bề mặt	noun
+edge	cạnh, mép, rìa	lưỡi, cạnh sắc	noun
+struggle	đấu tranh, vật lộn	sự đấu tranh	verb
+annual	hàng năm, năm một, từng năm	hàng năm, năm một, từng năm	
+conflict	sự xung đột, sự tranh giành, sự va chạm	sự xung đột, sự tranh giành, sự va chạm	
+presence	sự có mặt, sự hiện diện	sự có mặt	noun
+defense	sự phòng thủ, bảo vệ	defence	noun
+introduction	sự giới thiệu, lời giới thiệu	sự giới thiệu, lời giới thiệu	
+requirement	yêu cầu, điều kiện cần	nhu cầu, sự đòi hỏi	noun
+transport	giao thông vận tải; vận chuyển	sự chuyên chở, sự vận tải	noun
+emerge	xuất hiện, nổi lên	nổi lên, hiện ra, lòi ra	verb
+technique	kỹ thuật	kỹ xảo	noun
+improvement	sự cải thiện	sự cải tiến, sự cải thiện, làm cho tốt hơn	noun
+failure	sự thất bại	sự không xảy ra, sự không làm được	noun
+adopt	nhận nuôi; áp dụng	nhận làm con nuôi	verb
+combine	kết hợp	côngbin, xanhđica	verb
+waste	lãng phí; rác thải	Chất thải	verb
+commercial	thương mại; quảng cáo	buôn bán	adjective
+cultural	thuộc văn hóa	văn hoá	adjective
+demonstrate	chứng minh; biểu tình	chứng minh, giải thích	verb
+contribution	sự đóng góp, sự góp phần	sự đóng góp, sự góp phần	
+union	công đoàn; liên minh	sự hợp nhất, sự kết hợp, sự liên kết	noun
+currently	hiện thời, hiện nay	hiện thời, hiện nay	
+engage	tham gia; thu hút	hẹn, hứa hẹn, ước hẹn, cam kết	verb
+crisis	sự khủng hoảng	sự khủng hoảng	
+safety	sự an toàn, sự chắc chắn	sự an toàn, sự chắc chắn	
+investigation	cuộc điều tra	sự điều tra nghiên cứu	noun
+package	gói hàng, bưu kiện	gói đồ	noun
+consideration	sự cân nhắc, sự xem xét	sự cân nhắc, sự suy xét, sự nghiên cứu, sự suy nghĩ	noun
+threat	mối đe dọa	sự đe doạ	noun
+enable	cho phép, giúp có thể	làm cho có thể , làm cho có khả năng	verb
+religious	thuộc tôn giáo	tôn giáo	adjective
+cancer	bệnh ung thư	bệnh ung thư	
+convince	thuyết phục	làm cho tin, làm cho nghe theo, thuyết phục	verb
+vary	thay đổi, khác nhau	làm cho khác nhau, thay đổi, biến đổi	verb
+environmental	thuộc về môi trường	thuộc về môi trường	
+proceed	tiếp tục, tiến hành	tiến lên	verb
+recall	nhớ lại; thu hồi	sự gọi về, sự đòi về, sự triệu về, sự triệu hồi	verb
+totally	hoàn toàn	hoàn toàn	
+construction	sự xây dựng; công trình	sự xây dựng	noun
+vehicle	xe, xe cộ	xe, xe cộ	
+bomb	quả bom	quả bom	
+decrease	giảm; sự giảm	sự giảm đi, sự giảm sút	verb
+normally	thông thường, như thường lệ	thông thường, như thường lệ	
+generate	tạo ra, sinh ra	sinh, đẻ ra	verb
+delivery	sự giao hàng	sự phân phát	noun
+ignore	phớt lờ, bỏ qua	lờ đi, phớt đi, làm ra vẻ không biết đến	verb
+civil	thuộc công dân, dân sự	công dân	adjective
+locate	xác định vị trí; đặt ở	xác định đúng vị trí, xác định đúng chỗ	verb
+belief	niềm tin	lòng tin, đức tin	noun
+arrangement	sự sắp xếp	sự sắp xếp, sự sắp đặt, cái được sắp xếp, cái được sắp đặt	noun
+acquire	đạt được, thu được	được, giành được, thu được, đạt được, kiếm được	verb
+representative	người đại diện	miêu tả, biểu hiện	noun
+regulation	quy định, điều lệ	Sự điều tiết	noun
+afford	có đủ khả năng (chi trả)	có thể, có đủ sức, có đủ khả năng, có đủ điều kiện	verb
+confidence	sự tự tin; lòng tin	sự nói riêng	noun
+industrial	công nghiệp	công nghiệp	
+arrest	bắt giữ; sự bắt giữ	sự bắt giữ	verb
+register	đăng ký; sổ đăng ký	sổ, sổ sách	verb
+leadership	sự lãnh đạo, khả năng lãnh đạo	sự lânh đạo	noun
+hire	thuê, tuyển dụng	sự thuê	verb
+device	thiết bị	phương sách, phương kế	noun
+expense	chi phí, khoản chi	sự tiêu	noun
+resident	cư dân, người cư trú	cư trú, ở chính thức	noun
+entirely	hoàn toàn	toàn bộ, toàn vẹn, trọn vẹn	adverb
+moral	thuộc đạo đức; bài học đạo đức	đạo đức, luân lý, phẩm hạnh	adjective
+insist	khăng khăng, nhất quyết	cứ nhất định	verb
+definitely	chắc chắn, dứt khoát	rạch ròi, dứt khoát	adverb
+session	buổi, phiên (họp, học)	buổi họp, phiên họp, kỳ họp	noun
+protection	sự bảo vệ	Bảo hộ	noun
+largely	phần lớn, chủ yếu	ở mức độ lớn	adverb
+reasonable	hợp lý; phải chăng	có lý, hợp lý	adjective
+guarantee	bảo đảm; sự bảo hành	sự bảo đảm, sự cam đoan	verb
+judgment	sự đánh giá, nhận định; phán quyết	sự xét xử	noun
+definition	sự định nghĩa, lời định nghĩa	sự định nghĩa, lời định nghĩa	
+atmosphere	bầu không khí; khí quyển	quyển khí	noun
+comparison	sự so sánh	sự so sánh	
+rely	dựa vào, tin cậy vào	tin, tin cậy, dựa vào	verb
+identity	danh tính, bản sắc	Đồng nhất thức	noun
+permit	cho phép; giấy phép	giấy phép	verb
+engine	động cơ	máy động cơ	noun
+opposition	sự phản đối; phe đối lập	sự đối lập, sự đối nhau	noun
+arise	xuất hiện, nảy sinh ra, xảy ra	xuất hiện, nảy sinh ra, xảy ra	
+stretch	kéo căng, duỗi ra	sự căng ra, sự duỗi ra	verb
+researcher	nhà nghiên cứu	nhà nghiên cứu	
+selection	sự lựa chọn, sự chọn lọc, sự tuyển lựa	sự lựa chọn, sự chọn lọc, sự tuyển lựa	
+participant	người tham gia, người tham dự	người tham gia, người tham dự	
+vision	tầm nhìn; thị lực	sự nhìn	noun
+fellow	bạn đồng hành; người, anh chàng	bạn đồng chí	noun
+proportion	tỷ lệ, phần	sự cân xứng, sự cân đối	noun
+considerable	đáng kể, to tát, lớn	đáng kể, to tát, lớn	
+presentation	bài thuyết trình	sự bày ra, sự phô ra	noun
+reduction	sự giảm bớt	sự thu nhỏ, sự giảm bớt	noun
+reserve	đặt trước; dự trữ	sự dự trữ	verb
+somehow	bằng cách nào đó	vì lý do này khác, không biết làm sao	adverb
+neighborhood	khu phố, vùng lân cận	hàng xóm	noun
+justice	công lý, sự công bằng	sự công bằng	noun
+reject	từ chối, bác bỏ	vật bị loại, vật bỏ đi, vật không được chọn	verb
+protest	phản đối, biểu tình; cuộc biểu tình	sự phản đối, sự phản kháng, sự kháng nghị	noun
+unable	không thể	không có năng lực, không có khả năng, bất tài	adjective
+criminal	tội phạm; thuộc hình sự	có tội, phạm tội, tội ác	noun
+properly	đúng cách, hợp lý	đúng, chính xác	adverb
+via	qua, theo đường	qua, theo đường	
+county	hạt, quận	hạt, tỉnh	noun
+reward	phần thưởng; thưởng	sự thưởng, sự thưởng công	noun
+academic	thuộc học thuật	học viện	adjective
+meanwhile	trong khi đó	in the meantime trong lúc ấy, trong khi ấy	adverb
+absence	sự vắng mặt	sự vắng mặt, sự nghỉ , sự đi vắng	noun
+construct	xây dựng	làm xây dựng	verb
+remark	lời nhận xét; nhận xét	sự lưu ý, sự chú ý	noun
+settlement	sự giải quyết, thỏa thuận; khu định cư	sự giải quyết, sự dàn xếp, sự hoà giải	noun
+gap	khoảng trống, khoảng cách	lỗ hổng, kẽ hở	noun
+minimum	mức tối thiểu	Giá trị tối thiểu	noun
+equally	bằng nhau, ngang nhau, như nhau	bằng nhau, ngang nhau, như nhau	
+expose	phơi bày; tiếp xúc với	phơi ra	verb
+victory	sự chiến thắng, sự thắng cuộc	sự chiến thắng, sự thắng cuộc	
+resolve	giải quyết; quyết tâm	quyết tâm, ý kiên quyết	verb
+critic	nhà phê bình	nhà phê bình	
+permanent	lâu dài, vĩnh viễn	lâu dài, lâu bền, vĩnh cửu, thường xuyên, thường trực	adjective
+emotion	cảm xúc	sự cảm động, sự xúc động, sự xúc cảm	noun
+urge	thúc giục; sự thôi thúc	sự thúc đẩy, sự thôi thúc	verb
+phrase	cụm từ	nhóm từ	noun
+merely	chỉ, đơn thuần	chỉ, đơn thuần	
+injury	vết thương, chấn thương	sự làm hại, sự làm tổn hại, sự làm hỏng	noun
+producer	nhà sản xuất	người sản xuất	noun
+regional	thuộc vùng, khu vực	vùng, miền	adjective
+immediate	ngay lập tức, trực tiếp	trực tiếp	adjective
+slip	trượt, tuột	sự trượt chân	verb
+politician	nhà chính trị	nhà chính trị	
+qualify	đủ điều kiện, đủ tiêu chuẩn	cho là, gọi là	verb
+emotional	thuộc cảm xúc; dễ xúc động	cảm động, xúc động, xúc cảm	adjective
+existence	sự tồn tại, sự sống, sự sống còn	sự tồn tại, sự sống, sự sống còn	
+emphasize	nhấn mạnh	nhấn mạnh	
+maximum	mức tối đa	Giá trị cực đại	noun
+complicate	làm phức tạp, làm rắc rối	làm phức tạp, làm rắc rối	
+disappoint	làm thất vọng	không làm thoả ước vọng, không làm thoả ý mong đợi	verb
+extreme	cực độ, cực đoan	ở tít đằng đầu, ở đằng cùng, xa nhất, ở tột cùng	adjective
+negotiation	cuộc đàm phán, thương lượng	sự điều đình, sự đàm phán, sự thương lượng, sự dàn xếp	noun
+democracy	nền dân chủ	nền dân chủ, chế độ dân chủ	noun
+observation	sự quan sát; nhận xét	sự quan sát, sự để ý, sự chú ý, sự theo dõi	noun
+concentration	sự tập trung; nồng độ	Sự tập trung	noun
+interaction	sự tương tác	sự ảnh hưởng lẫn nhau	noun
+capable	có khả năng, có năng lực	có tài, có năng lực giỏi	adjective
+defeat	đánh bại; sự thất bại	sự thất bại	verb
+substantial	đáng kể, lớn	thật, có thật	adjective
+personally	đích thân, với tư cách cá nhân	đích thân, với tư cách cá nhân	
+approximately	khoảng chừng, độ chừng	khoảng chừng, độ chừng	
+highlight	điểm nổi bật; làm nổi bật	chỗ nổi bật nhất, chỗ đẹp nhất, chỗ sáng nhất	noun
+encounter	bắt gặp, chạm trán; cuộc gặp gỡ	sự gặp gỡ, sự bắt gặp	verb
+southern	thuộc phía nam, miền nam	người ở miền Nam	adjective
+install	cài đặt, lắp đặt	đặt	verb
+sufficient	đủ	đủ	
+update	làm cho cập nhật, hiện đại hoá	làm cho cập nhật, hiện đại hoá	
+preserve	bảo tồn, giữ gìn	mứt	verb
+aside	về một bên, sang một bên	về một bên, sang một bên	
+comfort	sự thoải mái; an ủi	sự an ủi, sự khuyên giải	noun
+primarily	chủ yếu	trước hết, đầu tiên	adverb
+bet	đánh cược, cá cược	sự đánh cuộc	verb
+retain	giữ, cầm lại	giữ, cầm lại	
+sequence	trình tự, chuỗi	sự nối tiếp, sự liên tiếp, sự liên tục	noun
+abandon	từ bỏ, bỏ rơi	bộm từ bỏ	verb
+examination	kỳ thi; sự kiểm tra, khám xét	sự khám xét kỹ, sự xem xét kỹ, sự thẩm tra, sự khảo sát	noun
+rapidly	nhanh, nhanh chóng, mau lẹ	nhanh, nhanh chóng, mau lẹ	
+efficient	hiệu quả	có hiệu lực, có hiệu quả	adjective
+delight	niềm vui thích; làm vui	sự vui thích, sự vui sướng	noun
+lean	dựa vào, nghiêng; gầy	độ nghiêng, độ dốc	verb
+dramatic	đột ngột, gây ấn tượng mạnh; thuộc kịch	kịch, như kịch, như đóng kịch, thích hợp với sân khấu	adjective
+differ	khác, khác biệt	+ from khác, không giống	verb
+derive	bắt nguồn từ, thu được từ	nhận được từ, lấy được từ, tìm thấy nguồn gốc từ	verb
+minority	thiểu số	phần ít	noun
+gentleman	quý ông	người hào hoa phong nhã	noun
+hunt	săn bắt; cuộc săn	cuộc đi săn	verb
+typically	thường thì, điển hình	điển hình, tiêu biểu	adverb
+laughter	tiếng cười	sự cười, tiếng cười	noun
+assistance	sự giúp đỡ, hỗ trợ	sự giúp đỡ	noun
+preparation	sự chuẩn bị	sự soạn, sự sửa soạn, sự chuẩn bị, sự dự bị	noun
+agenda	chương trình nghị sự	những việc phải làm	noun
+emphasis	sự nhấn mạnh	sự nhấn mạnh	
+edition	ấn bản, phiên bản	loại sách in ra loại sách xuất bản	noun
+unlikely	không chắc xảy ra	không chắc, không chắc có thực	adjective
+gay	đồng tính; vui vẻ	vui vẻ, vui tươi	adjective
+slight	nhẹ, không đáng kể	mỏng mảnh, thon, gầy, mảnh khảnh, yết ớt	adjective
+trace	dấu vết; lần theo	dây kéo	noun
+arrival	sự đến nơi	sự đến, sự tới nơi	noun
+tension	sự căng thẳng	sự căng	noun
+eliminate	loại ra, loại trừ	loại ra, loại trừ	
+persuade	thuyết phục	làm cho tin	verb
+inspire	truyền cảm hứng	truyền	verb
+routine	thói quen hằng ngày, lịch sinh hoạt	lề thói hằng ngày	noun
+stare	nhìn chằm chằm	sự nhìn chòng chọc, sự nhìn chằm chằm	verb
+supporter	người ủng hộ, cổ động viên	vật chống đỡ	noun
+steady	đều đặn, ổn định	vững, vững chắc, vững vàng	adjective
+fascinate	cuốn hút, mê hoặc	thôi miên, làm mê	verb
+whenever	bất cứ lúc nào	bất cứ lúc nào	
+depression	sự suy thoái; trầm cảm	Tình trạng suy thoái	noun
+distinction	sự khác biệt, sự phân biệt	sự phân biệt	noun
+satisfaction	sự hài lòng	sự làm cho thoả mãn	noun
+anger	sự tức giận, sự giận dữ	sự tức giận, sự giận dữ	
+naturally	tất nhiên; một cách tự nhiên	vốn, tự nhiên	adverb
+initially	vào lúc đầu, ban đầu	vào lúc đầu, ban đầu	
+rarely	hiếm, hiếm có, ít có	hiếm, hiếm có, ít có	
+constantly	liên tục, không ngừng	hằng số	adverb
+scare	làm sợ hãi; sự sợ hãi	sự sợ hãi, sự kinh hoàng, sự hoang mang lo sợ	verb
+transform	thay đổi, biến đổi	thay đổi, biến đổi	
+designer	nhà thiết kế	người phác hoạ, người vẽ kiểu	noun
+strain	sự căng thẳng; làm căng	sự căng, sự căng thẳng	noun
+invitation	lời mời, thiệp mời	sự mời, lời mời, giấy mời	noun
+adviser	người cố vấn	người khuyên bảo, người chỉ bảo, cố vấn	noun
+agricultural	nông nghiệp	nông nghiệp	
+competitor	đối thủ cạnh tranh	người cạnh tranh	noun
+van	xe tải nhỏ, xe van	tiền đội, quân tiên phong	noun
+log	khúc gỗ; nhật ký (hệ thống)	khúc gỗ mới đốn, khúc gỗ mới xẻ	noun
+giant	khổng lồ; người khổng lồ	người khổng lồ	noun
+similarly	cũng như thế, cũng như vậy, tương tự	cũng như thế, cũng như vậy, tương tự	
+infection	sự nhiễm trùng	sự nhiễm, sự làm nhiễm độc, sự làm nhiễm trùng	noun
+efficiency	hiệu quả, hiệu suất	Tính hiệu quả	noun
+resort	khu nghỉ dưỡng; phương sách	cái dùng đến, phương kế, phương sách	noun
+broadcast	phát sóng	được tung ra khắp nơi	verb
+membership	tư cách thành viên	tư cách hội viên, địa vị hội viên	noun
+briefly	ngắn gọn, vắn tắt, tóm tắt	ngắn gọn, vắn tắt, tóm tắt	
+poverty	sự nghèo đói	Sự nghèo khổ	noun
+newly	mới	mới	
+sponsor	nhà tài trợ; tài trợ	cha đỡ đầu, mẹ đỡ đầu	noun
+boot	giày ủng, bốt; khởi động (máy)	to boot thêm vào đó, nữa	noun
+dealer	người buôn bán, đại lý	người buôn bán	noun
+occasionally	thỉnh thoảng, thảng hoặc	thỉnh thoảng, thảng hoặc	
+discovery	sự khám phá, phát hiện	sự khám phá ra, sự tìm ra, sự phát hiện ra	noun
+approval	sự tán thành, sự đồng ý, sự chấp thuận	sự tán thành, sự đồng ý, sự chấp thuận	
+grab	chộp lấy, túm lấy	cái chộp	verb
+digital	kỹ thuật số	ngón chân, ngón tay	adjective
+deposit	tiền đặt cọc; gửi (tiền)	Tiền gửi	noun
+establishment	sự thành lập; cơ sở	sự thành lập, sự thiết lập, sự kiến lập	noun
+recovery	sự hồi phục; sự lấy lại	sự lấy lại được, sự tìm lại được	noun
+characterize	biểu thị đặc điểm, mô tả đặc điểm	biểu thị đặc điểm, mô tả đặc điểm	
+drag	kéo lê	cái bừa lớn, cái bừa nặng	verb
+mount	gắn, lắp; leo lên; núi	núi	verb
+wrap	gói, bọc	khăn choàng	verb
+dependent	phụ thuộc	người phụ thuộc, người tuỳ thuộc	adjective
+specialize	chuyên về	làm thành đặc trưng	verb
+anxiety	sự lo âu	mối lo, mối lo âu, mối băn khoăn	noun
+virus	vi-rút	virut	noun
+surgery	ca phẫu thuật; ngoại khoa	khoa phẫu thuật	noun
+significance	tầm quan trọng, ý nghĩa	ý nghĩa	noun
+charity	tổ chức từ thiện; lòng từ thiện	lòng nhân đức, lòng từ thiện	noun
+constitute	cấu thành, tạo thành	cấu tạo, tạo thành	verb
+historian	nhà viết sử, sử gia	nhà viết sử, sử gia	
+stupid	ngu ngốc	ngu dại, ngu đần, đần độn, ngớ ngẩn	adjective
+twin	sinh đôi; anh/chị/em sinh đôi	sinh đôi	noun
+eastern	thuộc phía đông, phương đông	đông	adjective
+forecast	dự báo	sự dự đoán trước	noun
+adapt	thích nghi; chuyển thể	tra vào, lắp vào	verb
+lecture	bài giảng	bài diễn thuyết	noun
+rescue	giải cứu; sự cứu hộ	sự giải thoát, sự cứu, sự cứu nguy	verb
+mess	tình trạng bừa bộn	tình trạng hỗn độn, tình trạng lộn xộn, tình trạng bừa bộn	noun
+preference	sự ưa thích, sở thích	Sở thích	noun
+beneath	bên dưới	ở dưới thấp, ở dưới	preposition
+dare	dám	sự dám làm	verb
+rid	loại bỏ (get rid of)	giải thoát	verb
+survival	sự sống sót	sự sống sót	
+counter	quầy (hàng, thu tiền)	quầy hàng, quầy thu tiền	noun
+visible	thấy được, có thể trông thấy được	thấy được, có thể trông thấy được	
+impressive	ấn tượng	gây ấn tượng sâu sắc, gây xúc động, gợi cảm	adjective
+burst	nổ tung, vỡ tung	sự nổ tung, sự vỡ tung	verb
+buyer	người mua	người mua	
+rail	đường ray; tay vịn	tay vịn	noun
+promotion	sự thăng chức; khuyến mãi	sự thăng chức, sự thăng cấp, sự đề bạt	noun
+champion	nhà vô địch	người vô địch, nhà quán quân	noun
+compromise	sự thỏa hiệp; thỏa hiệp	sự thoả hiệp	noun
+accomplish	hoàn thành, làm xong, làm trọn	hoàn thành, làm xong, làm trọn	
+announcement	thông báo	lời rao, lời loan báo	noun
+embarrass	làm xấu hổ, làm ngượng	làm lúng túng, làm ngượng nghịu	verb
+genetic	thuộc di truyền	căn nguyên, nguồn gốc	adjective
+format	định dạng	khổ	noun
+literary	thuộc văn học	văn chương, văn học, có tính chất văn chương	adjective
+praise	khen ngợi; lời khen	sự khen ngợi, sự ca ngợi, sự tán tụng, sự tán dương	verb
+flash	lóe sáng; đèn flash	ánh sáng loé lên	noun
+entertain	giải trí, tiếp đãi	tiếp đãi	verb
+historic	có ý nghĩa lịch sử	có tính chất lịch sử	adjective
+twist	xoắn, vặn; tình tiết bất ngờ	sự xoắn, sự vặn, sự bện	verb
+insight	sự hiểu biết sâu sắc	sự nhìn thấu được bên trong sự vật	noun
+reliable	chắc chắn, đáng tin cậy	chắc chắn, đáng tin cậy	
+scholar	học giả	người có học thức, nhà thông thái	noun
+psychological	thuộc tâm lý	tâm lý	adjective
+possession	sự sở hữu; vật sở hữu	quyền sở hữu	noun
+boom	sự bùng nổ (tăng trưởng)	Sự bùng nổ tăng trưởng	noun
+tale	câu chuyện, truyện kể	truyện, truyện ngắn	noun
+maintenance	sự bảo trì, duy trì	sự giữ, sự duy trì	noun
+strengthen	tăng cường, làm mạnh thêm	làm cho mạnh	verb
+undergo	trải qua	chịu, bị, trải qua	verb
+intense	mãnh liệt, dữ dội	mạnh, có cường độ lớn	adjective
+inquiry	sự hỏi thông tin; cuộc điều tra	sự điều tra, sự thẩm tra	noun
+humor	sự hài hước	sự hài hước, sự hóm hỉnh	noun
+limitation	sự hạn chế, giới hạn	sự hạn chế, sự hạn định, sự giới hạn	noun
+shelter	nơi trú ẩn	chỗ che, chỗ nương tựa, chỗ ẩn, chỗ núp, hầm	noun
+trigger	kích hoạt, gây ra; cò súng	cò súng	verb
+destruction	sự phá hủy	sự phá hoại, sự phá huỷ, sự tiêu diệt	noun
+whisper	thì thầm; tiếng thì thầm	tiếng nói thầm, tiếng xì xào	verb
+bless	ban phước, chúc phúc	giáng phúc, ban phúc	verb
+airline	hãng hàng không	công ty hàng không	noun
+racial	thuộc chủng tộc	dòng giống, chủng tộc	adjective
+hopefully	hy vọng là	đầy hy vọng, phấn khởi	adverb
+narrative	câu chuyện kể, lời kể	chuyện kể, bài tường thuật	noun
+barely	vừa đủ, hầu như không	công khai, rõ ràng	adverb
+tourism	ngành du lịch	sự du lịch	noun
+motivation	động lực	sự thúc đẩy, động cơ thúc đẩy	noun
+firmly	vững chắc	vững chắc	
+nowhere	không nơi nào, không ở đâu	không nơi nào, không ở đâu	
+excess	sự dư thừa, quá mức	sự vượt quá giới hạn, sự quá mức	noun
+surprisingly	đáng ngạc nhiên là	làm ngạc nhiên, làm kinh ngạc	adverb
+luxury	sự xa xỉ; đồ xa xỉ	Hàng xa xỉ	noun
+wherever	bất cứ nơi đâu	ở ni nào	adverb
+attraction	sự thu hút; điểm tham quan	sự hú	noun
+reflection	sự phản chiếu; sự suy ngẫm	sự phản chiếu, sự phản xạ, sự dội lại	noun
+determination	sự quyết tâm	sự xác định, sự định rõ	noun
+confusion	sự bối rối, nhầm lẫn	sự lộn xôn, sự hỗn độn, sự rối loạn, sự hỗn loạn	noun
+controversial	gây tranh cãi	có thể gây ra tranh luận, có thể bàn cãi được	adjective
+revise	sửa lại; ôn tập	đọc lại, xem lại, duyệt lại, xét lại	verb
+liquid	chất lỏng; lỏng	lỏng	noun
+transportation	giao thông vận tải, phương tiện đi lại	sự chuyên chở, sự vận tải	noun
+chase	đuổi theo; cuộc rượt đuổi	sự theo đuổi, sự đuổi theo, sự săn đuổi	verb
+storage	sự lưu trữ; kho chứa	sự xếp vào kho	noun
+substitute	người/vật thay thế; thay thế	Hàng thay thế	noun
+filter	bộ lọc; lọc	Bộ lọc	noun
+distant	xa, xa xôi	xa, cách, xa cách	adjective
+uncertainty	sự không chắc chắn	Sự không chắc chắn	noun
+swear	thề; chửi thề	lời thề	verb
+monthly	hàng tháng	hàng tháng	
+stir	khuấy	nhà tù, trại giam	verb
+excitement	sự phấn khích	sự kích thích, sự kích động	noun
+sigh	thở dài; tiếng thở dài	tiếng thở dài	verb
+tongue	cái lưỡi	cái lưỡi	
+cough	ho; cơn ho	chứng ho	verb
+mayor	thị trưởng	thị trưởng	
+tournament	giải đấu	cuộc đấu	noun
+registration	sự đăng ký, sự vào sổ	sự đăng ký, sự vào sổ	
+attachment	tệp đính kèm; sự gắn bó	sự gắn, sự dán	noun
+hunger	cơn đói, nạn đói	sự đói, tình trạng đói	noun
+thirst	cơn khát	sự khát nước	noun
+immigration	sự nhập cư	sự nhập cư	
+revenue	doanh thu	Doanh thu	noun
+phase	giai đoạn, pha	pha	noun
+offense	sự phạm tội; sự xúc phạm	offence	noun
+carbon	các-bon	cacbon	noun
+functional	có chức năng; thiết thực	functionary	adjective
+tender	dịu dàng; mềm; đấu thầu	non	adjective
+whilst	trong khi (= while)	while	conjunction
+protein	chất đạm, protein	Protein	noun
+acid	a-xít	Axit	noun
+span	khoảng thời gian; nhịp (cầu)	gang tay	noun
+pi	số pi (π)	Pi	noun
+manual	sách hướng dẫn; bằng tay, thủ công	tay	noun
+aluminum	nhôm	aluminium	noun
+handout	tài liệu phát tay; của bố thí	của bố thí cho ăn mày	noun
+enzyme	en-zim	Enzim	noun
+hormone	hoóc-môn	Hoocmon	noun
+substrate	chất nền, lớp nền	substratum	noun
+peripheral	ngoại vi, ngoại biên; thứ yếu	chu vi	adjective
+valve	van	van	noun
+sodium	natri	Natri	noun
+proton	prô-ton	Proton	noun
+onwards	trở đi, về sau	onward	adverb
+transparency	sự minh bạch; độ trong suốt	transparence	noun
+fringe	rìa, mép; tóc mái	tua	noun
+semi	bán, nửa (tiền tố)	<thgt> nhà chung tường	noun
+tech	công nghệ (viết tắt technology)	<thgt> trường cao đẳng kỹ thuật, trường đại học kỹ thuật	noun
+collaborative	mang tính hợp tác	xem collaborate	adjective
+prop	đạo cụ; chống đỡ	của proposition, mệnh đề	noun
+calorie	ca-lo	calo	noun
+bribe	tiền hối lộ; hối lộ	của đút lót, vật đút lót, vật hối lộ	noun
+subtly	một cách tinh tế, khéo léo	xem subtle	adverb
+paternal	thuộc về cha; bên nội	của cha	adjective
+structurally	về mặt cấu trúc	xem structural	adverb
+tranquility	sự yên tĩnh, thanh bình	<Mỹ>	noun
+repertory	tiết mục biểu diễn; kho, vốn	kho	noun
+superficially	một cách hời hợt, bề ngoài	xem superficial	adverb
+justly	một cách công bằng, xứng đáng	xem just	adverb
+physicality	thể chất, tính thể chất	xem physical	noun
+pedicure	sự chăm sóc móng chân	chiropody	noun
+smugly	một cách tự mãn	xem smug	adverb
+demographically	về mặt nhân khẩu học	xem demographic	adverb
+contextually	theo ngữ cảnh	xem contextual	adverb
+victoriously	một cách chiến thắng, đắc thắng	trạng từ	adverb
+animatedly	một cách sôi nổi, hăng hái	xem animated	adverb
+blankness	sự trống rỗng, vô hồn	xem blank	noun
+exotically	một cách kỳ lạ, ngoại lai	xem exotic	adverb
+unconvincingly	một cách thiếu thuyết phục	xem unconvincing	adverb
+insensitively	một cách vô tâm, thiếu tế nhị	xem insensitive	adverb
+meaninglessly	một cách vô nghĩa	xem meaningless	adverb
+insightfully	một cách sâu sắc, thấu đáo	xem insightful	adverb
+unreliably	một cách không đáng tin cậy	xem unreliable	adverb
+compliantly	một cách tuân thủ, ngoan ngoãn	xem compliant	adverb
+insubordinately	một cách bất tuân, cãi lệnh	xem insubordinate	adverb
+unmusically	không có tính nhạc, nghe chói tai	xem unmusical	adverb
+hypothetical	giả định, mang tính giả thuyết	Cách viết khác : hypothetic	adjective
+conglomerate	tập đoàn (đa ngành)	Conglomerate	noun
+palatable	ngon miệng; dễ chấp nhận	ngon	adjective
+unequivocally	một cách dứt khoát, rõ ràng	xem unequivocal	adverb
+confrontational	mang tính đối đầu	xem confrontation	adjective
+deviant	lệch chuẩn; kẻ lệch chuẩn	<bóng> kẻ lầm đường lạc lối	adjective
+athleticism	thể lực, năng khiếu thể thao	xem athletic	noun
+torrential	xối xả, như trút nước	như thác, cuồn cuộn	adjective
+allegorical	mang tính ngụ ngôn, ẩn dụ	xem allegoric	adjective
+maliciously	một cách ác ý	xem malicious	adverb
+unnerving	làm mất bình tĩnh, gây bất an	xem unnerve	adjective
+enabler	người/yếu tố tạo điều kiện	xem enable	noun
+contractually	theo hợp đồng	xem contractual	adverb
+autonomously	một cách tự chủ, tự động	xem autonomous	adverb
+physiologically	về mặt sinh lý	xem physiological	adverb
+philistine	kẻ phàm tục, không biết thưởng thức nghệ thuật	Phi-li-xtin	noun
+postural	thuộc tư thế	xem posture	adjective
+sulphuric	thuộc lưu huỳnh (axit sunfuric)	Sunfuric	adjective
+leaven	men (làm bánh); làm lên men	men	noun
+calorific	thuộc nhiệt lượng, sinh nhiệt	caloric	adjective
+incongruity	sự không hợp, sự phi lý	incongruousness	noun
+pervasiveness	sự lan tràn, tính phổ biến	xem pervasive	noun
+gravitationally	về mặt hấp dẫn (trọng lực)	xem gravitation	adverb
+presentational	thuộc cách trình bày	xem presentation	adjective
+unobtrusively	một cách kín đáo, không gây chú ý	trạng từ	adverb
+cultish	mang tính giáo phái, sùng bái	xem cult	adjective
+elephantine	to lớn, nặng nề như voi	voi	adjective
+retrospection	sự hồi tưởng, nhìn lại quá khứ	retrospect	noun
+unnervingly	một cách đáng lo ngại, gây bất an	trạng từ	adverb
+cogently	một cách thuyết phục, chặt chẽ	xem cogent	adverb
+anthropologically	về mặt nhân chủng học	xem anthropology	adverb
+commensurately	một cách tương xứng	xem commensurate	adverb
+blubbery	béo nhẽo, nhiều mỡ	xem blubber	adjective
+promotable	có thể thăng chức; có thể quảng bá	xem promote	adjective
+melodiously	một cách du dương	trạng từ	adverb
+euphorically	một cách hưng phấn, sung sướng	xem euphoria	adverb
+abhorrently	một cách ghê tởm	xem abhorrent	adverb
+calamitously	một cách thảm khốc	xem calamitous	adverb
+amorphously	một cách vô định hình, không rõ hình dạng	xem amorphous	adverb
+anticlimactically	một cách hụt hẫng, cụt hứng	xem anticlimax	adverb
+deficiently	một cách thiếu hụt, không đầy đủ	xem deficient	adverb
+impressionistically	theo lối ấn tượng	xem impressionistic	adverb
+inchoately	một cách mới chớm, chưa hoàn chỉnh	xem inchoate	adverb
+undemonstratively	một cách kín đáo, không bộc lộ cảm xúc	xem undemonstrative	adverb
+vestigially	một cách còn sót lại (dạng vết tích)	xem vestigial	adverb

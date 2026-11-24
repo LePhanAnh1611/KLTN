@@ -1,0 +1,2044 @@
+{
+ "contract": {
+  "phonetic": "/ˈkɒntɹækt/",
+  "part_of_speech": "noun",
+  "example": "Marriage is a contract.",
+  "sense_ok": false,
+  "llm_example": "She signed the contract after negotiating the terms for a week."
+ },
+ "deadline": {
+  "phonetic": "/ˈdɛdˌlaɪn/",
+  "part_of_speech": "noun",
+  "example": "I must make this deadline or my boss will kill me!",
+  "sense_ok": true
+ },
+ "invoice": {
+  "phonetic": "/ˈɪnˌvɔɪs/",
+  "part_of_speech": "noun",
+  "example": "The merchant receives a large invoice of goods.",
+  "sense_ok": true
+ },
+ "schedule": {
+  "phonetic": "/ˈskɛ.dʒu.əl/",
+  "part_of_speech": "noun",
+  "example": "stick to the schedule",
+  "sense_ok": true
+ },
+ "meeting": {
+  "phonetic": "/ˈmiːtɪŋ/",
+  "part_of_speech": "noun",
+  "example": "Meeting him will be exciting. I enjoy meeting new people.",
+  "sense_ok": false,
+  "llm_example": "We need to prepare well for the meeting tomorrow."
+ },
+ "agenda": {
+  "phonetic": "/əˈdʒɛn.də/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The meeting's agenda includes five main points."
+ },
+ "budget": {
+  "phonetic": "/ˈbʌdʒ.ɪt/",
+  "part_of_speech": "verb",
+  "example": "Budgeting is even harder in times of recession",
+  "sense_ok": true
+ },
+ "revenue": {
+  "phonetic": "/ˈɹɛvənjuː/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The company's revenue increased by 20% last quarter."
+ },
+ "profit": {
+  "phonetic": "/ˈpɹɒfɪt/",
+  "part_of_speech": "noun",
+  "example": "Reading such an enlightening book on the subject was of much profit to his studies.",
+  "sense_ok": true
+ },
+ "client": {
+  "phonetic": "/ˈklʌɪənt/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "We need to meet our new client tomorrow."
+ },
+ "colleague": {
+  "phonetic": "/ˈkɒliːɡ/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "At the meeting, my colleague suggested a new project idea."
+ },
+ "manager": {
+  "phonetic": "/ˈmæn.ɪ.dʒə/",
+  "part_of_speech": "noun",
+  "example": "a file manager; a task manager; Program Manager",
+  "sense_ok": true
+ },
+ "department": {
+  "phonetic": "/dɪˈpɑːtm(ə)nt/",
+  "part_of_speech": "noun",
+  "example": "Technical things are not his department; he's a people person.",
+  "sense_ok": true
+ },
+ "promotion": {
+  "phonetic": "/pɹəˈməʊʃən/",
+  "part_of_speech": "noun",
+  "example": "I'll have to give myself a promotion!",
+  "sense_ok": false,
+  "llm_example": "She worked hard to secure a promotion."
+ },
+ "salary": {
+  "phonetic": "/ˈsælɚi/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "Her new job offers a higher salary."
+ },
+ "negotiate": {
+  "phonetic": "/nəˈɡəʊ.ʃi.eɪt/",
+  "part_of_speech": "verb",
+  "example": "The client and server computers must first negotiate a network protocol to be used.",
+  "sense_ok": true
+ },
+ "approve": {
+  "phonetic": "/əˈpɹuːv/",
+  "part_of_speech": "verb",
+  "example": "Although we may disagree with it, we must nevertheless approve the sentence handed down by the court-martial.",
+  "sense_ok": true
+ },
+ "submit": {
+  "phonetic": "/səbˈmɪt/",
+  "part_of_speech": "verb",
+  "example": "They will not submit to the destruction of their rights.",
+  "sense_ok": false,
+  "llm_example": "You must submit your assignment before the class starts."
+ },
+ "postpone": {
+  "phonetic": "/poʊstˈpoʊn/",
+  "part_of_speech": "verb",
+  "example": null,
+  "llm_example": "We have to postpone the meeting until next week."
+ },
+ "attend": {
+  "phonetic": "/əˈtɛnd/",
+  "part_of_speech": "verb",
+  "example": "Secretaries attend to correspondence.",
+  "sense_ok": false,
+  "llm_example": "All students are required to attend the orientation session."
+ },
+ "assign": {
+  "phonetic": "/əˈsaɪn/",
+  "part_of_speech": "verb",
+  "example": "to assign a day for trial",
+  "sense_ok": true
+ },
+ "supervise": {
+  "phonetic": null,
+  "part_of_speech": "verb",
+  "example": "Without someone to supervise them, the group will lack direction.",
+  "sense_ok": true
+ },
+ "recruit": {
+  "phonetic": "/ɹɪˈkɹuːt/",
+  "part_of_speech": "noun",
+  "example": "These new recruits were hired after passing the interviews",
+  "sense_ok": true
+ },
+ "resign": {
+  "phonetic": "/ɹɪˈzaɪn/",
+  "part_of_speech": "verb",
+  "example": "He resigned the crown to follow his heart.",
+  "sense_ok": true
+ },
+ "overtime": {
+  "phonetic": "/ˈoʊvɚˌtaɪm/",
+  "part_of_speech": "noun",
+  "example": "Workers are usually paid extra for working overtime.",
+  "sense_ok": true
+ },
+ "proposal": {
+  "phonetic": "/pɹəˈpəʊzəl/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The committee requested a proposal for the new project."
+ },
+ "contractor": {
+  "phonetic": "/ˈkɒnˌtɹæk.tə(ɹ)/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The construction company hired a contractor to build the new office building."
+ },
+ "stakeholder": {
+  "phonetic": "/ˈsteɪkhoʊldə(ɹ)/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The company involves all stakeholders in the decision-making process."
+ },
+ "shareholder": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": "Shareholders are the real owners of a publicly traded business, but management runs it.",
+  "sense_ok": true
+ },
+ "merger": {
+  "phonetic": "/ˈmɜːdʒə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The merger of two companies created a larger market presence."
+ },
+ "invest": {
+  "phonetic": "/ɪnˈvɛst/",
+  "part_of_speech": "verb",
+  "example": "We'd like to thank all the contributors who have invested countless hours into this event.",
+  "sense_ok": true
+ },
+ "expense": {
+  "phonetic": "/ɪkˈspɛns/",
+  "part_of_speech": "noun",
+  "example": "Buying the car was a big expense, but will be worth it in the long run.",
+  "sense_ok": true
+ },
+ "password": {
+  "phonetic": "/ˈpæswɜːd/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "You should write down your new password in a secure place."
+ },
+ "firewall": {
+  "phonetic": "/ˈfaɪ.əˌwɔːl/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The IT department is configuring a robust firewall to protect the company's network."
+ },
+ "bandwidth": {
+  "phonetic": "/ˈbændwɪdθ/",
+  "part_of_speech": "noun",
+  "example": "I think it's a worthy project, but I just don't have the bandwidth right now.",
+  "sense_ok": true
+ },
+ "latency": {
+  "phonetic": "/ˈleɪ.tən.si/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The latency of the network connection caused significant delays in data transmission."
+ },
+ "cache": {
+  "phonetic": "/kæɪʃ/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The app uses cache to load content faster next time."
+ },
+ "query": {
+  "phonetic": "/ˈkwɪə.ɹi/",
+  "part_of_speech": "noun",
+  "example": "The teacher answered the student’s query concerning biosynthesis.",
+  "sense_ok": true
+ },
+ "schema": {
+  "phonetic": "/ˈskiːmə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The database schema defines the structure of the database."
+ },
+ "migrate": {
+  "phonetic": "/maɪ.ˈɡɹeɪt/",
+  "part_of_speech": "verb",
+  "example": "Twice a year the Minnesotans migrate from their state to the Gulf of Mexico.",
+  "sense_ok": false,
+  "llm_example": "The company decided to migrate all data to a new server last weekend."
+ },
+ "scalable": {
+  "phonetic": null,
+  "part_of_speech": "adjective",
+  "example": null,
+  "llm_example": "The cloud computing system is scalable to handle increasing amounts of data."
+ },
+ "deployment": {
+  "phonetic": "/dɪˈplɔɪmənt/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The deployment of new software improved our system's efficiency."
+ },
+ "interface": {
+  "phonetic": "/ˈɪntəfeɪs/",
+  "part_of_speech": "noun",
+  "example": "Public relations firms often serve as the interface between a company and the press.",
+  "sense_ok": true
+ },
+ "protocol": {
+  "phonetic": "/ˈpɹəʊtəˌkɒl/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The protocol requires that all messages be encrypted."
+ },
+ "cloud": {
+  "phonetic": "/klaʊd/",
+  "part_of_speech": "noun",
+  "example": "He opened the door and was greeted by a cloud of bats.",
+  "sense_ok": false,
+  "llm_example": "The cloud in the sky looks like a dinosaur."
+ },
+ "container": {
+  "phonetic": "/kənˈteɪnə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The container holds all the electronic components."
+ },
+ "monitor": {
+  "phonetic": "/ˈmɒnɨtə/",
+  "part_of_speech": "noun",
+  "example": "The camp monitors look after the children during the night, when the teachers are asleep.",
+  "sense_ok": true
+ },
+ "log": {
+  "phonetic": "/lɑɡ/",
+  "part_of_speech": "noun",
+  "example": "They walked across the stream on a fallen log.",
+  "sense_ok": false,
+  "llm_example": "He kept a log of his daily exercises."
+ },
+ "crash": {
+  "phonetic": "/kɹæʃ/",
+  "part_of_speech": "noun",
+  "example": "After the lightning came the crash of thunder.",
+  "sense_ok": true
+ },
+ "patch": {
+  "phonetic": "/pætʃ/",
+  "part_of_speech": "noun",
+  "example": "His sleeves had patches on the elbows where different fabric had been sewn on to replace material that had worn away.",
+  "sense_ok": true
+ },
+ "upgrade": {
+  "phonetic": "/ˈʌp.ɡɹeɪd/",
+  "part_of_speech": "noun",
+  "example": "With my phone company, I get a free upgrade every twelve months if I keep topping up 10 pounds a month.",
+  "sense_ok": true
+ },
+ "bug": {
+  "phonetic": "/bʌɡ/",
+  "part_of_speech": "noun",
+  "example": "These flies are a bother. I’ll get some bug spray and kill them.",
+  "sense_ok": false,
+  "llm_example": "The developers are fixing a bug in the login function."
+ },
+ "feature": {
+  "phonetic": "/ˈfiːtʃə/",
+  "part_of_speech": "noun",
+  "example": "one of the features of the landscape",
+  "sense_ok": true
+ },
+ "release": {
+  "phonetic": "/ɹɪˈliːs/",
+  "part_of_speech": "noun",
+  "example": "The video store advertised that it had all the latest releases.",
+  "sense_ok": true
+ },
+ "rollback": {
+  "phonetic": null,
+  "part_of_speech": "verb",
+  "example": "The server is unstable, we need to rollback the changes.",
+  "sense_ok": true
+ },
+ "maintenance": {
+  "phonetic": "/ˈmeɪnt(ə)nəns/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "Regular maintenance is crucial for keeping the machinery running smoothly."
+ },
+ "airport": {
+  "phonetic": "/ˈɛə.pɔːt/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "We will arrive at the airport at 8 AM for our early morning flight."
+ },
+ "confirm": {
+  "phonetic": "/kənˈfɜːm/",
+  "part_of_speech": "verb",
+  "example": null,
+  "llm_example": "Please confirm your email address to activate your account."
+ },
+ "check-in": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "We need to check-in half an hour before the flight."
+ },
+ "platform": {
+  "phonetic": "/ˈplætfɔːm/",
+  "part_of_speech": "noun",
+  "example": "This new talk show will give a platform to everyday men and women.",
+  "sense_ok": false,
+  "llm_example": "The train stopped at the platform for passengers to board."
+ },
+ "fare": {
+  "phonetic": "/fɛə(ɹ)/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The fare for the taxi is quite expensive."
+ },
+ "route": {
+  "phonetic": "/ɹʉːt/",
+  "part_of_speech": "noun",
+  "example": "The route was used so much that it formed a rut.",
+  "sense_ok": false,
+  "llm_example": "Follow the route marked on the map."
+ },
+ "transit": {
+  "phonetic": "/ˈtɹæn.sɪt/",
+  "part_of_speech": "noun",
+  "example": "the transit of goods through a country",
+  "sense_ok": true
+ },
+ "crowded": {
+  "phonetic": "/ˈkɹaʊdɪd/",
+  "part_of_speech": "verb",
+  "example": "The man crowded into the packed room.",
+  "sense_ok": true
+ },
+ "scenery": {
+  "phonetic": "/ˈsiːnəɹi/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The scenery along the river is absolutely breathtaking."
+ },
+ "landmark": {
+  "phonetic": "/ˈlændmɑɹk/",
+  "part_of_speech": "noun",
+  "example": "a landmark paper in neurosurgery",
+  "sense_ok": false,
+  "llm_example": "The Eiffel Tower is a famous landmark in Paris."
+ },
+ "backpack": {
+  "phonetic": "/ˈbæk.pæk/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "I left my homework in my backpack."
+ },
+ "hostel": {
+  "phonetic": "/ˈhɒstəl/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The hostel was a great place to meet travelers from around the world."
+ },
+ "resort": {
+  "phonetic": "/ɹɨˈzɔ(ɹ)t/",
+  "part_of_speech": "noun",
+  "example": "to have resort to violence",
+  "sense_ok": false,
+  "llm_example": "The family decided to stay at a luxurious resort during their vacation."
+ },
+ "beach": {
+  "phonetic": "/biːt͡ʃ/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "We decided to have a picnic on the beach."
+ },
+ "mountain": {
+  "phonetic": "/ˈmaʊntɪn/",
+  "part_of_speech": "noun",
+  "example": "We spent the weekend hiking in the mountains.",
+  "sense_ok": true
+ },
+ "borrow": {
+  "phonetic": "/ˈbɔɹoʊ/",
+  "part_of_speech": "noun",
+  "example": "This putt has a big left-to right borrow on it.",
+  "sense_ok": false,
+  "llm_example": "I need to borrow a ladder to reach the high shelf."
+ },
+ "neighbour": {
+  "phonetic": "/ˈneɪbə/",
+  "part_of_speech": "noun",
+  "example": "My neighbour has two noisy cats.",
+  "sense_ok": true
+ },
+ "grocery": {
+  "phonetic": "/ˈɡɹəʊs(ə)ɹi/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "I need to go to the store to buy some grocery."
+ },
+ "laundry": {
+  "phonetic": "/ˈlɑn.dɹi/",
+  "part_of_speech": "noun",
+  "example": "You've left your dirty laundry all over the house.",
+  "sense_ok": true
+ },
+ "furniture": {
+  "phonetic": "/ˈfɜːnɪtʃə/",
+  "part_of_speech": "noun",
+  "example": "A chair is furniture. Sofas are also furniture.",
+  "sense_ok": true
+ },
+ "kitchen": {
+  "phonetic": "/ˈkɪt͡ʃən/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "I like to cook dinner in my new kitchen."
+ },
+ "bedroom": {
+  "phonetic": "/ˈbɛdɹʊm/",
+  "part_of_speech": "noun",
+  "example": "Please don't enter my bedroom without knocking.",
+  "sense_ok": true
+ },
+ "rent": {
+  "phonetic": "/ɹɛnt/",
+  "part_of_speech": "noun",
+  "example": "A New York city taxicab license earns more than $10,000 a year in rent.",
+  "sense_ok": true
+ },
+ "landlord": {
+  "phonetic": "/ˈlænd.lɔːd/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "I need to find a new landlord when I move out."
+ },
+ "electricity": {
+  "phonetic": "/ɪˌlɛkˈtɹɪsɪti/",
+  "part_of_speech": "noun",
+  "example": "Opening night for the new production had an electricity unlike other openings.",
+  "sense_ok": true
+ },
+ "plumbing": {
+  "phonetic": "/ˈplʌmɪŋ/",
+  "part_of_speech": "noun",
+  "example": "My plumbing was playing up, so I had to see the doctor.",
+  "sense_ok": true
+ },
+ "drawer": {
+  "phonetic": "/dɹɔː(ɹ)/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She organized her office by placing files in labeled drawers."
+ },
+ "shelf": {
+  "phonetic": "/ʃɛlf/",
+  "part_of_speech": "noun",
+  "example": "a shelf of videos",
+  "sense_ok": true
+ },
+ "ceiling": {
+  "phonetic": "/ˈsiːlɪŋ/",
+  "part_of_speech": "noun",
+  "example": "the dining room had an ornate ceiling",
+  "sense_ok": true
+ },
+ "balcony": {
+  "phonetic": "/ˈbælkəni/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The family often enjoys the warm weather on the balcony."
+ },
+ "garden": {
+  "phonetic": "/ˈɡɑːdn̩/",
+  "part_of_speech": "noun",
+  "example": "a vegetable garden  a flower garden",
+  "sense_ok": true
+ },
+ "hypothesis": {
+  "phonetic": "/haɪˈpɑː.θə.sɪs/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "Her hypothesis about the ancient artifacts turned out to be correct after the archaeological findings."
+ },
+ "methodology": {
+  "phonetic": "/meθəˈdɒlədʒi/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The methodology used in the study provided reliable and valid results."
+ },
+ "significant": {
+  "phonetic": "/sɪɡˈnɪ.fɪ.kənt/",
+  "part_of_speech": "adjective",
+  "example": "a significant word or sound; a significant look",
+  "sense_ok": true
+ },
+ "evidence": {
+  "phonetic": "[ˈɛvəɾəns]",
+  "part_of_speech": "noun",
+  "example": "There is no evidence that anyone was here earlier.",
+  "sense_ok": true
+ },
+ "analysis": {
+  "phonetic": "/əˈnælɪsɪs/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The analysis of the data showed a clear trend."
+ },
+ "literature": {
+  "phonetic": "/ˈlɪ.tə.ɹɪ.tʃə(ɹ)/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "He prefers novels to academic literature."
+ },
+ "citation": {
+  "phonetic": "/ˌsaɪˈteɪ.ʃən/",
+  "part_of_speech": "noun",
+  "example": "It's a simple citation of facts.",
+  "sense_ok": true
+ },
+ "abstract": {
+  "phonetic": "/ˈæbˌstɹækt/",
+  "part_of_speech": "verb",
+  "example": "He was wholly abstracted by other objects.",
+  "sense_ok": false,
+  "llm_example": "She wrote the abstract of her thesis in just one paragraph."
+ },
+ "conclusion": {
+  "phonetic": "/kənˈkluːʒən/",
+  "part_of_speech": "noun",
+  "example": "The board has come to the conclusion that the proposed takeover would not be in the interest of our shareholders.",
+  "sense_ok": true
+ },
+ "variable": {
+  "phonetic": "/ˈvɛəɹ.i.ə.bl̩/",
+  "part_of_speech": "noun",
+  "example": "There are several variables to consider here.",
+  "sense_ok": true
+ },
+ "correlation": {
+  "phonetic": "/kɒɹəˈleɪʃən/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The correlation between study time and exam scores is very strong."
+ },
+ "sample": {
+  "phonetic": "/sæːm.pəl/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "Use this sample to understand the format required."
+ },
+ "survey": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": "A survey of the stores of a ship; a survey of roads and bridges; a survey of buildings.",
+  "sense_ok": true
+ },
+ "questionnaire": {
+  "phonetic": "/ˌk(w)estjəˈnɛə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She had to fill out the questionnaire before her appointment."
+ },
+ "qualitative": {
+  "phonetic": "/ˈkwɒl.ɪ.tə.tɪv/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The qualitative analysis revealed a wide range of emotions expressed in the interviews."
+ },
+ "quantitative": {
+  "phonetic": "/ˈkwɒntətɪv/",
+  "part_of_speech": "adjective",
+  "example": null,
+  "llm_example": "The study requires both qualitative and quantitative data."
+ },
+ "assumption": {
+  "phonetic": "/əˈsʌmp.ʃən/",
+  "part_of_speech": "noun",
+  "example": "His assumption of secretarial duties was timely.",
+  "sense_ok": true
+ },
+ "limitation": {
+  "phonetic": "/lɪmɪˈteɪʃən/",
+  "part_of_speech": "noun",
+  "example": "Getting into his wheelchair after his amputation, it felt like a limitation you could roll in.",
+  "sense_ok": true
+ },
+ "implication": {
+  "phonetic": "/ˌɪmpləˈkeɪʃən/",
+  "part_of_speech": "noun",
+  "example": "There are serious implications for the environment of such reforms.",
+  "sense_ok": true
+ },
+ "validate": {
+  "phonetic": "/ˈvæl.ɪ.deɪt/",
+  "part_of_speech": "verb",
+  "example": "The data file cannot be imported because it doesn't validate.",
+  "sense_ok": true
+ },
+ "surgery": {
+  "phonetic": "/ˈsɜːdʒəɹi/",
+  "part_of_speech": "noun",
+  "example": "Many times surgery is necessary to prevent cancer from spreading.",
+  "sense_ok": true
+ },
+ "injury": {
+  "phonetic": "/ˈɪn.dʒə.ɹi/",
+  "part_of_speech": "noun",
+  "example": "The passenger sustained a severe injury in the car accident.",
+  "sense_ok": true
+ },
+ "recovery": {
+  "phonetic": "/ɹəˈkʌvəɹi/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The recovery of the patient was slower than expected."
+ },
+ "infection": {
+  "phonetic": "/ɪnˈfɛkʃən/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The doctor prescribed antibiotics to treat the infection."
+ },
+ "vaccine": {
+  "phonetic": "/vækˈsaɪn/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She refused to get the vaccine because of her doubts."
+ },
+ "allergy": {
+  "phonetic": "[ˈæl.ə.dʒi]",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She has to avoid nuts as they trigger her allergy."
+ },
+ "fever": {
+  "phonetic": "/ˈfiːvə/",
+  "part_of_speech": "noun",
+  "example": "\"I have a fever. I think I've the flu.\"",
+  "sense_ok": true
+ },
+ "cough": {
+  "phonetic": "/kɑf/",
+  "part_of_speech": "noun",
+  "example": "Behind me, I heard a distinct, dry cough.",
+  "sense_ok": true
+ },
+ "headache": {
+  "phonetic": "/ˈhɛdeɪk/",
+  "part_of_speech": "noun",
+  "example": "The clumsy filing system has been a huge headache.",
+  "sense_ok": true
+ },
+ "dizzy": {
+  "phonetic": "/ˈdɪzi/",
+  "part_of_speech": "adjective",
+  "example": "I stood up too fast and felt dizzy.",
+  "sense_ok": true
+ },
+ "nausea": {
+  "phonetic": "/ˈnɔːsɪə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The strong smell caused a nausea in her stomach."
+ },
+ "fatigue": {
+  "phonetic": "/fəˈtiːɡ/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "After a long day at work, she felt fatigue setting in as soon as she lay down on the bed."
+ },
+ "insomnia": {
+  "phonetic": "/ɪnˈsɒmniə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "He suffers from insomnia and finds it hard to fall asleep at night."
+ },
+ "nutrition": {
+  "phonetic": "/njuːˈtɹɪ.ʃən/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She is studying nutrition to become a dietitian."
+ },
+ "diet": {
+  "phonetic": "/ˈdaɪət/",
+  "part_of_speech": "noun",
+  "example": "The diet of the Giant Panda consists mainly of bamboo.",
+  "sense_ok": true
+ },
+ "exercise": {
+  "phonetic": "/ˈɛk.sə.saɪz/",
+  "part_of_speech": "noun",
+  "example": "The teacher told us that the next exercise is to write an essay.",
+  "sense_ok": false,
+  "llm_example": "She enjoys exercise in the morning to start her day."
+ },
+ "immune": {
+  "phonetic": "/ɪˈmjuːn/",
+  "part_of_speech": "adjective",
+  "example": "As a diplomat, you are immune from prosecution.",
+  "sense_ok": true
+ },
+ "chronic": {
+  "phonetic": "/ˈkɹɒnɪk/",
+  "part_of_speech": "adjective",
+  "example": "chronic unemployment; chronic poverty; chronic anger; chronic life",
+  "sense_ok": true
+ },
+ "severe": {
+  "phonetic": "/sɪˈvɪə/",
+  "part_of_speech": "adjective",
+  "example": "a severe old maiden aunt",
+  "sense_ok": true
+ },
+ "mild": {
+  "phonetic": "/ˈmaɪld/",
+  "part_of_speech": "adjective",
+  "example": "He received a mild sentence.",
+  "sense_ok": true
+ },
+ "side effect": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": "The Eiffel programming language is somewhat purist in insisting that functions have no side effects.",
+  "sense_ok": false,
+  "llm_example": "The doctor warned that the medication might have some side effects."
+ },
+ "therapy": {
+  "phonetic": "/ˈθɛɹ.ə.pi/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She is starting a new therapy to manage her anxiety."
+ },
+ "mental": {
+  "phonetic": "/ˈmɛntəl/",
+  "part_of_speech": "adjective",
+  "example": "He is the most mental freshman I've seen yet.",
+  "sense_ok": true
+ },
+ "anxiety": {
+  "phonetic": "/ˌæŋ(ɡ)ˈzaɪ.ə.ti/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She felt a growing anxiety as the exam date approached."
+ },
+ "chop": {
+  "phonetic": "/tʃɒp/",
+  "part_of_speech": "noun",
+  "example": "I only like lamb chops with mint jelly.",
+  "sense_ok": false,
+  "llm_example": "He chops the vegetables into small pieces for the stew."
+ },
+ "peel": {
+  "phonetic": "/piːl/",
+  "part_of_speech": "verb",
+  "example": "I sat by my sister's bed, peeling oranges for her.",
+  "sense_ok": true
+ },
+ "stir": {
+  "phonetic": "/stɜː/",
+  "part_of_speech": "noun",
+  "example": "Can you give the soup a little stir?",
+  "sense_ok": true
+ },
+ "season": {
+  "phonetic": "/ˈsiːzən/",
+  "part_of_speech": "noun",
+  "example": "The third season of Friends aired from 1996 to 1997.",
+  "sense_ok": false,
+  "llm_example": "We need to adjust the seasonings during the cooking season."
+ },
+ "serve": {
+  "phonetic": "/sɜːv/",
+  "part_of_speech": "noun",
+  "example": "Whose serve is it?",
+  "sense_ok": false,
+  "llm_example": "He serves the best pizza in town."
+ },
+ "portion": {
+  "phonetic": "/ˈpoəɹʃən/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "Each portion of the cake is delicious."
+ },
+ "appetiser": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The chef recommended a light appetiser to start the meal."
+ },
+ "dessert": {
+  "phonetic": "/dɪˈzɜːt/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "After the meal, she had a cup of coffee and a piece of chocolate as her favorite dessert."
+ },
+ "beverage": {
+  "phonetic": "/ˈbevəɹɪdʒ/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She prefers water as her beverage over soda."
+ },
+ "vegetarian": {
+  "phonetic": "/vɛd͡ʒɪˈtɛəɹi.ən/",
+  "part_of_speech": "adjective",
+  "example": "I have a vegetarian brother",
+  "sense_ok": true
+ },
+ "menu": {
+  "phonetic": "/ˈmɛnju/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "I ordered the pizza from the menu."
+ },
+ "waiter": {
+  "phonetic": "/ˈweɪtə/",
+  "part_of_speech": "noun",
+  "example": "Waiter! There's a fly in my soup.",
+  "sense_ok": true
+ },
+ "bill": {
+  "phonetic": "/bɪl/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "Please sign the bill before we leave the restaurant."
+ },
+ "tip": {
+  "phonetic": "/tɪp/",
+  "part_of_speech": "noun",
+  "example": "the tip of one's nose",
+  "sense_ok": false,
+  "llm_example": "He always leaves a generous tip for the waiter."
+ },
+ "leftover": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": "It's a leftover from yesterday, but it's still perfectly good.",
+  "sense_ok": true
+ },
+ "takeaway": {
+  "phonetic": "/ˈteɪkəweɪ/",
+  "part_of_speech": "noun",
+  "example": "If you're hungry, there's a takeaway just around the corner.",
+  "sense_ok": true
+ },
+ "cuisine": {
+  "phonetic": "/kwɪˈziːn/",
+  "part_of_speech": "noun",
+  "example": "French cuisine is considered to be one of the world's most refined and elegant styles of cooking.",
+  "sense_ok": true
+ },
+ "snack": {
+  "phonetic": "/snæk/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "I bought a snack from the vending machine during the movie."
+ },
+ "beef": {
+  "phonetic": "/biːf/",
+  "part_of_speech": "noun",
+  "example": "I love eating beef.",
+  "sense_ok": true
+ },
+ "seafood": {
+  "phonetic": "/ˈsiːfuːd/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The restaurant specializes in fresh seafood."
+ },
+ "noodle": {
+  "phonetic": "/nuːdl̩/",
+  "part_of_speech": "noun",
+  "example": "She slurped a long noodle up out of her soup.",
+  "sense_ok": true
+ },
+ "dough": {
+  "phonetic": "/dʌf/",
+  "part_of_speech": "noun",
+  "example": "Pizza dough is very stretchy.",
+  "sense_ok": true
+ },
+ "sauce": {
+  "phonetic": "/sɔːs/",
+  "part_of_speech": "noun",
+  "example": "apple sauce; mint sauce",
+  "sense_ok": true
+ },
+ "allergic": {
+  "phonetic": "[ə.ˈlɜː.dʒɪk]",
+  "part_of_speech": "adjective",
+  "example": "I am allergic to cats.",
+  "sense_ok": true
+ },
+ "sustainable": {
+  "phonetic": "/səˈsteɪnəbəl/",
+  "part_of_speech": "adjective",
+  "example": null,
+  "llm_example": "The company aims to adopt sustainable practices to reduce its environmental impact."
+ },
+ "pollution": {
+  "phonetic": "/pəˈl(j)uːʃn̩/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The pollution in this city is terrible, you can hardly see the sky."
+ },
+ "emission": {
+  "phonetic": "/ɪˈmɪʃn̩/",
+  "part_of_speech": "noun",
+  "example": "the emission was mostly blood",
+  "sense_ok": false,
+  "llm_example": "The factory's high emission is a major concern for the environment."
+ },
+ "climate": {
+  "phonetic": "/ˈklaɪmɪt/",
+  "part_of_speech": "noun",
+  "example": "Industries that require a lot of fossil fuels are unlikely to be popular in the current political climate.",
+  "sense_ok": false,
+  "llm_example": "The climate here is perfect for growing orchids."
+ },
+ "drought": {
+  "phonetic": "[dɹʌʊt]",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The drought forced the farmers to sell their cattle."
+ },
+ "flood": {
+  "phonetic": "/flʌd/",
+  "part_of_speech": "noun",
+  "example": "a flood of complaints",
+  "sense_ok": false,
+  "llm_example": "The flood forced the villagers to evacuate their homes urgently."
+ },
+ "renewable": {
+  "phonetic": null,
+  "part_of_speech": "adjective",
+  "example": "Solar and wind power are renewable, but coal is not.",
+  "sense_ok": true
+ },
+ "conservation": {
+  "phonetic": "/ˌkɑnsə(ɹ)ˈveɪʃən/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The national park plays a crucial role in the conservation of local wildlife."
+ },
+ "biodiversity": {
+  "phonetic": "/ˌbaɪoʊdɑɪˈvɚsəti/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "Protecting biodiversity is crucial for the health of our planet."
+ },
+ "habitat": {
+  "phonetic": "/ˈhæbɪtæt/",
+  "part_of_speech": "noun",
+  "example": "This park offers important amphibian habitat and breeding area.",
+  "sense_ok": true
+ },
+ "extinct": {
+  "phonetic": "/ɛkˈstɪŋkt/",
+  "part_of_speech": "adjective",
+  "example": "Poor Edward's cigarillo was already extinct.",
+  "sense_ok": true
+ },
+ "deforestation": {
+  "phonetic": "/dɪˌfɒɹɪsˈteɪʃən/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The government's new policy aims to reduce deforestation in national parks."
+ },
+ "landfill": {
+  "phonetic": "/ˈlænd.fɪl/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The city plans to build a new landfill to manage its waste."
+ },
+ "consumption": {
+  "phonetic": "/kənˈsʌmp.ʃən/",
+  "part_of_speech": "noun",
+  "example": "The consumption of snails as food is more common in France than in England.",
+  "sense_ok": true
+ },
+ "resource": {
+  "phonetic": "/ɹɪˈsɔɹs/",
+  "part_of_speech": "noun",
+  "example": "a man/woman of resource",
+  "sense_ok": false,
+  "llm_example": "The library is a valuable resource for students."
+ },
+ "policy": {
+  "phonetic": "/ˈpɒləsi/",
+  "part_of_speech": "noun",
+  "example": "The Communist Party has a policy of returning power to the workers.",
+  "sense_ok": true
+ },
+ "regulation": {
+  "phonetic": "/ˌɹɛɡjʊˈleɪʃən/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "All students must follow the school's regulation."
+ },
+ "awareness": {
+  "phonetic": "/əˈwɛənəs/",
+  "part_of_speech": "noun",
+  "example": "I gradually passed from sleep to full awareness.",
+  "sense_ok": true
+ },
+ "campaign": {
+  "phonetic": "/kæmˈpeɪn/",
+  "part_of_speech": "noun",
+  "example": "The company is targeting children in their latest advertising campaign.",
+  "sense_ok": true
+ },
+ "volunteer": {
+  "phonetic": "/vɒl.ənˈtɪə/",
+  "part_of_speech": "verb",
+  "example": "to volunteer for doing the dishes",
+  "sense_ok": true
+ },
+ "poverty": {
+  "phonetic": "/ˈpɒvəti/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The child lives in poverty and cannot afford to go to school."
+ },
+ "inequality": {
+  "phonetic": "/ˌɪnɪˈkwɒlɪti/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The inequality in wealth distribution is a major issue in many countries."
+ },
+ "literacy": {
+  "phonetic": "/ˈlɪt.ɹə.si/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "To improve literacy rates, schools should focus on engaging teaching methods."
+ },
+ "welfare": {
+  "phonetic": "/ˈwɛlˌfɛə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The government increased funding for welfare programs to help the poor."
+ },
+ "migration": {
+  "phonetic": "/maɪˈɡɹeɪʃ(ə)n/",
+  "part_of_speech": "noun",
+  "example": "The migration of lead from a can to the food inside it can cause lead poisoning.",
+  "sense_ok": true
+ },
+ "urbanisation": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The rapid urbanisation has changed the face of the countryside."
+ },
+ "infrastructure": {
+  "phonetic": "/ˈɪnfɹəˌstɹʌk(t)ʃɚ/",
+  "part_of_speech": "noun",
+  "example": "The parasitic tyranny's infrastructure depends on secrecy in order to be effective.",
+  "sense_ok": false,
+  "llm_example": "The city's infrastructure needs significant improvement."
+ },
+ "census": {
+  "phonetic": "/ˈsɛnsəs/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The government conducts a census every ten years to count the population."
+ },
+ "demographic": {
+  "phonetic": "/dɛməˈɡɹæfɪk/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The demographic data helped us better understand the target market."
+ },
+ "protest": {
+  "phonetic": "/ˈpɹəʊ.tɛst/",
+  "part_of_speech": "noun",
+  "example": "They lodged a protest with the authorities.",
+  "sense_ok": false,
+  "llm_example": "They decided to protest against the new policy by marching in the city center."
+ },
+ "reform": {
+  "phonetic": "/ɹɪˈfɔːm/",
+  "part_of_speech": "noun",
+  "example": "A major reform is needed to improve the efficiency in the factory.",
+  "sense_ok": true
+ },
+ "subsidy": {
+  "phonetic": "/ˈsʌbsɨdi/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The government provides a subsidy to farmers to support the agricultural sector."
+ },
+ "tax": {
+  "phonetic": "/tæks/",
+  "part_of_speech": "noun",
+  "example": "a heavy tax on time or health",
+  "sense_ok": true
+ },
+ "charity": {
+  "phonetic": "/ˈtʃæɹɪti/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She volunteers at a charity every weekend."
+ },
+ "donate": {
+  "phonetic": "/dəʊˈneɪt/",
+  "part_of_speech": "verb",
+  "example": "He donated an etching from his own collection to the new art gallery.",
+  "sense_ok": true
+ },
+ "community": {
+  "phonetic": "/k(ə)ˈmjunəti/",
+  "part_of_speech": "noun",
+  "example": "a community of goods",
+  "sense_ok": true
+ },
+ "diverse": {
+  "phonetic": "/daɪˈvɜːs/",
+  "part_of_speech": "adjective",
+  "example": "Idris Elba was a diverse hire for the franchise",
+  "sense_ok": true
+ },
+ "integrate": {
+  "phonetic": "/ˈɪntəɡɹeɪt/",
+  "part_of_speech": "verb",
+  "example": "They were keen to integrate their new skills into the performance.",
+  "sense_ok": true
+ },
+ "discriminate": {
+  "phonetic": "/dɪsˈkɹɪmɪneɪt/",
+  "part_of_speech": "verb",
+  "example": null
+ },
+ "advocate": {
+  "phonetic": "/ˈæd.və.keɪt/",
+  "part_of_speech": "noun",
+  "example": "Since she started working with her advocate, she has become much more confident.",
+  "sense_ok": true
+ },
+ "refund": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": "If the camera is faulty, you can return it to the store where you bought it for a full refund.",
+  "sense_ok": true
+ },
+ "warranty": {
+  "phonetic": "/ˈwɒ.ɹən.ti/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The store offered a warranty on the new refrigerator."
+ },
+ "supplier": {
+  "phonetic": "/səˈplaɪə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "We need to find a reliable supplier for our raw materials."
+ },
+ "inventory": {
+  "phonetic": "/ɪnˈvɛn.tə.ɹi/",
+  "part_of_speech": "noun",
+  "example": "Due to an undersized inventory at the Boston outlet, customers had to travel to Providence to find the item.",
+  "sense_ok": true
+ },
+ "logistics": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The company improved its logistics to reduce shipping delays."
+ },
+ "forecast": {
+  "phonetic": "/ˈfɔːkɑːst/",
+  "part_of_speech": "verb",
+  "example": "to forecast a rise in prices",
+  "sense_ok": true
+ },
+ "quarterly": {
+  "phonetic": null,
+  "part_of_speech": "adjective",
+  "example": "The arms of Hohenzollern is quarterly argent and sable.",
+  "sense_ok": false,
+  "llm_example": "The company releases its financial report on a quarterly basis."
+ },
+ "audit": {
+  "phonetic": "/ɔː.dɪt/",
+  "part_of_speech": "verb",
+  "example": "to audit the accounts of a treasure, or of parties who have a suit depending in court",
+  "sense_ok": true
+ },
+ "database": {
+  "phonetic": "/ˈdeɪtəˌbeɪs/",
+  "part_of_speech": "noun",
+  "example": "I have a database of all my contacts in my personal organizer.",
+  "sense_ok": true
+ },
+ "deploy": {
+  "phonetic": "/dɪˈplɔɪ/",
+  "part_of_speech": "verb",
+  "example": "\"Deploy two units of infantry along the enemy's flank,\" the general ordered.",
+  "sense_ok": true
+ },
+ "server": {
+  "phonetic": "/ˈsɜːvə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The server crashed, causing the website to be unavailable."
+ },
+ "network": {
+  "phonetic": "/nɛtwɜːk/",
+  "part_of_speech": "noun",
+  "example": "A network of roads crisscrossed the country.",
+  "sense_ok": true
+ },
+ "software": {
+  "phonetic": "/ˈsɑftˌwɛɹ/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The software on my phone helps me organize my daily tasks."
+ },
+ "hardware": {
+  "phonetic": "/ˈhɑːdˌwɛə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "He needs to buy some hardware for his computer."
+ },
+ "algorithm": {
+  "phonetic": "/ˈælɡəɹɪðm̩/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The algorithm for sorting data is crucial for efficient database management."
+ },
+ "debug": {
+  "phonetic": "/diːˈbʌɡ/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "We need to debug this program to find the error."
+ },
+ "compile": {
+  "phonetic": "/kəmpʌɪl/",
+  "part_of_speech": "verb",
+  "example": "Samuel Johnson compiled one of the most influential dictionaries of the English language.",
+  "sense_ok": true
+ },
+ "framework": {
+  "phonetic": "/ˈfɹeɪm.wɜːk/",
+  "part_of_speech": "noun",
+  "example": "These ‘three principles of connexion’ compose the framework of principles in Hume's account of the association of ideas.",
+  "sense_ok": true
+ },
+ "library": {
+  "phonetic": "/ˈlaɪbɹi/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "After school, I often go to the library to read books."
+ },
+ "repository": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The company uses a central repository to store all its code."
+ },
+ "version": {
+  "phonetic": "/ˈvɜːʃən/",
+  "part_of_speech": "noun",
+  "example": "It's only in the King James Version of the Bible.",
+  "sense_ok": true
+ },
+ "backup": {
+  "phonetic": "/ˈbækˌʌp/",
+  "part_of_speech": "noun",
+  "example": "If the goalkeeper is injured, we have a backup.",
+  "sense_ok": true
+ },
+ "encrypt": {
+  "phonetic": "/ɪn.ˈkrɪpt/",
+  "part_of_speech": "verb",
+  "example": null,
+  "llm_example": "The message must be encrypted before sending it over the internet."
+ },
+ "authenticate": {
+  "phonetic": "/ɔ.ˈθɛn.tɪ.keɪt/",
+  "part_of_speech": "verb",
+  "example": "He didn't manage to authenticate the portrait: it's probably a fake.",
+  "sense_ok": true
+ },
+ "ticket": {
+  "phonetic": "/ˈtɪkɪt/",
+  "part_of_speech": "noun",
+  "example": "Joe has joined the party's ticket for the county elections.",
+  "sense_ok": false,
+  "llm_example": "I bought a ticket to see the movie."
+ },
+ "luggage": {
+  "phonetic": "/ˈlʌɡɪd͡ʒ/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She checked her luggage before boarding the plane."
+ },
+ "passport": {
+  "phonetic": "/ˈpɑːspɔːt/",
+  "part_of_speech": "noun",
+  "example": "You will have to bring your passport to prove who you are.",
+  "sense_ok": true
+ },
+ "boarding": {
+  "phonetic": null,
+  "part_of_speech": "verb",
+  "example": null
+ },
+ "departure": {
+  "phonetic": "/dɪˈpɑː(ɹ)tjə(ɹ)/",
+  "part_of_speech": "noun",
+  "example": "The departure was scheduled for noon.",
+  "sense_ok": true
+ },
+ "arrival": {
+  "phonetic": "/əˈɹaɪ.vəl/",
+  "part_of_speech": "noun",
+  "example": "The early arrival of the bride created a stir.",
+  "sense_ok": true
+ },
+ "delay": {
+  "phonetic": "/dɪˈleɪ/",
+  "part_of_speech": "noun",
+  "example": "the delay before the echo of a sound",
+  "sense_ok": false,
+  "llm_example": "The flight delay caused a lot of inconvenience to the passengers."
+ },
+ "gate": {
+  "phonetic": "/ɡeɪt/",
+  "part_of_speech": "noun",
+  "example": "The gate in front of the railroad crossing went up after the train had passed.",
+  "sense_ok": false,
+  "llm_example": "We need to go through the gate to board the plane."
+ },
+ "terminal": {
+  "phonetic": "/ˈtɚmɪnəl/",
+  "part_of_speech": "adjective",
+  "example": "a student's terminal fees",
+  "sense_ok": false,
+  "llm_example": "The terminal is where passengers board the airplanes."
+ },
+ "customs": {
+  "phonetic": "/ˈkʌstəmz/",
+  "part_of_speech": "noun",
+  "example": "Customs of £200 were due on all the wine we took back from France.",
+  "sense_ok": false,
+  "llm_example": "We had to declare all our items at the customs when we arrived."
+ },
+ "visa": {
+  "phonetic": "/ˈviː.sə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "You need a visa to work in that country."
+ },
+ "reservation": {
+  "phonetic": "/ˌɹɛzəˈveɪʃən/",
+  "part_of_speech": "noun",
+  "example": "The committee authorised the reservation of funds.",
+  "sense_ok": true
+ },
+ "accommodation": {
+  "phonetic": "/ə.ˌkɒm.ə.ˈdeɪ.ʃən/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The accommodation provided by the hotel was basic but clean."
+ },
+ "itinerary": {
+  "phonetic": "/aɪˈtɪnəɹi/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "We need to carefully plan our itinerary for the upcoming vacation."
+ },
+ "destination": {
+  "phonetic": "/dɛstɪˈneɪʃən/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "What is your destination on this trip?"
+ },
+ "sightseeing": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": "Sightseeing is a frequent reason to visit San Francisco.",
+  "sense_ok": true
+ },
+ "souvenir": {
+  "phonetic": "/ˌsuːvəˈnɪə(ɹ)/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She bought a small statue as a souvenir from her trip to Thailand."
+ },
+ "currency": {
+  "phonetic": "/ˈkʌɹ.ən.si/",
+  "part_of_speech": "noun",
+  "example": "Wampum was used as a currency by Amerindians.",
+  "sense_ok": true
+ },
+ "exchange": {
+  "phonetic": "/ɛksˈtʃeɪndʒ/",
+  "part_of_speech": "noun",
+  "example": "All in all, it was an even exchange.",
+  "sense_ok": false,
+  "llm_example": "We need to exchange our old money before traveling to the United States."
+ },
+ "guide": {
+  "phonetic": "/ɡaɪd/",
+  "part_of_speech": "noun",
+  "example": "The guide led us around the museum and explained the exhibits.",
+  "sense_ok": true
+ },
+ "tourist": {
+  "phonetic": "/ˈtʊəɹɪst/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The tourist asked where the nearest museum was located."
+ },
+ "journey": {
+  "phonetic": "/ˈd͡ʒɜːni/",
+  "part_of_speech": "noun",
+  "example": "my journey of dealing with grief",
+  "sense_ok": true
+ },
+ "transfer": {
+  "phonetic": "/ˈtɹænzfɜː/",
+  "part_of_speech": "verb",
+  "example": "to transfer the laws of one country to another; to transfer suspicion",
+  "sense_ok": false,
+  "llm_example": "He needs to transfer to the red line at the next station."
+ },
+ "insurance": {
+  "phonetic": "/ɪn.ˈʃɔː.ɹəns/",
+  "part_of_speech": "noun",
+  "example": "The car was totalled, but fortunately I had insurance.",
+  "sense_ok": true
+ },
+ "cancel": {
+  "phonetic": "/ˈkænsl̩/",
+  "part_of_speech": "verb",
+  "example": "He cancelled his order on their website.",
+  "sense_ok": true
+ },
+ "repair": {
+  "phonetic": "/ɹɪˈpɛə/",
+  "part_of_speech": "noun",
+  "example": "I took the car to the workshop for repair.",
+  "sense_ok": true
+ },
+ "tidy": {
+  "phonetic": "/ˈtaɪdi/",
+  "part_of_speech": "adjective",
+  "example": "The scheme made a tidy profit.",
+  "sense_ok": true
+ },
+ "messy": {
+  "phonetic": "/ˈmɛsi/",
+  "part_of_speech": "adjective",
+  "example": "Jim ran his fingers through his messy brown hair.",
+  "sense_ok": true
+ },
+ "chore": {
+  "phonetic": "/tʃɔː/",
+  "part_of_speech": "noun",
+  "example": "Washing dishes is a chore, but we cannot just stop eating.",
+  "sense_ok": true
+ },
+ "appointment": {
+  "phonetic": "/əˈpɔɪnt.mɛnt/",
+  "part_of_speech": "noun",
+  "example": "His appointment was deemed suitable",
+  "sense_ok": true
+ },
+ "receipt": {
+  "phonetic": "/ɹɪˈsiːt/",
+  "part_of_speech": "noun",
+  "example": "A balance payable on receipt of the goods.",
+  "sense_ok": true
+ },
+ "discount": {
+  "phonetic": "/dɪsˈkaʊnt/",
+  "part_of_speech": "noun",
+  "example": "This store offers discounts on all its wares. That store specializes in discount wares, too.",
+  "sense_ok": true
+ },
+ "bargain": {
+  "phonetic": "/ˈbɑːɹɡən/",
+  "part_of_speech": "noun",
+  "example": "At that price, it's not just a bargain, it's a steal.",
+  "sense_ok": true
+ },
+ "queue": {
+  "phonetic": "/kjuː/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "We need to queue up at the counter to order our food."
+ },
+ "crowd": {
+  "phonetic": "/kɹaʊd/",
+  "part_of_speech": "noun",
+  "example": "After the movie let out, a crowd of people pushed through the exit doors.",
+  "sense_ok": true
+ },
+ "commute": {
+  "phonetic": "/kəˈmjuːt/",
+  "part_of_speech": "verb",
+  "example": "A pair of matrices share the same set of eigenvectors if and only if they commute.",
+  "sense_ok": true
+ },
+ "traffic": {
+  "phonetic": "/ˈtɹæfɪk/",
+  "part_of_speech": "noun",
+  "example": "The traffic is slow during rush hour.",
+  "sense_ok": true
+ },
+ "pedestrian": {
+  "phonetic": "/pəˈdɛst.ɹi.ən/",
+  "part_of_speech": "adjective",
+  "example": "His manner of dress was pedestrian but tidy.",
+  "sense_ok": true
+ },
+ "sidewalk": {
+  "phonetic": "/ˈsaɪdwɔːk/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "After the rain, water accumulated on the sidewalk."
+ },
+ "garbage": {
+  "phonetic": "/ˈɡɑːbɪd͡ʒ/",
+  "part_of_speech": "noun",
+  "example": "Garbage is collected on Tuesdays; rubbish on Fridays",
+  "sense_ok": true
+ },
+ "recycle": {
+  "phonetic": "/ɹiˈsaɪkəl/",
+  "part_of_speech": "verb",
+  "example": "Both paper and plastic can be recycled.",
+  "sense_ok": true
+ },
+ "weather": {
+  "phonetic": "/ˈwɛðə/",
+  "part_of_speech": "noun",
+  "example": "Wooden garden furniture must be well oiled as it is continuously exposed to weather.",
+  "sense_ok": true
+ },
+ "umbrella": {
+  "phonetic": "/ʌmˈbɹɛlə/",
+  "part_of_speech": "noun",
+  "example": "Quick, grab that umbrella before you get rained on!",
+  "sense_ok": true
+ },
+ "blanket": {
+  "phonetic": "/ˈblæŋkɪt/",
+  "part_of_speech": "noun",
+  "example": "The baby was cold, so his mother put a blanket over him.",
+  "sense_ok": true
+ },
+ "pillow": {
+  "phonetic": "/ˈpɪləʊ/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She placed a soft pillow behind his head for comfort."
+ },
+ "towel": {
+  "phonetic": "/taʊl/",
+  "part_of_speech": "verb",
+  "example": "He got out of the shower and toweled himself dry.",
+  "sense_ok": true
+ },
+ "soap": {
+  "phonetic": "/səʊp/",
+  "part_of_speech": "noun",
+  "example": "I tried washing my hands with soap, but the stain wouldn't go away.",
+  "sense_ok": true
+ },
+ "mirror": {
+  "phonetic": "/ˈmɘ.ɹɘ/",
+  "part_of_speech": "noun",
+  "example": "I had a look in the mirror to see if the blood had come off my face.",
+  "sense_ok": true
+ },
+ "replicate": {
+  "phonetic": "/ˈɹɛpləˌkeɪt/",
+  "part_of_speech": "verb",
+  "example": "On entering a host cell, a virus will start to replicate.",
+  "sense_ok": true
+ },
+ "peer": {
+  "phonetic": "/pɪə/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "At the workshop, experienced peers shared tips with new colleagues."
+ },
+ "journal": {
+  "phonetic": "/ˈd͡ʒɜːnəl/",
+  "part_of_speech": "noun",
+  "example": "The university's biology department subscribes to half a dozen academic journals.",
+  "sense_ok": true
+ },
+ "publish": {
+  "phonetic": "/ˈpʌblɪʃ/",
+  "part_of_speech": "verb",
+  "example": "Most of the sketches Faulkner published in 1925 appeared in the Sunday magazine section of the New Orleans Times-Picayune.",
+  "sense_ok": true
+ },
+ "findings": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The report summarizes the key findings of the clinical trial."
+ },
+ "bias": {
+  "phonetic": "/ˈbaɪəs/",
+  "part_of_speech": "verb",
+  "example": "Our prejudices bias our views.",
+  "sense_ok": true
+ },
+ "threshold": {
+  "phonetic": "/ˈθɹeʃ(h)əʊld/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The threshold for triggering the alarm is set to 100 decibels."
+ },
+ "criterion": {
+  "phonetic": "/kɹaɪˈtɪəɹi.ən/",
+  "part_of_speech": "noun",
+  "example": "Criterion of choice, of decision, of selection",
+  "sense_ok": true
+ },
+ "empirical": {
+  "phonetic": "/ɪmˈpɪɹɪkəl/",
+  "part_of_speech": "adjective",
+  "example": null,
+  "llm_example": "The scientists used empirical data to support their theory."
+ },
+ "theoretical": {
+  "phonetic": "/ˌθi.əˈɹɛtɪkəl/",
+  "part_of_speech": "adjective",
+  "example": null,
+  "llm_example": "Theoretical knowledge is important, but practical experience is equally crucial."
+ },
+ "comprehensive": {
+  "phonetic": "/ˌkɒm.pɹɪˈhɛn.sɪv/",
+  "part_of_speech": "adjective",
+  "example": "When there are diametrically opposing views on a big issue that concerns millions of people, doing comprehensive research just makes sense.",
+  "sense_ok": true
+ },
+ "substantial": {
+  "phonetic": "/səbˈstænʃəl/",
+  "part_of_speech": "adjective",
+  "example": "a substantial fence or wall",
+  "sense_ok": true
+ },
+ "inevitable": {
+  "phonetic": "/ɪnˈɛvɪtəbəl/",
+  "part_of_speech": "adjective",
+  "example": "We were going so fast that the collision was inevitable.",
+  "sense_ok": true
+ },
+ "ambiguous": {
+  "phonetic": "/æmˈbɪɡjuəs/",
+  "part_of_speech": "adjective",
+  "example": "The politician was criticized for his ambiguous statements and lack of precision.",
+  "sense_ok": true
+ },
+ "coherent": {
+  "phonetic": "/koːˈhiɹənt/",
+  "part_of_speech": "adjective",
+  "example": null,
+  "llm_example": "Her thoughts were coherent even though she was unwell."
+ },
+ "rigorous": {
+  "phonetic": "/ˈɹɪɡəɹəs/",
+  "part_of_speech": "adjective",
+  "example": "a rigorous execution of law",
+  "sense_ok": false,
+  "llm_example": "The professor is known for his rigorous grading system."
+ },
+ "plausible": {
+  "phonetic": "/ˈplɔːz.ə.bəl/",
+  "part_of_speech": "adjective",
+  "example": "a plausible pretext; plausible manners; a plausible delusion",
+  "sense_ok": true
+ },
+ "subsequent": {
+  "phonetic": "/ˈsʌbsəkwənt/",
+  "part_of_speech": "adjective",
+  "example": null,
+  "llm_example": "The subsequent meeting was postponed due to unforeseen circumstances."
+ },
+ "preliminary": {
+  "phonetic": "/pɹɪˈlɪmɪnəɹi/",
+  "part_of_speech": "adjective",
+  "example": "These are just the preliminary results.",
+  "sense_ok": true
+ },
+ "symptom": {
+  "phonetic": "/ˈsɪm(p)təm/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She went to the doctor because she had a fever and cough, which are common symptoms of a cold."
+ },
+ "diagnosis": {
+  "phonetic": "/daɪəɡˈnəʊsɪs/",
+  "part_of_speech": "noun",
+  "example": "He was given the wrong treatment due to an erroneous diagnosis.",
+  "sense_ok": true
+ },
+ "treatment": {
+  "phonetic": "/ˈtɹiːtmənt/",
+  "part_of_speech": "noun",
+  "example": "He still has nightmares resulting from the treatment he received from his captors.",
+  "sense_ok": true
+ },
+ "prescription": {
+  "phonetic": "/pɝˈskɹɪpʃən/",
+  "part_of_speech": "noun",
+  "example": "The surgeon wrote a prescription for a pain killer and physical therapy.",
+  "sense_ok": true
+ },
+ "pharmacy": {
+  "phonetic": "/ˈfɑːməsi/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "She went to the pharmacy to pick up her prescription."
+ },
+ "dose": {
+  "llm_example": "She took the dose of medicine prescribed by the doctor."
+ },
+ "stress": {
+  "phonetic": "/stɹɛs/",
+  "part_of_speech": "noun",
+  "example": "Go easy on him, he's been under a lot of stress lately.",
+  "sense_ok": true
+ },
+ "posture": {
+  "phonetic": "/ˈpɒstʃə/",
+  "part_of_speech": "verb",
+  "example": "to posture oneself; to posture a model",
+  "sense_ok": false,
+  "llm_example": "She adjusted her posture to appear more confident in the interview."
+ },
+ "hydrate": {
+  "phonetic": "/ˈhaɪdɹeɪt/",
+  "part_of_speech": "verb",
+  "example": "A lotion can hydrate the skin.",
+  "sense_ok": true
+ },
+ "wound": {
+  "phonetic": "/wuːnd/",
+  "part_of_speech": "noun",
+  "example": "It took a long time to get over the wound of that insult.",
+  "sense_ok": true
+ },
+ "bandage": {
+  "phonetic": "/ˈbændɪdʒ/",
+  "part_of_speech": "noun",
+  "example": "this new healthcare proposal merely applies a bandage to the current medical crisis",
+  "sense_ok": true
+ },
+ "emergency": {
+  "phonetic": "/ɪˈmɝ.dʒən.si/",
+  "part_of_speech": "noun",
+  "example": "Cardiac arrest is an emergency and if you find someone in cardiac arrest you should call 999 immediately.",
+  "sense_ok": true
+ },
+ "ambulance": {
+  "phonetic": "/ˈæm.bjə.ləns/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The ambulance arrived quickly to take the injured man to the hospital."
+ },
+ "checkup": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": "The appointment was just for a checkup.",
+  "sense_ok": true
+ },
+ "prevent": {
+  "phonetic": "/pɹəˈvɛnt/",
+  "part_of_speech": "verb",
+  "example": "I brush my teeth regularly to prevent them from turning yellow.",
+  "sense_ok": true
+ },
+ "recipe": {
+  "phonetic": "/ˈɹɛs.ə.pi/",
+  "part_of_speech": "noun",
+  "example": "His new approach is definitely a recipe for success.",
+  "sense_ok": true
+ },
+ "ingredient": {
+  "phonetic": "/ɪnˈɡɹiːdi.ənt/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The recipe lists tomatoes as a key ingredient."
+ },
+ "flavour": {
+  "phonetic": null,
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "The chef added a touch of cinnamon to enhance the flavour of the dessert."
+ },
+ "delicious": {
+  "phonetic": "/dɪˈlɪʃəs/",
+  "part_of_speech": "adjective",
+  "example": "The irony is delicious!",
+  "sense_ok": true
+ },
+ "spicy": {
+  "phonetic": null,
+  "part_of_speech": "adjective",
+  "example": "He prepared a spicy casserole.",
+  "sense_ok": true
+ },
+ "sour": {
+  "phonetic": "/ˈsaʊə/",
+  "part_of_speech": "verb",
+  "example": "Too much lemon juice will sour the recipe.",
+  "sense_ok": true
+ },
+ "bitter": {
+  "phonetic": "/ˈbɪtə/",
+  "part_of_speech": "adjective",
+  "example": "The coffee tasted bitter.",
+  "sense_ok": true
+ },
+ "salty": {
+  "phonetic": "/ˈsɒl.ti/",
+  "part_of_speech": "adjective",
+  "example": null,
+  "llm_example": "The fish tasted too salty."
+ },
+ "fresh": {
+  "phonetic": "/fɹɛʃ/",
+  "part_of_speech": "adjective",
+  "example": "He followed the fresh hoofprints to find the deer.",
+  "sense_ok": true
+ },
+ "frozen": {
+  "phonetic": "/ˈfɹəʊzən/",
+  "part_of_speech": "adjective",
+  "example": "The mammoth has been frozen for ten thousand years.",
+  "sense_ok": true
+ },
+ "boil": {
+  "phonetic": "/bɔɪl/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "Boil the eggs for exactly three minutes."
+ },
+ "fry": {
+  "phonetic": "/fɹaɪ/",
+  "part_of_speech": "noun",
+  "example": "to be in a fry",
+  "sense_ok": false,
+  "llm_example": "He likes to fry his potatoes in olive oil."
+ },
+ "grill": {
+  "phonetic": "/ɡɹɪl/",
+  "part_of_speech": "noun",
+  "example": "I put some peppers and mushrooms on the grill to go with dinner.",
+  "sense_ok": true
+ },
+ "steam": {
+  "phonetic": "/stiːm/",
+  "part_of_speech": "noun",
+  "example": "After three weeks in bed he was finally able to sit up under his own steam.",
+  "sense_ok": false,
+  "llm_example": "I put the vegetables in the pot to steam them."
+ },
+ "bake": {
+  "phonetic": "/beɪk/",
+  "part_of_speech": "verb",
+  "example": "I baked a delicious cherry pie.",
+  "sense_ok": true
+ },
+ "errand": {
+  "llm_example": "She ran several errands before heading to the doctor's appointment."
+ },
+ "hello": {
+  "phonetic": "/həˈləʊ/",
+  "part_of_speech": "interjection",
+  "example": "Hello? How may I help you?",
+  "sense_ok": true
+ },
+ "name": {
+  "phonetic": "/neɪm/",
+  "part_of_speech": "noun",
+  "example": "I've never liked the name my parents gave me so I changed it at the age of twenty.",
+  "sense_ok": true
+ },
+ "please": {
+  "phonetic": "/pliːz/",
+  "part_of_speech": "verb",
+  "example": "Her presentation pleased the executives.",
+  "sense_ok": false,
+  "llm_example": "Please pass me the salt."
+ },
+ "thanks": {
+  "phonetic": "/θæŋks/",
+  "part_of_speech": "noun",
+  "example": "After all I’ve done, a simple acknowledgment is all the thanks I get?",
+  "sense_ok": true
+ },
+ "sorry": {
+  "phonetic": "/ˈsɔɹi/",
+  "part_of_speech": "adjective",
+  "example": "I am sorry I stepped on your toes. It was an accident.",
+  "sense_ok": true
+ },
+ "goodbye": {
+  "phonetic": "/ɡədˈbaɪ/",
+  "part_of_speech": "noun",
+  "example": null,
+  "llm_example": "We said goodbye at the door after a long hug."
+ },
+ "family": {
+  "phonetic": "/ˈfɛm(ɘ)li/",
+  "part_of_speech": "noun",
+  "example": "Our family lives in town.",
+  "sense_ok": true
+ },
+ "mother": {
+  "phonetic": "/ˈmʌðə(ɹ)/",
+  "part_of_speech": "noun",
+  "example": "He had something of his mother in him.",
+  "sense_ok": true
+ },
+ "father": {
+  "phonetic": "/ˈfaːðə/",
+  "part_of_speech": "noun",
+  "example": "My father was a strong influence on me.",
+  "sense_ok": true
+ },
+ "house": {
+  "phonetic": "/hʌʊs/",
+  "part_of_speech": "noun",
+  "example": "This is my house and my family's ancestral home.",
+  "sense_ok": true
+ },
+ "table": {
+  "phonetic": "/ˈteɪbəl/",
+  "part_of_speech": "verb",
+  "example": "The legislature tabled the amendment, so they will not be discussing it until later.",
+  "sense_ok": false,
+  "llm_example": "We placed the vase on the small table."
+ },
+ "station": {
+  "phonetic": "/ˈsteɪʃən/",
+  "part_of_speech": "noun",
+  "example": "She had ambitions beyond her station.",
+  "sense_ok": false,
+  "llm_example": "I need to be at the station by 8 AM to catch my train."
+ },
+ "book": {
+  "phonetic": "/buːk/",
+  "part_of_speech": "noun",
+  "example": "He was frustrated because he couldn't find anything about dinosaurs in the book."
+ },
+ "map": {
+  "phonetic": "/mæp/",
+  "part_of_speech": "noun",
+  "example": "I don't want to play this map again!",
+  "sense_ok": true
+ },
+ "order": {
+  "phonetic": "/ˈɔːdə/",
+  "part_of_speech": "noun",
+  "example": "The house is in order; the machinery is out of order."
+ },
+ "cheap": {
+  "phonetic": "/t͡ʃiːp/",
+  "part_of_speech": "adjective",
+  "example": "the cheap trick of hiding deadly lava under pushable blocks",
+  "sense_ok": false,
+  "llm_example": "The hotel is cheap, but the service is excellent."
+ },
+ "report": {
+  "phonetic": "/ɹəˈpoːt/",
+  "part_of_speech": "noun",
+  "example": "A report by the telecommunications ministry on the phone network revealed a severe capacity problem.",
+  "sense_ok": true
+ },
+ "recover": {
+  "phonetic": "/ɹɪˈkʌvə/",
+  "part_of_speech": "verb",
+  "example": "After days of inquiries, he finally recovered his lost wallet."
+ }
+}

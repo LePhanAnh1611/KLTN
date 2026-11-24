@@ -1,0 +1,71 @@
+{
+  "_readme": [
+    "Ngưỡng số để quy đặc trưng đo được (C1 fluency, C2 intelligibility) về mức 1-4.",
+    "KHÔNG có trong speaking-rubric.md vì rubric mô tả bằng lời; đây là bản dịch sang số.",
+    "TRẠNG THÁI: CHƯA CALIBRATE. Mục 8 của rubric yêu cầu đối chiếu với 20-30 mẫu do",
+    "người thật chấm trước khi phát hành. Các con số dưới đây là điểm khởi đầu hợp lý",
+    "cho tiếng Anh nói tự do, KHÔNG phải kết quả đo đạc. Sửa file này là cách calibrate,",
+    "không cần đụng vào code.",
+    "QUAN SÁT THỰC TẾ (2026-08-15, 1 mẫu, CHƯA phải calibrate): giọng TTS tiếng Anh đọc ở tốc độ bình thường cho words_per_minute = 202 trên thang này. Lưu ý WPM ở đây đo trên THỜI GIAN THỰC SỰ NÓI (đã trừ khoảng lặng) nên cao hơn con số hội thoại quen thuộc (~150 wpm đo theo đồng hồ). Hệ quả: ngưỡng mức 4 (120) có thể đang quá dễ, và wpm_too_fast (210) quá sát mức nói bình thường — người nói nhanh tự nhiên có nguy cơ bị phạt oan. Đây là 1 mẫu, KHÔNG đủ để chỉnh số; ghi lại để đợt calibrate soi vào trước tiên."
+  ],
+  "calibrated": false,
+  "language_defaults": "en",
+  "fluency": {
+    "_note": "Mỗi mức là ngưỡng TỐI THIỂU để đạt mức đó. Xét từ mức 4 xuống.",
+    "words_per_minute": {
+      "4": 120,
+      "3": 90,
+      "2": 55,
+      "1": 0
+    },
+    "wpm_too_fast": 210,
+    "wpm_too_fast_penalty": 1,
+    "pause_ratio_max": {
+      "4": 0.18,
+      "3": 0.3,
+      "2": 0.45,
+      "1": 1.0
+    },
+    "filler_per_100_words_max": {
+      "4": 2.0,
+      "3": 5.0,
+      "2": 10.0,
+      "1": 1000.0
+    },
+    "long_pause_sec": 1.0,
+    "min_pause_sec": 0.3
+  },
+  "intelligibility": {
+    "_note": "avg_confidence là xác suất trung bình theo từ do ASR trả về (0-1).",
+    "avg_confidence_min": {
+      "4": 0.9,
+      "3": 0.78,
+      "2": 0.6,
+      "1": 0.0
+    },
+    "low_confidence_word_threshold": 0.6,
+    "low_confidence_ratio_max": {
+      "4": 0.05,
+      "3": 0.15,
+      "2": 0.3,
+      "1": 1.0
+    },
+    "max_low_confidence_examples": 6
+  },
+  "quality_gates": {
+    "_note": "Dưới các mức này thì bản ghi không đủ để chấm — cảnh báo thay vì chấm bừa.",
+    "min_duration_sec": 3.0,
+    "min_words": 5,
+    "max_no_speech_prob": 0.6,
+    "unreliable_avg_confidence": 0.45
+  },
+  "aggregate": {
+    "_note": "Trọng số mặc định bằng nhau (rubric mục 6). Người gọi ghi đè được.",
+    "default_weights": {
+      "fluency": 1.0,
+      "pronunciation": 1.0,
+      "grammar_vocab": 1.0,
+      "coherence_task": 1.0
+    }
+  }
+}
