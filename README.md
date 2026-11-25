@@ -1,19 +1,19 @@
-# LearningHub — Hệ thống học ngoại ngữ cá nhân hóa ứng dụng Deep Knowledge Tracing
+# LearningHub - Hệ thống học ngoại ngữ cá nhân hóa ứng dụng Deep Knowledge Tracing
 
-Khóa luận tốt nghiệp — web app học từ vựng tiếng Anh cho người Việt, dùng mô hình
-**Deep Knowledge Tracing (DKT)** để ước lượng mức độ nắm vững từng từ của người
+Khóa luận tốt nghiệp của Lê Phan Anh - 11236049, web app học từ vựng tiếng Anh cho người Việt, dùng mô hình
+Deep Knowledge Tracing (DKT) để ước lượng mức độ nắm vững từng từ của người
 học, từ đó **gợi ý từ vừa sức** và **lập lịch ôn tập** thay cho công thức giãn
 cách cố định.
 
 > Điểm khác biệt so với Anki/Quizlet: lịch ôn và thứ tự từ do mô hình học sâu suy
 > ra từ toàn bộ lịch sử trả lời, không phải từ một công thức tĩnh. SM-2 được cài
-> song song làm **baseline để so sánh**.
+> song song làm baseline để so sánh.
 
 ---
 
 ## 1. Kết quả khoa học (Chương 4)
 
-Ba mô hình Knowledge Tracing huấn luyện trên bộ **Duolingo SLAM 2018 (track en_es)**,
+Ba mô hình Knowledge Tracing huấn luyện trên bộ Duolingo SLAM 2018 (track en_es),
 2.593 người học · 386.604 lượt trả lời, đánh giá bằng AUC/Accuracy:
 
 | Mô hình | AUC | Accuracy | Ghi chú |
@@ -173,10 +173,3 @@ python -m src.sakt --full                # SAKT
 
 Toàn bộ ngưỡng vận hành nằm trong bảng `system_configs`, sửa được ở màn Quản trị
 → Cấu hình (UC-81); phân quyền theo từng quyền cụ thể ở màn Phân quyền (UC-74).
-
----
-
-## 6. Ngoài phạm vi
-
-Không nằm trong khóa luận: thanh toán/premium, luyện nói ASR+LLM+TTS (giai đoạn 2),
-kết bạn/theo dõi, đa ngôn ngữ giao diện.
